@@ -1,0 +1,37 @@
+// if higher than
+@mixin iht($point) {
+  @if $point == m {
+    @media (min-width: 400px) { @content ; }
+  }
+  @else if $point == l {
+    @media (min-width: 769px) { @content ; }
+  }
+  @else if $point == xl {
+    @media (min-width: 1024px)  { @content ; }
+  }
+  @else if $point != ZZZ{
+    @media (min-width: $point)  { @content; }
+  }
+}
+
+// if lower than
+@mixin ilt($point) {
+  @if $point == m {
+    @media (max-width: 400px) { @content ; }
+  }
+  @else if $point == l {
+    @media (max-width: 769px) { @content ; }
+  }
+  @else if $point == xl {
+    @media (max-width: 1024px)  { @content ; }
+  }
+}
+
+@mixin retina($url){
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url($url);
+  }
+}
+

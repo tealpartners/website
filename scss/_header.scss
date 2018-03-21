@@ -1,0 +1,105 @@
+.colorband{
+  position: relative;
+
+  &.colorband--large{
+    padding-bottom:150px;
+    @include iht(l){padding-bottom:300px};
+  }
+
+  &:after{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    top:-50px;
+    overflow: hidden;
+    transform: skewY(-10deg);
+    transform-origin: 0;
+    background: url("../assets/img/teal-logo-shape.svg"), linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
+    background-position: center center;
+    z-index: -1;
+  }
+}
+
+.l-header{
+  position: relative;
+  -ms-display:grid;
+  display:grid;
+
+  z-index: 1;
+
+}
+
+.logo{
+
+  justify-self:center;
+  @include iht(l){
+    justify-self:start;
+  }
+
+
+  a{
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 200px;
+    height:69px;
+    background: url(../assets/img/tealpartners-logo.svg) no-repeat center center;
+    background-size: 200px 69px;
+  }
+}
+/*
+.main-navigation__list,
+.main-navigation__list__item{
+  margin: 0;
+  padding:0;
+}
+
+.main-navigation__list{
+  width: 100%;
+  font-size: 0;
+  padding: 0px 20px;
+}
+
+.main-navigation__list__item{
+  display: inline-block;
+  text-align: center;
+  width: calc(100% / 5);
+}
+
+.main-navigation__list__item a{
+  color:#FFF;
+  text-decoration: none;
+  font-weight: 300;
+  font-size:14px;
+}
+
+*/
+
+// TOP navigation using CSS grid
+
+.top-navigation{
+  display: flex;
+}
+
+.top-navigation__item{
+  text-align: center;
+  align-self: center;
+  line-height: 60px;
+  flex: 1;
+}
+
+.top-navigation__item a{
+  color:#FFF;
+  text-decoration: none;
+  font-weight: 400;
+  font-size:14px;
+
+  @include iht(m){
+    font-size:16px;
+  };
+
+  @include iht(l){
+    font-size:18px;
+  };
+}

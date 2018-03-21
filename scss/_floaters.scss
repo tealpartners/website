@@ -1,0 +1,77 @@
+.floaters{
+  @extend .l-wrapper;
+  display: grid;
+  position: relative;
+  z-index:30;
+
+  margin-top: -150px;
+  @include iht(l){
+    margin-top: -300px;
+  };
+
+}
+
+.floaters2{
+  @include iht(m){
+    grid-template-columns: 1fr 1fr;
+  };
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  @include iht(l){
+    grid-column-gap: 80px;
+  };
+}
+
+.floaters__item{
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.13);
+  padding: 40px;
+  text-align: center;
+  display: grid;
+  @include iht(m){
+    padding: 50px;
+  };
+
+}
+
+.floaters__item__title{
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  margin:0 0 10px 0;
+  padding-bottom:10px;
+  align-self: start;
+
+  @include iht(m){
+    margin:0 0 15px 0;
+    padding-bottom:15px;
+  };
+
+
+
+  &:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 30px;
+    bottom: 0px;
+    left:calc(50% - 15px);
+    background-color: $color-brand;
+  }
+}
+
+.floaters__item__text{
+  font-weight:300;
+  font-size: 22px;
+  @include iht(l){
+    font-size: 26px;
+  };
+  margin:0 0 30px 0;
+}
+
+.floaters__item__button{
+  align-self: end;
+  text-align: center;
+  width: 100%;
+}

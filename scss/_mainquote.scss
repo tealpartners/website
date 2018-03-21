@@ -1,0 +1,29 @@
+.mainquote{
+  display: grid;
+  margin: 30px 30px 50px 30px;
+
+  @include iht(m){
+    margin:50px 50px 70px 50px;
+  };
+  @include iht(l){
+    margin:100px 100px 120px 100px;
+  };
+}
+
+.mainquote__text{
+  font-weight:500;
+  font-size:22px;
+  font-style: italic;
+  color:#FFF;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+
+  @include iht(m){
+    font-size:28px;
+  };
+
+  @include iht(l){
+    font-size:35px;
+  };
+}
