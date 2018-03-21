@@ -717,6 +717,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     background-color: #18A7B5; }
 
+.about__list__item__image {
+  overflow: hidden; }
+
 .about__list__item__text {
   margin: 0;
   font-size: 15px;
