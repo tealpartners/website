@@ -14,14 +14,18 @@
     z-index: -1;
 
     height: 100%;
-    bottom: -150px;
+    bottom: -100px;
 
     @include for-size(tablet-up){
-       bottom: -300px;
+       bottom: -250px;
     }
 
     @include for-size(tablet-landscape-up){
-      bottom: -500px;
+      bottom: -350px;
+    }
+
+    @include for-size(desktop-up){
+      bottom: -450px;
     }
 
   }

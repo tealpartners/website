@@ -2,10 +2,6 @@
   @extend .l-wrapper;
   text-align: center;
 
-  margin-top:40px;
-  @include for-size(tablet-landscape-up){
-    margin-top: 80px;
-  }
   img{
     width: 100%;
   }
