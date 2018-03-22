@@ -10,6 +10,7 @@
 
 .l-header{
   margin-top:20px;
+  -ms-display: grid;
   display: grid;
 
   @include iht(l){

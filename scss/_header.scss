@@ -25,7 +25,6 @@
   position: relative;
   -ms-display:grid;
   display:grid;
-
   z-index: 1;
 
 }
@@ -33,8 +32,10 @@
 .logo{
 
   justify-self:center;
+  -ms-grid-column-align:center;
+
   @include iht(l){
-    justify-self:start;
+    -ms-grid-column-align:start;
   }
 
 
@@ -75,8 +76,6 @@
 }
 
 */
-
-// TOP navigation using CSS grid
 
 .top-navigation{
   display: flex;

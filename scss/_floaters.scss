@@ -1,5 +1,6 @@
 .floaters{
   @extend .l-wrapper;
+  -ms-display: grid;
   display: grid;
   position: relative;
   z-index:30;
@@ -13,6 +14,7 @@
 
 .floaters2{
   @include iht(m){
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   };
   grid-column-gap: 20px;
@@ -28,6 +30,7 @@
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.13);
   padding: 40px;
   text-align: center;
+  -ms-display: grid;
   display: grid;
   @include iht(m){
     padding: 50px;
@@ -41,6 +44,7 @@
   position: relative;
   margin:0 0 10px 0;
   padding-bottom:10px;
+  -ms-grid-row-align: start;
   align-self: start;
 
   @include iht(m){
@@ -71,6 +75,7 @@
 }
 
 .floaters__item__button{
+  -ms-grid-row-align: end;
   align-self: end;
   text-align: center;
   width: 100%;
