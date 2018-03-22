@@ -40,5 +40,15 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
     background-color: $color-cta-alt;
   }
+}
 
+.textbutton{
+  color:$color-brand;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  &:hover{
+    color: $color-brand-light;
+    transition: all 0.2s;
+  }
 }

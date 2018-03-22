@@ -1,15 +1,19 @@
 // Standards & config
-@import "normalize.scss";
-@import "fonts.scss";
-@import "mixins.scss";
-@import "vars.scss";
+@import "_normalize.scss";
+@import "_fonts.scss";
+@import "_mixins.scss";
+@import "_vars.scss";
 
 
 // Layout and modules
-@import "layout.scss";
-@import "general.scss";
-@import "header.scss";
-@import "mainquote.scss";
-@import "floaters.scss";
-@import "about.scss";
+@import "_layout.scss";
+@import "_general.scss";
+@import "_header.scss";
+@import "_mainquote.scss";
+@import "_floaters.scss";
+@import "_about.scss";
+@import "_blog.scss";
+@import "_bigpic.scss";
+@import "_footer.scss";
+
 

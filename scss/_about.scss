@@ -23,11 +23,11 @@
 }
 
 .about__list{
-  -ms-display: grid;
+  display: -ms-grid;;
   display: grid;
 
- @include for-size(desktop-up){
-   -ms-grid-columns: 1fr 1fr 1fr;
+  @include for-size(desktop-up){
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
   grid-column-gap: 40px;
@@ -37,7 +37,7 @@
 .about__list__item{
 
   @include for-size(tablet-down){
-    -ms-display: grid;
+    display: -ms-grid;;
     display: grid;
     grid-column-gap:10px;
   };
@@ -54,12 +54,12 @@
   &:nth-child(odd) {
     -ms-grid-columns: 90px 1fr;
     grid-template-columns: 90px 1fr;
-    @include for-size(phone-only){
+    @include for-size(tablet-up){
       -ms-grid-columns: 150px 1fr;
       grid-template-columns: 150px 1fr;
     }
     padding-right:40px;
-    @include for-size(phone-only){
+    @include for-size(tablet-up){
       padding:0px 40px;
     }
 
@@ -70,7 +70,7 @@
         width: 120%;
         position: relative;
         left:-25px;
-        @include for-size(phone-only){
+        @include for-size(tablet-up){
           width: 100%;
           left:0;
         }
@@ -90,12 +90,12 @@
   &:nth-child(even) {
     -ms-grid-columns: 1fr 90px;
     grid-template-columns: 1fr 90px;
-    @include for-size(phone-only){
+    @include for-size(tablet-up){
       -ms-grid-columns: 1fr 150px;
       grid-template-columns: 1fr 150px;
     }
     padding-left:40px;
-    @include for-size(phone-only){
+    @include for-size(tablet-up){
       padding:0px 40px;
     }
 
@@ -108,7 +108,7 @@
       img{
         width: 120%;
         position: relative;
-        @include for-size(phone-only){
+        @include for-size(tablet-up){
           width: 100%;
         }
       }
@@ -132,6 +132,25 @@
   }
 }
 
+// 3 columns from tablet-landscape and up
+@include for-size(tablet-landscape-up){
+
+  .about__list .about__list__item{
+    padding:0;
+    text-align: center;
+  }
+
+  .about__list__item .about__list__item__image{
+    margin-bottom: 40px;
+  }
+
+  .about__list__item:nth-child(odd) .about__list__item__image img,
+  .about__list__item:nth-child(even) .about__list__item__image img{
+    width: 60%;
+  }
+}
+
+
 
 .about__list__item__title{
   margin: 0;
@@ -141,6 +160,11 @@
   padding-bottom: 15px;
   margin-bottom:15px;
 
+  @include for-size(tablet-landscape-up){
+    padding-bottom: 40px;
+    margin-bottom:40px;
+  }
+
   &:after{
     position: absolute;
     content: '';
@@ -149,7 +173,13 @@
     bottom: 0px;
     left:0;
     background-color: $color-brand;
+
+    @include for-size(tablet-landscape-up){
+      left: calc(50% - 15px);
+    }
+
   }
+
 }
 
 .about__list__item__image{
@@ -161,4 +191,14 @@
   font-size:15px;
   color: $color-text2;
   line-height:22px;
+}
+
+.about__button{
+  text-align: center;
+  margin-top:40px;
+
+  @include for-size(tablet-landscape-up){
+    margin-top:60px;
+  }
+
 }
