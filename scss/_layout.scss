@@ -2,7 +2,7 @@
   max-width: $maxwidth;
   margin: 0 auto;
   padding: 0px 20px;
-  @include iht(m){
+  @include for-size(tablet-portrait-up){
     padding: 0px 40px;
   };
 }
@@ -13,7 +13,7 @@
   -ms-display: grid;
   display: grid;
 
-  @include iht(l){
+  @include for-size(desktop-up){
     grid-template-columns: 300px 1fr;
   }
 }

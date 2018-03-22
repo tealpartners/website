@@ -1,31 +1,21 @@
-// if higher than
-@mixin iht($point) {
-  @if $point == m {
-    @media (min-width: 400px) { @content ; }
-  }
-  @else if $point == l {
-    @media (min-width: 769px) { @content ; }
-  }
-  @else if $point == xl {
-    @media (min-width: 1024px)  { @content ; }
-  }
-  @else if $point != ZZZ{
-    @media (min-width: $point)  { @content; }
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1100px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == tablet-down {
+    @media (max-width: $tablet-landscape-upper-boundary) { @content; }
   }
 }
 
-// if lower than
-@mixin ilt($point) {
-  @if $point == m {
-    @media (max-width: 400px) { @content ; }
-  }
-  @else if $point == l {
-    @media (max-width: 769px) { @content ; }
-  }
-  @else if $point == xl {
-    @media (max-width: 1024px)  { @content ; }
-  }
-}
 
 @mixin retina($url){
   @media

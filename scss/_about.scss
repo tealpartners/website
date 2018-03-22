@@ -11,11 +11,11 @@
   padding: 0px 20px;
   margin: 0 0 40px 0;
 
-  @include iht(l){
+  @include for-size(tablet-portrait-up){
     font-size:26px;
   };
 
-  @include iht(xl){
+  @include for-size(desktop-up){
     font-size:34px;
     margin: 0px 0px 100px 0px;
   };
@@ -26,7 +26,7 @@
   -ms-display: grid;
   display: grid;
 
- @include iht(l){
+ @include for-size(desktop-up){
    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -35,15 +35,33 @@
 }
 
 .about__list__item{
-  -ms-display: grid;
-  display: grid;
-  grid-column-gap:10px;
+
+  @include for-size(tablet-down){
+    -ms-display: grid;
+    display: grid;
+    grid-column-gap:10px;
+  };
+
+  @include for-size(tablet-portrait-up){
+    grid-column-gap:30px;
+  }
+
+  .about__list__item__image img{
+    width: 60%;
+  }
 
   // Mobile - img links, text+title rechts
   &:nth-child(odd) {
     -ms-grid-columns: 90px 1fr;
     grid-template-columns: 90px 1fr;
+    @include for-size(phone-only){
+      -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+    }
     padding-right:40px;
+    @include for-size(phone-only){
+      padding:0px 40px;
+    }
 
     .about__list__item__image{
       -ms-grid-row-span: 2;
@@ -52,6 +70,10 @@
         width: 120%;
         position: relative;
         left:-25px;
+        @include for-size(phone-only){
+          width: 100%;
+          left:0;
+        }
       }
     }
 
@@ -68,7 +90,14 @@
   &:nth-child(even) {
     -ms-grid-columns: 1fr 90px;
     grid-template-columns: 1fr 90px;
+    @include for-size(phone-only){
+      -ms-grid-columns: 1fr 150px;
+      grid-template-columns: 1fr 150px;
+    }
     padding-left:40px;
+    @include for-size(phone-only){
+      padding:0px 40px;
+    }
 
     .about__list__item__image{
       -ms-grid-column:2;
@@ -79,8 +108,12 @@
       img{
         width: 120%;
         position: relative;
+        @include for-size(phone-only){
+          width: 100%;
+        }
       }
     }
+
 
     .about__list__item__title{
       -ms-grid-column:1;
@@ -98,6 +131,7 @@
 
   }
 }
+
 
 .about__list__item__title{
   margin: 0;

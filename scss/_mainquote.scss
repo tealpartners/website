@@ -3,10 +3,10 @@
   display: grid;
   margin: 30px 30px 50px 30px;
 
-  @include iht(m){
+  @include for-size(tablet-portrait-up){
     margin:50px 50px 70px 50px;
   };
-  @include iht(l){
+  @include for-size(desktop-up){
     margin:100px 100px 120px 100px;
   };
 }
@@ -20,11 +20,11 @@
   justify-self: center;
   text-align: center;
 
-  @include iht(m){
+  @include for-size(tablet-portrait-up){
     font-size:28px;
   };
 
-  @include iht(l){
+  @include for-size(desktop-up){
     font-size:35px;
   };
 }
