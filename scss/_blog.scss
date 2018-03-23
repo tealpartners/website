@@ -88,6 +88,7 @@
 
   -ms-grid-columns: 1fr 60px;
   grid-template-columns: 1fr 60px;
+  text-decoration: none;
 
   @include for-size(tablet-landscape-up){
     -ms-grid-columns: 80px 1fr;
@@ -96,6 +97,10 @@
     grid-column-gap: 20px;
   }
 
+  &:hover{
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
 
 }
 

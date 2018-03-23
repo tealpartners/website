@@ -27,10 +27,8 @@
     @include for-size(desktop-up){
       bottom: -450px;
     }
-
   }
 }
-
 
 
 .footer__info{
@@ -116,7 +114,6 @@
 }
 
 /* TABLET */
-
 @include for-size(tablet-up) {
 
   .footer__info {
@@ -164,7 +161,6 @@
 }
 
 /* DESKTOP */
-
 @include for-size(tablet-landscape-up) {
 
   .footer__info {
@@ -178,7 +174,6 @@
       height: 50px;
     }
   }
-
 
   .footer__adress {
     text-align: center;
