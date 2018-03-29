@@ -6,28 +6,37 @@
     position: absolute;
     content:"";
     width: 100%;
+    bottom:0z;
     overflow: hidden;
-    transform: skewY(-10deg);
+    transform: skewY(0deg);
     transform-origin: 0;
     background: linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
     background-position: center center;
     z-index: -1;
 
     height: 100%;
-    bottom: -100px;
 
-    @include for-size(tablet-up){
-       bottom: -250px;
-    }
+  }
 
-    @include for-size(tablet-landscape-up){
-      bottom: -350px;
-    }
+  &.footer--large{
+    &:after{
+      bottom: -100px;
+      transform: skewY(-10deg);
 
-    @include for-size(desktop-up){
-      bottom: -450px;
+      @include for-size(tablet-up){
+        bottom: -250px;
+      }
+
+      @include for-size(tablet-landscape-up){
+        bottom: -350px;
+      }
+
+      @include for-size(desktop-up){
+        bottom: -450px;
+      }
     }
   }
+
 }
 
 

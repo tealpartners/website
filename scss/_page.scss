@@ -1,0 +1,16 @@
+.page{
+
+}
+
+.page__title{
+
+  color:$color-text1;
+
+}
+
+.page__header{
+  margin: 0px auto;
+  max-width: calc(1100px - 80px);
+  background-color: #fff;
+  box-shadow: 0px -2px 10px rgba(0,0,0,0.15);
+}

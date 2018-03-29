@@ -44,6 +44,7 @@
   -ms-grid-column-align:center;
 
   @include for-size(desktop-up){
+    justify-self:start;
     -ms-grid-column-align:start;
   }
 
