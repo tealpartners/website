@@ -1,22 +1,22 @@
 .footer{
   position: relative;
   overflow: hidden;
+  margin-top: 40px;
 
   &:after{
     position: absolute;
     content:"";
     width: 100%;
-    bottom:0z;
     overflow: hidden;
     transform: skewY(0deg);
     transform-origin: 0;
     background: linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
     background-position: center center;
     z-index: -1;
-
     height: 100%;
-
+    bottom:0px;
   }
+
 
   &.footer--large{
     &:after{
