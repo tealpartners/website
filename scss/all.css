@@ -929,7 +929,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   position: relative;
   overflow: hidden;
-  margin-top: 40px; }
+  margin-top: 60px; }
   .footer:after {
     position: absolute;
     content: "";
@@ -1142,5 +1142,66 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 600px) {
       .page__content p {
         font-size: 18px; } }
+
+.team {
+  display: grid;
+  display: -ms-grid;
+  transform: skewY(-3deg);
+  margin-top: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr; }
+  @media (min-width: 600px) {
+    .team {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 900px) {
+    .team {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+.team__member {
+  height: 160px;
+  background-color: #000;
+  color: #FFF;
+  position: relative; }
+
+.team__picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.team__description {
+  position: absolute;
+  color: #FFF;
+  bottom: 0px;
+  padding: 20px; }
+
+.team__name, .team__job {
+  display: block; }
+
+.team__name {
+  font-size: 15px;
+  font-weight: 600; }
+  @media (min-width: 600px) {
+    .team__name {
+      font-size: 17px; } }
+
+.team__job {
+  font-size: 13px;
+  font-weight: 400; }
+  @media (min-width: 600px) {
+    .team__job {
+      font-size: 15px; } }
+
+.team__cta {
+  margin-top: 60px;
+  text-align: center; }
+  .team__cta h2 {
+    font-size: 30px; }
+  @media (min-width: 900px) {
+    .team__cta {
+      margin-top: 100px; } }
 
 /*# sourceMappingURL=all.css.map */
