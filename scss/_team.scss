@@ -3,7 +3,7 @@
   display: -ms-grid;
   transform: skewY(-3deg);
 
-  margin-top:30px;
+  margin-top:50px;
   margin-left:-30px;
   margin-right:-30px;
   grid-column-gap:15px;
@@ -16,8 +16,10 @@
   }
   
   @include for-size(tablet-landscape-up){
+    margin: 50px 0px 0px 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
 
 }
 
@@ -26,7 +28,9 @@
   background-color: #000;
   color:#FFF;
   position: relative;
-
+  @include for-size(tablet-up){
+      height: 200px;
+  }
 }
 
 .team__picture{
