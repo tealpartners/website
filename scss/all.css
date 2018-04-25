@@ -468,8 +468,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.1s ease-out;
   position: relative; }
   .button:hover {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-    background-color: #B2475A; }
+    box-shadow: 0px 0px 30px rgba(255, 0, 65, 0.34);
+    transform: scale(1.02); }
 
 .textbutton {
   color: #18A7B5;
@@ -479,6 +479,15 @@ h1, h2, h3, h4, h5, h6 {
   .textbutton:hover {
     color: #57C8B9;
     transition: all 0.2s; }
+
+.callout {
+  margin-top: 60px;
+  text-align: center; }
+  .callout .callout__title {
+    font-size: 30px; }
+  @media (min-width: 900px) {
+    .callout {
+      margin-top: 100px; } }
 
 .colorband {
   position: relative;
@@ -1207,15 +1216,6 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 600px) {
     .team__job {
       font-size: 15px; } }
-
-.team__cta {
-  margin-top: 60px;
-  text-align: center; }
-  .team__cta h2 {
-    font-size: 30px; }
-  @media (min-width: 900px) {
-    .team__cta {
-      margin-top: 100px; } }
 
 .testimonials__grid {
   display: grid;

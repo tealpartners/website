@@ -82,17 +82,3 @@
   }
 }
 
-
-.team__cta{
-  margin-top:60px;
-  text-align: center;
-  h2{
-    font-size:30px;
-  }
-
-  
-  @include for-size(tablet-landscape-up){
-      margin-top:100px;
-  }
-
-}
