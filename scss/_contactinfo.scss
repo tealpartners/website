@@ -1,0 +1,32 @@
+.contactinfo{
+  display: -ms-grid;
+  display: grid;
+
+  font-size:16px;
+  font-weight: 500;
+  color:$color-text2;
+  line-height:150%;
+  @include for-size(tablet-up){
+    font-size: 18px;
+  }
+
+  .contactinfo_right{
+    padding-top: 20px;
+  }
+
+  @include for-size(tablet-up){
+    grid-template-columns: 1fr 1fr;
+
+    .contactinfo_right{
+      padding-top: 0;
+      padding-left: 40px;
+      border-left: 1px solid $color-border;
+    }
+
+  }
+}
+
+.contactinfo__name{
+  font-weight:600;
+  color: $color-text1;
+}
