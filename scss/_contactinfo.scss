@@ -28,8 +28,15 @@
   }
 }
 
+.contactinfo_left{
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
 .contactinfo_right{
   text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
 }
 
 .contactinfo__name{
