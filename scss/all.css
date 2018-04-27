@@ -1311,15 +1311,18 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 600px) {
     .contactinfo {
       font-size: 18px; } }
-  .contactinfo .contactinfo_right {
-    padding-top: 20px; }
   @media (min-width: 600px) {
     .contactinfo {
-      grid-template-columns: 1fr 1fr; }
-      .contactinfo .contactinfo_right {
-        padding-top: 0;
-        padding-left: 40px;
-        border-left: 1px solid #D9D9D9; } }
+      grid-template-columns: 1fr 1fr; } }
+
+.contactinfo_right img {
+  width: 180px; }
+  @media (max-width: 599px) {
+    .contactinfo_right img {
+      display: none; } }
+
+.contactinfo_right {
+  text-align: center; }
 
 .contactinfo__name {
   font-weight: 600;

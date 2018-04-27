@@ -12,20 +12,23 @@
     font-size: 18px;
   }
 
-  .contactinfo_right{
-    padding-top: 20px;
-  }
+
 
   @include for-size(tablet-up){
     grid-template-columns: 1fr 1fr;
 
-    .contactinfo_right{
-      padding-top: 0;
-      padding-left: 40px;
-      border-left: 1px solid $color-border;
-    }
-
   }
+}
+
+.contactinfo_right img{
+  width: 180px;
+  @include for-size(phone-only){
+      display: none;
+  }
+}
+
+.contactinfo_right{
+  text-align: center;
 }
 
 .contactinfo__name{
