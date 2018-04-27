@@ -1303,6 +1303,7 @@ h1, h2, h3, h4, h5, h6 {
 .contactinfo {
   display: -ms-grid;
   display: grid;
+  margin-top: 40px;
   font-size: 16px;
   font-weight: 500;
   color: #46686C;
