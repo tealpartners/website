@@ -522,6 +522,12 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   z-index: 1; }
 
+.l-header__logo {
+  -ms-grid-column: 1; }
+
+.l-header__nav {
+  -ms-grid-column: 2; }
+
 .logo {
   justify-self: center;
   -ms-grid-column-align: center; }
@@ -1357,6 +1363,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .contactinfo__name {
   font-weight: 600;
-  color: green; }
+  color: black; }
 
 /*# sourceMappingURL=all.css.map */

@@ -30,6 +30,7 @@
   }
 }
 
+
 .l-header{
   position: relative;
   display: -ms-grid;
@@ -37,6 +38,15 @@
   z-index: 1;
 
 }
+
+.l-header__logo{
+  -ms-grid-column: 1;
+}
+
+.l-header__nav{
+  -ms-grid-column: 2;
+}
+
 
 .logo{
 
