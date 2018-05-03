@@ -437,6 +437,17 @@ template {
     .l-header {
       grid-template-columns: 300px 1fr; } }
 
+.l-contentcontainer, .page__content, .projects {
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  max-width: 880px; }
+  @media (min-width: 600px) {
+    .l-contentcontainer, .page__content, .projects {
+      width: calc(100% - 180px); } }
+  @media (min-width: 600px) {
+    .l-contentcontainer, .page__content, .projects {
+      width: calc(100% - 180px); } }
+
 body {
   font-family: "Enzo";
   color: #202E30;
@@ -1159,48 +1170,38 @@ h1, h2, h3, h4, h5, h6 {
     .page__intro {
       font-size: 22px; } }
 
-.page__content {
-  margin: 0 auto;
-  width: calc(100% - 100px);
-  max-width: 880px; }
+.page__content h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 30px 0px 20px 0px; }
+  .page__content h2:first-child {
+    margin-top: 0; }
+.page__content p, .page__content li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #46686C;
+  line-height: 150%; }
   @media (min-width: 600px) {
-    .page__content {
-      width: calc(100% - 180px); } }
-  @media (min-width: 600px) {
-    .page__content {
-      width: calc(100% - 180px); } }
-  .page__content h2 {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 600;
-    margin: 30px 0px 20px 0px; }
-    .page__content h2:first-child {
-      margin-top: 0; }
-  .page__content p, .page__content li {
-    font-size: 16px;
-    font-weight: 500;
-    color: #46686C;
-    line-height: 150%; }
-    @media (min-width: 600px) {
-      .page__content p, .page__content li {
-        font-size: 18px; } }
-  .page__content ul {
-    list-style-type: none;
-    padding: 0px 0px 0px 20px;
-    margin: 0; }
-  .page__content li {
-    position: relative;
-    padding-left: 20px;
-    list-style: none; }
-    .page__content li:before {
-      position: absolute;
-      content: "";
-      height: 5px;
-      width: 5px;
-      top: 11px;
-      left: 0px;
-      transform: skewX(-20deg);
-      background-color: #18A7B5; }
+    .page__content p, .page__content li {
+      font-size: 18px; } }
+.page__content ul {
+  list-style-type: none;
+  padding: 0px 0px 0px 20px;
+  margin: 0; }
+.page__content li {
+  position: relative;
+  padding-left: 20px;
+  list-style: none; }
+  .page__content li:before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    top: 11px;
+    left: 0px;
+    transform: skewX(-20deg);
+    background-color: #18A7B5; }
 
 .team {
   margin-top: 40px;
@@ -1364,5 +1365,68 @@ h1, h2, h3, h4, h5, h6 {
 .contactinfo__name {
   font-weight: 600;
   color: black; }
+
+.projects {
+  margin-top: 40px; }
+
+.projects__image {
+  position: relative;
+  border-bottom: 1px solid #18A7B5;
+  text-align: center;
+  overflow: hidden; }
+  .projects__image img {
+    width: 80%;
+    position: relative;
+    bottom: -40px; }
+  @media (min-width: 900px) {
+    .projects__image {
+      width: 100%;
+      border: none;
+      overflow: visible;
+      max-height: none; }
+      .projects__image img {
+        width: 100%;
+        top: 0;
+        bottom: auto; } }
+
+.projects__case {
+  margin-bottom: 50px; }
+  @media (min-width: 600px) {
+    .projects__case {
+      margin-bottom: 80px; } }
+  @media (min-width: 900px) {
+    .projects__case {
+      display: grid;
+      column-gap: 60px;
+      grid-template-columns: 1fr 1fr; } }
+
+.projects__case__title {
+  font-size: 20px;
+  color: #202E30;
+  margin: 30px 0px 10px 0px; }
+  @media (min-width: 600px) {
+    .projects__case__title {
+      font-size: 24px; } }
+  @media (min-width: 900px) {
+    .projects__case__title {
+      margin-top: 0; } }
+
+.projects__case__body {
+  font-size: 15px;
+  color: #46686C;
+  line-height: 150%;
+  margin: 0; }
+  @media (min-width: 600px) {
+    .projects__case__body {
+      font-style: 18px; } }
+
+/* ODD EVEN */
+@media (min-width: 900px) {
+  .projects__case:nth-child(even) .projects__case__text {
+    grid-column: 1;
+    grid-row: 1; }
+  .projects__case:nth-child(even) .projects__image {
+    grid-column: 2;
+    grid-row: 1; } }
 
 /*# sourceMappingURL=all.css.map */

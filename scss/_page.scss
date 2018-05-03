@@ -36,6 +36,8 @@
   }
 }
 
+
+
 .page__intro{
   font-size:18px;
   font-weight: 300;
@@ -53,17 +55,7 @@
 }
 
 .page__content{
-  margin: 0 auto;
-  width: calc(100% - 100px);
-  max-width: 880px;
-
-  @include for-size(tablet-up){
-    width: calc(100% - 180px);
-  }
-
-  @include for-size(tablet-up){
-    width: calc(100% - 180px);
-  }
+  @extend .l-contentcontainer;
 
   h2{
     font-size: 18px;
