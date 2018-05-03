@@ -21,14 +21,12 @@
     overflow: visible;
     max-height: none;
 
-
     img{
       width: 100%;
       top:0;
       bottom: auto;
     }
   }
-
 }
 
 .projects__case{
@@ -39,12 +37,11 @@
 
   @include for-size(tablet-landscape-up){
       display:grid;
+      align-items: center;
       column-gap: 60px;
       grid-template-columns: 1fr 1fr;
   }
 }
-
-
 
 .projects__case__title{
   font-size:20px;
@@ -69,11 +66,10 @@
   }
 }
 
-/* ODD EVEN */
-
+/* ODD/EVEN LEFT/RIGHT */
 .projects__case:nth-child(even){
   @include for-size(tablet-landscape-up){
-
+    text-align: right;
     .projects__case__text{
       grid-column: 1;
       grid-row:1;
