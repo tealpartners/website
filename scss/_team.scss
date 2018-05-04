@@ -39,6 +39,8 @@
 
 .team__member{
   height:200px;
+  background: #C3CDCD;
+  background: -webkit-radial-gradient(ellipse at center, rgba(213,213,213,1) 24%,rgba(158,176,176,1) 100%);
   background: radial-gradient(ellipse at center, rgba(213,213,213,1) 24%,rgba(158,176,176,1) 100%);
   color:#FFF;
   position: relative;
@@ -68,6 +70,7 @@
 }
 
 .team__member:hover{
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(213,213,213,1) 1%,rgba(134,151,151,1) 100%);
   background: radial-gradient(ellipse at center, rgba(213,213,213,1) 1%,rgba(134,151,151,1) 100%);
   .team__description{
     opacity: 1;

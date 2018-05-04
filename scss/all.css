@@ -1232,6 +1232,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .team__member {
   height: 200px;
+  background: #C3CDCD;
+  background: -webkit-radial-gradient(ellipse at center, #d5d5d5 24%, #9eb0b0 100%);
   background: radial-gradient(ellipse at center, #d5d5d5 24%, #9eb0b0 100%);
   color: #FFF;
   position: relative;
@@ -1258,6 +1260,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.2s ease; }
 
 .team__member:hover {
+  background: -webkit-radial-gradient(center, ellipse cover, #d5d5d5 1%, #869797 100%);
   background: radial-gradient(ellipse at center, #d5d5d5 1%, #869797 100%); }
   .team__member:hover .team__description {
     opacity: 1; }
