@@ -1005,6 +1005,22 @@ h1, h2, h3, h4, h5, h6 {
       .footer.footer--large:after {
         bottom: -450px; } }
 
+.bigpic .bigpic__inner {
+  position: relative; }
+  .bigpic .bigpic__inner:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/img/portretten/011-websitecut-hover.png");
+    opacity: 0;
+    transition: all 0.2s ease;
+    background-size: 100% 100%;
+    position: absolute; }
+  .bigpic .bigpic__inner:hover:after {
+    opacity: 1; }
+
 .footer__info {
   color: #fff;
   display: -ms-grid;
