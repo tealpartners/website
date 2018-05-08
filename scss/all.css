@@ -464,6 +464,15 @@ h1, h2, h3, h4, h5, h6 {
 * {
   box-sizing: border-box; }
 
+.page a {
+  border-bottom: 2px solid rgba(217, 80, 104, 0.7);
+  color: #D95068;
+  transition: all 0.2s ease;
+  text-decoration: none; }
+  .page a:hover {
+    border-bottom: 3px solid #d95068;
+    color: #D95068; }
+
 .button {
   background-color: #D95068;
   color: #fff;
@@ -1006,7 +1015,9 @@ h1, h2, h3, h4, h5, h6 {
         bottom: -450px; } }
 
 .bigpic .bigpic__inner {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px; }
   .bigpic .bigpic__inner:after {
     content: "";
     width: 100%;

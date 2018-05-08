@@ -20,6 +20,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+.page a{
+  border-bottom: 2px solid rgba($color-cta,0.7);
+  color:$color-cta;
+  transition: all 0.2s ease;
+  text-decoration: none;
+
+  &:hover{
+    border-bottom: 3px solid rgba($color-cta,1);
+    color:$color-cta;
+  }
+
+}
+
 .button{
   background-color: $color-cta;
   color:#fff;
@@ -65,5 +78,4 @@ h1,h2,h3,h4,h5,h6{
   @include for-size(tablet-landscape-up){
     margin-top:100px;
   }
-
 }
