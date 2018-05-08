@@ -12,8 +12,6 @@
     font-size: 18px;
   }
 
-
-
   @include for-size(tablet-up){
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;

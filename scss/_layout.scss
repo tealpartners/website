@@ -16,6 +16,7 @@
   display: grid;
 
   @include for-size(desktop-up){
+    -ms-grid-columns: 300px 1fr;
     grid-template-columns: 300px 1fr;
   }
 }

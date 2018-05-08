@@ -36,10 +36,14 @@
   }
 
   @include for-size(tablet-landscape-up){
-      display:grid;
-      align-items: center;
-      grid-column-gap: 60px;
-      grid-template-columns: 1fr 1fr;
+    display:-ms-grid;
+    display:grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 60px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -73,11 +77,15 @@
     .projects__case__text{
       grid-column: 1;
       grid-row:1;
+      -ms-grid-column: 1;
+      -ms-grid-row: 1;
     }
 
     .projects__image{
       grid-column: 2;
       grid-row:1;
+      -ms-grid-column: 2;
+      -ms-grid-row: 1;
     }
 
   }

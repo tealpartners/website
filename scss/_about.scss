@@ -43,7 +43,6 @@
   display: grid;
   grid-column-gap:10px;
 
-
   @include for-size(tablet-portrait-up){
     grid-column-gap:30px;
   }
@@ -63,6 +62,7 @@
   &:nth-child(odd) {
     -ms-grid-columns: 90px 1fr;
     grid-template-columns: 90px 1fr;
+
     @include for-size(tablet-up){
       -ms-grid-columns: 150px 1fr;
       grid-template-columns: 150px 1fr;
@@ -140,6 +140,13 @@
 
   }
 }
+
+/* IE 11 fixes */
+.about__list__item:nth-child(1){-ms-grid-column: 1;}
+.about__list__item:nth-child(2){-ms-grid-column: 2;}
+.about__list__item:nth-child(3){-ms-grid-column: 3;}
+.about__list__item:nth-child(4){-ms-grid-column: 4;}
+
 
 // 3 columns from tablet-landscape and up
 @include for-size(tablet-landscape-up){

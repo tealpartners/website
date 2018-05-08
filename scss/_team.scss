@@ -16,24 +16,25 @@
 }
 
 .team__grid{
+  transform: skewY(-3deg);
   display: grid;
   display: -ms-grid;
-  transform: skewY(-3deg);
-
   grid-column-gap:15px;
   grid-row-gap: 15px;
 
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 
   @include for-size(tablet-up){
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   @include for-size(tablet-landscape-up){
     margin: 50px 0px 0px 0px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
 }
 
 
