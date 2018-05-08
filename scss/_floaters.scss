@@ -48,6 +48,7 @@
   margin:0 0 10px 0;
   padding-bottom:10px;
   -ms-grid-row-align: start;
+  -ms-grid-row-: 1;
   align-self: start;
 
   @include for-size(tablet-portrait-up){
@@ -71,6 +72,7 @@
 .floaters__item__text{
   font-weight:300;
   font-size: 22px;
+  -ms-grid-row-: 2;
   @include for-size(desktop-up){
     font-size: 26px;
   };
@@ -79,7 +81,9 @@
 
 .floaters__item__button{
   -ms-grid-row-align: end;
+  -ms-grid-row-: 3;
   align-self: end;
   text-align: center;
   width: 100%;
+
 }
