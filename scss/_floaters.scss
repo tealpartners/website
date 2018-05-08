@@ -35,7 +35,6 @@
   @include for-size(tablet-portrait-up){
     padding: 50px;
   };
-
 }
 
 .floaters__item__title{
@@ -80,3 +79,7 @@
   text-align: center;
   width: 100%;
 }
+
+/* IE 11 Fixes */
+.floaters__item:nth-child(1){  -ms-grid-column: 1;  }
+.floaters__item:nth-child(2){  -ms-grid-column: 2;  }

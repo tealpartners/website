@@ -715,6 +715,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 100%; }
 
+/* IE 11 Fixes */
+.floaters__item:nth-child(1) {
+  -ms-grid-column: 1; }
+
+.floaters__item:nth-child(2) {
+  -ms-grid-column: 2; }
+
 .about {
   padding: 0px;
   margin-top: 80px; }
