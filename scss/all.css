@@ -1439,7 +1439,7 @@ h1, h2, h3, h4, h5, h6 {
     .projects__case {
       display: grid;
       align-items: center;
-      column-gap: 60px;
+      grid-column-gap: 60px;
       grid-template-columns: 1fr 1fr; } }
 
 .projects__case__title {

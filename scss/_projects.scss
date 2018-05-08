@@ -38,7 +38,7 @@
   @include for-size(tablet-landscape-up){
       display:grid;
       align-items: center;
-      column-gap: 60px;
+      grid-column-gap: 60px;
       grid-template-columns: 1fr 1fr;
   }
 }
