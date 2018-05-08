@@ -10,7 +10,7 @@
   grid-row-gap:20px;
 
   @include for-size(tablet-up){
-    -ms-grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-template-columns: 33% 33% 33%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap:20px;
   }

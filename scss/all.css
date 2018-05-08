@@ -573,7 +573,8 @@ h1, h2, h3, h4, h5, h6 {
 .top-navigation {
   display: -ms-grid;
   display: grid;
-  justify-items: stretch; }
+  justify-items: stretch;
+  -ms-grid-columns: 25% 25% 25% 25%; }
 
 .top-navigation__item {
   text-align: center;
@@ -1340,7 +1341,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-row-gap: 20px; }
   @media (min-width: 600px) {
     .testimonials__grid {
-      -ms-grid-template-columns: 1fr 1fr 1fr;
+      -ms-grid-template-columns: 33% 33% 33%;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 20px; } }
   @media (min-width: 900px) {

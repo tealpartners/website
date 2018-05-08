@@ -80,6 +80,7 @@
   display: -ms-grid;
   display: grid;
   justify-items: stretch;
+  -ms-grid-columns: 25% 25% 25% 25%;
 }
 
 .top-navigation__item{
