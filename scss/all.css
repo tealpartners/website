@@ -1415,9 +1415,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: 13px; }
 
-.testimonials__logo {
-  height: 32px;
+.testimonals__image {
   -ms-grid-row: 1; }
+
+.testimonials__logo {
+  height: 32px; }
 
 /* IE execptions */
 @media all and (-ms-high-contrast: none) {

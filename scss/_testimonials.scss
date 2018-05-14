@@ -94,9 +94,12 @@
   }
 }
 
+.testimonals__image{
+  -ms-grid-row: 1;
+}
+
 .testimonials__logo{
   height:32px;
-  -ms-grid-row: 1;
 
   @include for-size(tablet-landcape-up){
     height: 38px;
