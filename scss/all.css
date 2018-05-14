@@ -469,14 +469,11 @@ a {
   color: #D95068;
   text-decoration: none;
   transition: all 0.2s ease; }
-  a:hover {
-    color: #D95068; }
 
 .page a {
   border-bottom: 2px solid rgba(217, 80, 104, 0.7); }
   .page a:hover {
-    border-bottom: 3px solid #d95068;
-    color: #D95068; }
+    border-bottom: 3px solid #d95068; }
 
 .button {
   background-color: #D95068;
@@ -494,7 +491,8 @@ a {
   position: relative; }
   .button:hover {
     box-shadow: 0px 0px 30px rgba(255, 0, 65, 0.34);
-    transform: scale(1.02); }
+    transform: scale(1.02);
+    color: #fff; }
 
 .textbutton {
   color: #18A7B5;
