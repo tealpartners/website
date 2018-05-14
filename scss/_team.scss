@@ -128,7 +128,7 @@
 /* IE execptions */
 @media all and (-ms-high-contrast:none)
 {
-  .team__member{ margin: 0px 5px; } /* IE10 */
-  *::-ms-backdrop, .team__member{ margin: 0px 5px; } /* IE11 */
+  .team__member{ margin:5px; } /* IE10 */
+  *::-ms-backdrop, .team__member{ margin:5px; } /* IE11 */
 }
 

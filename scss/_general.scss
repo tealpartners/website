@@ -20,11 +20,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+a{
+  color:$color-cta;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover{
+    color:$color-cta;
+  }
+}
+
 .page a{
   border-bottom: 2px solid rgba($color-cta,0.7);
-  color:$color-cta;
-  transition: all 0.2s ease;
-  text-decoration: none;
 
   &:hover{
     border-bottom: 3px solid rgba($color-cta,1);
@@ -49,9 +55,7 @@ h1,h2,h3,h4,h5,h6{
   position: relative;
 
   &:hover{
-    //box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px rgba(255,0,65,0.34);
-    //background-color: $color-cta-alt;
     transform: scale(1.02);
 
   }

@@ -72,6 +72,7 @@
   @extend .l-wrapper;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 30% 30% 30% 10%;
 
   *{
     padding: 0;
@@ -201,8 +202,9 @@
 @include for-size(tablet-landscape-up) {
 
   .footer__info {
+
     justify-items: stretch;
-    -ms-grid-columns: auto;
+    -ms-grid-columns: 1fr 1fr 1fr 70px;
     grid-template-columns: auto;
   }
 
@@ -245,4 +247,5 @@
   }
 
 }
+
 

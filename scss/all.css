@@ -465,11 +465,15 @@ h1, h2, h3, h4, h5, h6 {
 * {
   box-sizing: border-box; }
 
-.page a {
-  border-bottom: 2px solid rgba(217, 80, 104, 0.7);
+a {
   color: #D95068;
-  transition: all 0.2s ease;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.2s ease; }
+  a:hover {
+    color: #D95068; }
+
+.page a {
+  border-bottom: 2px solid rgba(217, 80, 104, 0.7); }
   .page a:hover {
     border-bottom: 3px solid #d95068;
     color: #D95068; }
@@ -1080,7 +1084,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer__info {
   color: #fff;
   display: -ms-grid;
-  display: grid; }
+  display: grid;
+  -ms-grid-columns: 30% 30% 30% 10%; }
   .footer__info * {
     padding: 0;
     margin: 0;
@@ -1174,7 +1179,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 900px) {
   .footer__info {
     justify-items: stretch;
-    -ms-grid-columns: auto;
+    -ms-grid-columns: 1fr 1fr 1fr 70px;
     grid-template-columns: auto; }
 
   .footer__name {
@@ -1446,11 +1451,11 @@ h1, h2, h3, h4, h5, h6 {
 /* IE execptions */
 @media all and (-ms-high-contrast: none) {
   .team__member {
-    margin: 0px 5px; }
+    margin: 5px; }
 
   /* IE10 */
   *::-ms-backdrop, .team__member {
-    margin: 0px 5px; }
+    margin: 5px; }
 
   /* IE11 */ }
 .testimonials__grid {
