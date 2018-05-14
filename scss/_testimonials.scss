@@ -46,10 +46,15 @@
   @include for-size(tablet-landscape-up){
       padding: 40px;
   }
-
 }
 
+.testimonials__box:nth-child(1){-ms-grid-column: 1;}
+.testimonials__box:nth-child(2){-ms-grid-column: 2;}
+.testimonials__box:nth-child(3){-ms-grid-column: 3;}
+
+
 .testimonials__headline{
+  -ms-grid-row: 2;
   color:#fff;
   font-weight:500;
   font-style: italic;
@@ -66,6 +71,7 @@
 
 .testimonials__source{
   align-self: end;
+  -ms-grid-row: 3;
 }
 
 .testimonials__name{
@@ -79,6 +85,7 @@
 }
 
 .testimonials__function{
+  -ms-grid-row: 1;
   font-weight:400;
   display: block;
   font-size:13px;
@@ -89,6 +96,7 @@
 
 .testimonials__logo{
   height:32px;
+  -ms-grid-row: 1;
 
   @include for-size(tablet-landcape-up){
     height: 38px;

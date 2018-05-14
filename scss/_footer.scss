@@ -207,6 +207,7 @@
   }
 
   .footer__name{
+    -ms-grid-column: 1;
     img{
       height: 50px;
     }
@@ -214,6 +215,7 @@
 
   .footer__adress {
     text-align: center;
+    -ms-grid-column: 2;
   }
 
   .footer__street{
@@ -221,6 +223,7 @@
   }
 
   .footer__contact {
+    -ms-grid-column: 3;
     text-align: center;
   }
 
@@ -230,6 +233,7 @@
 
   .footer__social {
     text-align: right;
+    -ms-grid-column: 4;
     img{
       width: 30px;
     }
