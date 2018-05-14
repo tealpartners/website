@@ -714,7 +714,7 @@ h1, h2, h3, h4, h5, h6 {
 .floaters__item__text {
   font-weight: 300;
   font-size: 22px;
-  -ms-grid-row-: 2;
+  -ms-grid-row: 2;
   margin: 0 0 30px 0; }
   @media (min-width: 1100px) {
     .floaters__item__text {
@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .floaters__item__button {
   -ms-grid-row-align: end;
-  -ms-grid-row-: 2;
+  -ms-grid-row: 3;
   align-self: end;
   text-align: center;
   width: 100%; }
@@ -1338,8 +1338,8 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 15px; } }
 
 .testimonials__grid {
-  display: grid;
   display: -ms-grid;
+  display: grid;
   grid-column-gap: 40px;
   grid-row-gap: 20px; }
   @media (min-width: 600px) {
@@ -1361,6 +1361,8 @@ h1, h2, h3, h4, h5, h6 {
 .testimonials__box {
   display: grid;
   display: -ms-grid;
+  display: -ms-grid;
+  display: grid;
   justify-items: center;
   background: linear-gradient(-200deg, #006580 0%, #57C8B9 100%);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);

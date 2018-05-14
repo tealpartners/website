@@ -2,10 +2,9 @@
   @extend .l-wrapper;
 }
 
-
 .testimonials__grid{
-  display: grid;
   display: -ms-grid;
+  display: grid;
   grid-column-gap:40px;
   grid-row-gap:20px;
 
@@ -33,9 +32,8 @@
 
 
 .testimonials__box{
-
-  display: grid;
   display: -ms-grid;
+  display: grid;
   justify-items: center;
 
   background: linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);

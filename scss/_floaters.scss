@@ -72,7 +72,7 @@
 .floaters__item__text{
   font-weight:300;
   font-size: 22px;
-  -ms-grid-row-: 2;
+  -ms-grid-row: 2;
   @include for-size(desktop-up){
     font-size: 26px;
   };
@@ -81,7 +81,7 @@
 
 .floaters__item__button{
   -ms-grid-row-align: end;
-  -ms-grid-row-: 3;
+  -ms-grid-row: 3;
   align-self: end;
   text-align: center;
   width: 100%;
