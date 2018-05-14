@@ -1419,6 +1419,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 32px;
   -ms-grid-row: 1; }
 
+/* IE execptions */
+@media all and (-ms-high-contrast: none) {
+  .projects__case:nth-child(odd) {
+    /* IE10 */
+    /* IE11 */ }
+    .projects__case:nth-child(odd) .testimonials__box {
+      margin: 0px 20px; }
+    .projects__case:nth-child(odd) *::-ms-backdrop, .projects__case:nth-child(odd) .testimonials__box {
+      margin: 0px 20px; } }
 .contactinfo {
   display: -ms-grid;
   display: grid;

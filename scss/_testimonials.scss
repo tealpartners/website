@@ -102,3 +102,14 @@
     height: 38px;
   }
 }
+
+/* IE execptions */
+@media all and (-ms-high-contrast:none)
+{
+  .projects__case:nth-child(odd){
+    .testimonials__box{ margin: 0px 20px; } /* IE10 */
+    *::-ms-backdrop, .testimonials__box{ margin: 0px 20px; } /* IE11 */
+  }
+
+
+}
