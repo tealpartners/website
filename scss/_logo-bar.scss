@@ -1,0 +1,53 @@
+.logo-bar{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  @extend .l-wrapper;
+
+  margin-top:40px;
+  margin-bottom:20px;
+
+  background-color: rgba(0,0,0,0.1);
+  padding: 40px 0;
+  opacity: 0.5;
+  filter:grayscale(50%);
+  transition: all 0.4s ease;
+
+  @include for-size(tablet-landscape-up){
+    margin-top:80px;
+    margin-bottom:20px;
+    background-color: transparent;
+    filter:grayscale(100%);
+    opacity: 0.4;
+
+  }
+  
+  &:hover{
+    opacity: 0.9;
+    filter:grayscale(20%);
+  }
+
+}
+
+.logo-bar__logo{
+  text-align: center;
+  width: 50%;
+  @include for-size(tablet-landscape-up){
+    width: auto;
+  }
+
+  img{
+    height: 25px;
+    @include for-size(tablet-up){
+      height: 35px;
+    }
+  }
+
+}
+
+.logo-bar__logo:nth-child(1), .logo-bar__logo:nth-child(2){
+  margin-bottom:20px;
+  @include for-size(tablet-landscape-up){
+    margin-bottom:0px;
+  }
+}
