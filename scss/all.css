@@ -1705,7 +1705,7 @@ a {
       opacity: 0.4; } }
   .logo-bar:hover {
     opacity: 0.9;
-    filter: grayscale(20%); }
+    filter: grayscale(0%); }
 
 .logo-bar__logo {
   text-align: center;
@@ -1713,11 +1713,23 @@ a {
   @media (min-width: 900px) {
     .logo-bar__logo {
       width: auto; } }
-  .logo-bar__logo img {
-    height: 25px; }
-    @media (min-width: 600px) {
-      .logo-bar__logo img {
-        height: 35px; } }
+  .logo-bar__logo.logo__wolters img {
+    width: 115px; }
+  .logo-bar__logo.logo__sd img {
+    width: 70px; }
+  .logo-bar__logo.logo__q8 img {
+    width: 36px; }
+  .logo-bar__logo.logo__unbox img {
+    width: 78px; }
+  @media (min-width: 600px) {
+    .logo-bar__logo.logo__wolters img {
+      width: 162px; }
+    .logo-bar__logo.logo__sd img {
+      width: 98px; }
+    .logo-bar__logo.logo__q8 img {
+      width: 50px; }
+    .logo-bar__logo.logo__unbox img {
+      width: 110px; } }
 
 .logo-bar__logo:nth-child(1), .logo-bar__logo:nth-child(2) {
   margin-bottom: 20px; }

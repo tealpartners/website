@@ -21,10 +21,10 @@
     opacity: 0.4;
 
   }
-  
+
   &:hover{
     opacity: 0.9;
-    filter:grayscale(20%);
+    filter:grayscale(0%);
   }
 
 }
@@ -36,11 +36,17 @@
     width: auto;
   }
 
-  img{
-    height: 25px;
-    @include for-size(tablet-up){
-      height: 35px;
-    }
+  &.logo__wolters img{width: 115px;}
+  &.logo__sd img{width: 70px;}
+  &.logo__q8 img{width: 36px; }
+  &.logo__unbox img{width: 78px;}
+
+
+  @include for-size(tablet-up){
+    &.logo__wolters img{width: 162px;}
+    &.logo__sd img{width: 98px;}
+    &.logo__q8 img{width: 50px; }
+    &.logo__unbox img{width: 110px;}
   }
 
 }
@@ -51,3 +57,4 @@
     margin-bottom:0px;
   }
 }
+
