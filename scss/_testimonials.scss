@@ -21,12 +21,15 @@
 
 
 .testimonials__title{
-  @extend .about__title;
+  @extend .refs__title;
+}
 
-  margin-top: 50px;
-  margin-bottom:40px;
+.testimonials .testimonials__title{
+  margin-top: 60px;
+  margin-bottom:30px;
+
   @include for-size(tablet-up){
-    margin-top:80px;
+    margin-top:70px;
   }
 }
 

@@ -4,7 +4,8 @@
   @include for-size(tablet-landscape-up){
       padding: 0px 40px;
   }
-  margin-top:80px;
+  margin-top:60px;
+
 }
 
 .about__title{
@@ -12,7 +13,7 @@
   font-weight: 600;
   text-align: center;
   padding: 0px 20px;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
 
   @include for-size(tablet-portrait-up){
     font-size:26px;
@@ -174,7 +175,6 @@
 }
 
 
-
 .about__list__item__title{
   margin: 0;
   font-size:24px;
@@ -184,8 +184,8 @@
   margin-bottom:15px;
 
   @include for-size(tablet-landscape-up){
-    padding-bottom: 40px;
-    margin-bottom:40px;
+    padding-bottom: 25px;
+    margin-bottom:25px;
   }
 
   &:after{

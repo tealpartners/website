@@ -79,3 +79,14 @@ a{
     margin-top:100px;
   }
 }
+
+.pagegrid{
+  display: grid;
+  min-height: 100%;
+
+  grid-template-rows: auto 1fr auto;
+
+  .footer{
+    align-self: end;
+  }
+}

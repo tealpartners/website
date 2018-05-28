@@ -419,16 +419,13 @@ template {
   src: url("../assets/fonts/EnzoOT-BoldIta.woff");
   font-weight: 600;
   font-style: italic; }
-.l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .logo-bar {
+.l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0px 20px; }
   @media (min-width: 600px) {
-    .l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .logo-bar {
+    .l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs {
       padding: 0px 40px; } }
-  @media (min-width: 1100px) {
-    .l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .logo-bar {
-      padding: 0px; } }
 
 .l-header {
   display: -ms-grid;
@@ -512,6 +509,13 @@ a {
     .callout {
       margin-top: 100px; } }
 
+.pagegrid {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto; }
+  .pagegrid .footer {
+    align-self: end; }
+
 .colorband {
   position: relative;
   padding: 20px 0px 150px 0px; }
@@ -523,7 +527,7 @@ a {
     content: "";
     width: 100%;
     height: 100%;
-    top: -50px;
+    top: 0px;
     overflow: hidden;
     transform: skewY(-4deg);
     transform-origin: 0;
@@ -634,7 +638,7 @@ a {
       margin: 50px 50px 70px 50px; } }
   @media (min-width: 1100px) {
     .mainquote {
-      margin: 100px 100px 120px 100px; } }
+      margin: 70px 100px 100px 100px; } }
 
 .mainquote__text {
   font-weight: 500;
@@ -676,7 +680,7 @@ a {
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.13);
-  padding: 40px;
+  padding: 40px 30px;
   text-align: center;
   display: -ms-grid;
   display: grid; }
@@ -741,22 +745,22 @@ a {
 
 .about {
   padding: 0px;
-  margin-top: 80px; }
+  margin-top: 60px; }
   @media (min-width: 900px) {
     .about {
       padding: 0px 40px; } }
 
-.about__title, .testimonials__title {
+.about__title {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   padding: 0px 20px;
-  margin: 0 0 40px 0; }
+  margin: 0 0 60px 0; }
   @media (min-width: 600px) {
-    .about__title, .testimonials__title {
+    .about__title {
       font-size: 26px; } }
   @media (min-width: 900px) {
-    .about__title, .testimonials__title {
+    .about__title {
       font-size: 34px;
       margin: 0px 0px 100px 0px; } }
 
@@ -886,8 +890,8 @@ a {
   margin-bottom: 15px; }
   @media (min-width: 900px) {
     .about__list__item__title {
-      padding-bottom: 40px;
-      margin-bottom: 40px; } }
+      padding-bottom: 25px;
+      margin-bottom: 25px; } }
   .about__list__item__title:after {
     position: absolute;
     content: '';
@@ -1065,19 +1069,6 @@ a {
   position: relative;
   overflow: hidden;
   border-radius: 5px; }
-  .bigpic .bigpic__inner:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url("../assets/img/portretten/011-websitecut-hover.png");
-    opacity: 0;
-    transition: all 0.2s ease;
-    background-size: 100% 100%;
-    position: absolute; }
-  .bigpic .bigpic__inner:hover:after {
-    opacity: 1; }
 
 .footer__info {
   color: #fff;
@@ -1470,12 +1461,12 @@ a {
     .testimonials__grid {
       grid-column-gap: 40px; } }
 
-.testimonials__title {
-  margin-top: 50px;
-  margin-bottom: 40px; }
+.testimonials .testimonials__title {
+  margin-top: 60px;
+  margin-bottom: 30px; }
   @media (min-width: 600px) {
-    .testimonials__title {
-      margin-top: 80px; } }
+    .testimonials .testimonials__title {
+      margin-top: 70px; } }
 
 .testimonials__box {
   display: -ms-grid;
@@ -1685,56 +1676,67 @@ a {
       padding-right: 60px; }
     .projects__case:nth-child(even) *::-ms-backdrop, .projects__case:nth-child(even) .projects__case__text {
       padding-right: 60px; } }
-.logo-bar {
+.refs {
+  margin-top: 60px;
+  margin-bottom: 20px; }
+  @media (min-width: 900px) {
+    .refs {
+      margin-top: 70px;
+      background-color: transparent; } }
+  .refs:hover .refs__strip {
+    opacity: 1;
+    filter: grayscale(0%); }
+
+.refs__title, .testimonials__title {
+  font-size: 20px;
+  color: #006580;
+  opacity: 0.4;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 40px 0px; }
+
+.refs__strip {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 40px 0;
   opacity: 0.5;
-  filter: grayscale(50%);
+  filter: grayscale(100%);
+  opacity: 0.4;
   transition: all 0.4s ease; }
-  @media (min-width: 900px) {
-    .logo-bar {
-      margin-top: 80px;
-      margin-bottom: 20px;
-      background-color: transparent;
-      filter: grayscale(100%);
-      opacity: 0.4; } }
-  .logo-bar:hover {
-    opacity: 0.9;
+  .refs__strip:hover .refs__strip {
+    opacity: 1;
     filter: grayscale(0%); }
 
-.logo-bar__logo {
+.refs__logo {
   text-align: center;
   width: 50%; }
   @media (min-width: 900px) {
-    .logo-bar__logo {
+    .refs__logo {
       width: auto; } }
-  .logo-bar__logo.logo__wolters img {
+  .refs__logo.logo__wolters img {
     width: 115px; }
-  .logo-bar__logo.logo__sd img {
+  .refs__logo.logo__sd img {
     width: 70px; }
-  .logo-bar__logo.logo__q8 img {
+  .refs__logo.logo__q8 img {
     width: 36px; }
-  .logo-bar__logo.logo__unbox img {
+  .refs__logo.logo__unbox img {
     width: 78px; }
   @media (min-width: 600px) {
-    .logo-bar__logo.logo__wolters img {
+    .refs__logo.logo__wolters img {
       width: 162px; }
-    .logo-bar__logo.logo__sd img {
+    .refs__logo.logo__sd img {
       width: 98px; }
-    .logo-bar__logo.logo__q8 img {
+    .refs__logo.logo__q8 img {
       width: 50px; }
-    .logo-bar__logo.logo__unbox img {
+    .refs__logo.logo__unbox img {
       width: 110px; } }
 
-.logo-bar__logo:nth-child(1), .logo-bar__logo:nth-child(2) {
+.refs-bar__logo:nth-child(1), .refs__logo:nth-child(2) {
   margin-bottom: 20px; }
   @media (min-width: 900px) {
-    .logo-bar__logo:nth-child(1), .logo-bar__logo:nth-child(2) {
+    .refs-bar__logo:nth-child(1), .refs__logo:nth-child(2) {
       margin-bottom: 0px; } }
 
 /*# sourceMappingURL=all.css.map */

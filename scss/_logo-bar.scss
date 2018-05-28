@@ -1,35 +1,53 @@
-.logo-bar{
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+.refs{
   @extend .l-wrapper;
 
-  margin-top:40px;
+  margin-top:60px;
   margin-bottom:20px;
 
-  background-color: rgba(0,0,0,0.1);
-  padding: 40px 0;
-  opacity: 0.5;
-  filter:grayscale(50%);
-  transition: all 0.4s ease;
 
   @include for-size(tablet-landscape-up){
-    margin-top:80px;
-    margin-bottom:20px;
+    margin-top:70px;
     background-color: transparent;
-    filter:grayscale(100%);
-    opacity: 0.4;
-
   }
 
   &:hover{
-    opacity: 0.9;
-    filter:grayscale(0%);
+    .refs__strip{
+      opacity: 1;
+      filter:grayscale(0%);
+    }
   }
 
 }
 
-.logo-bar__logo{
+.refs__title{
+  font-size:20px;
+  color: $color-brand-dark;
+  opacity: 0.4;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.refs__strip{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  opacity: 0.5;
+  filter:grayscale(100%);
+  opacity: 0.4;
+  transition: all 0.4s ease;
+
+  &:hover{
+    .refs__strip{
+      opacity: 1;
+      filter:grayscale(0%);
+    }
+  }
+}
+
+.refs__logo{
   text-align: center;
   width: 50%;
   @include for-size(tablet-landscape-up){
@@ -51,7 +69,7 @@
 
 }
 
-.logo-bar__logo:nth-child(1), .logo-bar__logo:nth-child(2){
+.refs-bar__logo:nth-child(1), .refs__logo:nth-child(2){
   margin-bottom:20px;
   @include for-size(tablet-landscape-up){
     margin-bottom:0px;
