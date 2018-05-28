@@ -749,6 +749,10 @@ a {
   @media (min-width: 900px) {
     .about {
       padding: 0px 40px; } }
+  .about .about__subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px; }
 
 .about__title {
   font-size: 20px;
