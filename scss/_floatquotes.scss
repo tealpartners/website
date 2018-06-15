@@ -2,10 +2,6 @@
   @extend .l-wrapper;
   padding: 0px 40px;
   max-width: 900px;
-
-  display: grid;
-  display: -ms-grid;
-
   margin-top:40px;
 
   @include for-size(tablet-up){
