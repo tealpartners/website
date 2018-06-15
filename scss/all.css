@@ -419,12 +419,12 @@ template {
   src: url("../assets/fonts/EnzoOT-BoldIta.woff");
   font-weight: 600;
   font-style: italic; }
-.l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs {
+.l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs, .floatquotes {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0px 20px; }
   @media (min-width: 600px) {
-    .l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs {
+    .l-wrapper, .floaters, .about, .bigpic, .footer__info, .testimonials, .refs, .floatquotes {
       padding: 0px 40px; } }
 
 .l-header {
@@ -1746,5 +1746,146 @@ a {
   @media (min-width: 900px) {
     .refs-bar__logo:nth-child(1), .refs__logo:nth-child(2) {
       margin-bottom: 0px; } }
+
+.floatquotes {
+  padding: 0px 40px;
+  max-width: 900px;
+  display: grid;
+  display: -ms-grid;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  @media (min-width: 600px) {
+    .floatquotes {
+      margin-top: 130px; } }
+
+.floatquote {
+  display: grid;
+  display: -ms-grid;
+  align-items: center;
+  perspective: 2000px;
+  margin-top: 20px; }
+  @media (min-width: 600px) {
+    .floatquote {
+      margin-top: -35px; } }
+
+.floatquote__plane {
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(-45deg, #1D1B1B, #404F5E);
+  z-index: 20;
+  padding: 30px;
+  padding-top: 35px; }
+  @media (min-width: 900px) {
+    .floatquote__plane {
+      padding: 40px;
+      padding-top: 50px; } }
+
+.floatquote__plane.plane--teal {
+  background: linear-gradient(-45deg, #00B6AD, #006580); }
+
+.floatquote__plane.plane--white {
+  background: #fff;
+  color: #000; }
+
+.floatquote__logo {
+  justify-self: center;
+  -ms-grid-column-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+  position: relative;
+  z-index: 10;
+  display: none; }
+  @media (min-width: 600px) {
+    .floatquote__logo {
+      display: block; } }
+  .floatquote__logo img {
+    height: 40px; }
+
+.teal .floatquote__logo img {
+  height: 60px; }
+
+/* Decorator to connects logo to plane */
+.floatquote__logo:after {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border-radius: 9px;
+  background-color: #E9E9E9;
+  left: -20px;
+  top: calc(50% - 4px); }
+.floatquote__logo:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 200px;
+  background-color: #E9E9E9;
+  left: -220px;
+  top: 50%; }
+
+.floatquote:nth-child(even) .floatquote__logo:after {
+  left: auto;
+  right: -20px; }
+.floatquote:nth-child(even) .floatquote__logo:before {
+  left: auto;
+  right: -220px; }
+
+/* - */
+.plane__quote {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0; }
+  @media (min-width: 900px) {
+    .plane__quote {
+      font-size: 18px;
+      line-height: 23px; } }
+
+.plane__source {
+  margin-top: 30px; }
+
+.plane__name, .plane__function {
+  margin: 0; }
+
+.plane__name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px; }
+
+.plane__function {
+  font-size: 15px;
+  font-weight: 300; }
+
+.floatquote:nth-child(odd) {
+  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr; }
+  @media (min-width: 600px) {
+    .floatquote:nth-child(odd) {
+      justify-self: start;
+      grid-template-columns: 0.6fr 0.4fr;
+      -ms-grid-columns: 0.6fr 0.4fr; }
+      .floatquote:nth-child(odd) .floatquote__plane {
+        transform: rotateY(20deg);
+        box-shadow: -10px 0px 80px rgba(0, 0, 0, 0.2); } }
+
+.floatquote:nth-child(even) {
+  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr; }
+  @media (min-width: 600px) {
+    .floatquote:nth-child(even) {
+      justify-self: end;
+      grid-template-columns: 0.4fr 0.6fr;
+      -ms-grid-columns: 0.4fr 0.6fr; }
+      .floatquote:nth-child(even) .floatquote__plane {
+        transform: rotateY(-20deg);
+        box-shadow: 10px 0px 80px rgba(0, 0, 0, 0.2); }
+      .floatquote:nth-child(even) .floatquote__plane {
+        -ms-grid-column: 2;
+        grid-column: 2; }
+      .floatquote:nth-child(even) .floatquote__logo {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        -ms-grid-row: 1;
+        grid-row: 1; } }
 
 /*# sourceMappingURL=all.css.map */
