@@ -1733,13 +1733,17 @@ a {
     width: 78px; }
   @media (min-width: 600px) {
     .refs__logo.logo__wolters img {
-      width: 162px; }
+      width: 162px;
+      height: 38px; }
     .refs__logo.logo__sd img {
-      width: 98px; }
+      width: 98px;
+      height: 35px; }
     .refs__logo.logo__q8 img {
-      width: 50px; }
+      width: 50px;
+      height: 38px; }
     .refs__logo.logo__unbox img {
-      width: 110px; } }
+      width: 110px;
+      height: 29px; } }
 
 .refs-bar__logo:nth-child(1), .refs__logo:nth-child(2) {
   margin-bottom: 20px; }
