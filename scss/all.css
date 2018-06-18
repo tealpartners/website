@@ -1800,8 +1800,10 @@ a {
   .floatquote__logo img {
     height: 40px; }
 
-.teal .floatquote__logo img {
-  height: 60px; }
+.teal .floatquote__logo {
+  width: 200px; }
+  .teal .floatquote__logo img {
+    height: 60px; }
 
 /* Decorator to connects logo to plane */
 .floatquote__logo:after {
