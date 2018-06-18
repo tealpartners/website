@@ -170,8 +170,18 @@
     }
 
   }
+  .floatquote__plane{
+    -ms-grid-column:1;
+    grid-column:1;
+  }
 
+  .floatquote__logo{
+    -ms-grid-column:2;
+    grid-column:2;
 
+    -ms-grid-row:1;
+    grid-row:1;
+  }
 
 
 }

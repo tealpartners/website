@@ -1865,6 +1865,14 @@ a {
       .floatquote:nth-child(odd) .floatquote__plane {
         transform: rotateY(20deg);
         box-shadow: -10px 0px 80px rgba(0, 0, 0, 0.2); } }
+  .floatquote:nth-child(odd) .floatquote__plane {
+    -ms-grid-column: 1;
+    grid-column: 1; }
+  .floatquote:nth-child(odd) .floatquote__logo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1; }
 
 .floatquote:nth-child(even) {
   grid-template-columns: 1fr;
