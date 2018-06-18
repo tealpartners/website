@@ -634,8 +634,8 @@ a {
   -ms-grid-column: 6; }
 
 .mainquote {
-  display: -ms-grid;
-  display: grid;
+  display: flex;
+  justify-content: center;
   margin: 30px 30px 50px 30px; }
   @media (min-width: 600px) {
     .mainquote {
@@ -648,10 +648,7 @@ a {
   font-weight: 500;
   font-size: 22px;
   font-style: italic;
-  color: #FFF;
-  align-self: center;
-  justify-self: center;
-  text-align: center; }
+  color: #FFF; }
   @media (min-width: 600px) {
     .mainquote__text {
       font-size: 28px; } }

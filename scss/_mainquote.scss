@@ -1,6 +1,6 @@
 .mainquote{
-  display: -ms-grid;;
-  display: grid;
+  display: flex;
+  justify-content: center;
   margin: 30px 30px 50px 30px;
 
   @include for-size(tablet-portrait-up){
@@ -16,9 +16,7 @@
   font-size:22px;
   font-style: italic;
   color:#FFF;
-  align-self: center;
-  justify-self: center;
-  text-align: center;
+
 
   @include for-size(tablet-portrait-up){
     font-size:28px;
