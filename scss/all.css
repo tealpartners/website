@@ -1057,6 +1057,9 @@ a {
     z-index: -1;
     height: 100%;
     bottom: 0px; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
   .footer.footer--large:after {
     bottom: -100px;
     transform: skewY(-10deg); }
@@ -1575,6 +1578,10 @@ a {
 .contactinfo__name {
   font-weight: 600;
   color: black; }
+  .contactinfo__name a {
+    text-decoration: none;
+    color: black;
+    border: none; }
 
 .projects {
   margin-top: 40px; }
