@@ -520,6 +520,18 @@ a {
   .pagegrid .footer {
     align-self: end; }
 
+.hide-tablet-landscape-up {
+  display: inline-block; }
+  @media (min-width: 900px) {
+    .hide-tablet-landscape-up {
+      display: none; } }
+
+.show-tablet-landscape-up {
+  display: none; }
+  @media (min-width: 900px) {
+    .show-tablet-landscape-up {
+      display: inline-block; } }
+
 .colorband {
   position: relative;
   padding: 20px 0px 150px 0px; }
@@ -1605,6 +1617,17 @@ a {
         width: 100%;
         top: 0;
         bottom: auto; } }
+  .projects__image .fatlink {
+    display: none;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: none; }
+    .projects__image .fatlink:hover {
+      border: none; }
+    @media (min-width: 900px) {
+      .projects__image .fatlink {
+        display: inline-block; } }
 
 .projects__case {
   margin-bottom: 50px; }
@@ -1723,7 +1746,8 @@ a {
 
 .refs__logo {
   text-align: center;
-  width: 50%; }
+  width: 50%;
+  background-position: center center; }
   @media (min-width: 900px) {
     .refs__logo {
       width: auto; } }
@@ -1735,10 +1759,11 @@ a {
     width: 36px; }
   .refs__logo.logo__unbox img {
     width: 78px; }
+  .refs__logo.logo__xerius img {
+    width: 78px; }
   @media (min-width: 600px) {
     .refs__logo.logo__wolters img {
-      width: 162px;
-      height: 38px; }
+      width: 162px; }
     .refs__logo.logo__sd img {
       width: 98px;
       height: 35px; }
@@ -1747,7 +1772,9 @@ a {
       height: 38px; }
     .refs__logo.logo__unbox img {
       width: 110px;
-      height: 29px; } }
+      height: 29px; }
+    .refs__logo.logo__xerius img {
+      width: 110px; } }
 
 .refs-bar__logo:nth-child(1), .refs__logo:nth-child(2) {
   margin-bottom: 20px; }

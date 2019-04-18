@@ -31,6 +31,7 @@ a{
   transition: all 0.2s ease;
 }
 
+
 .page a{
   border-bottom: 2px solid rgba($color-cta,0.7);
 
@@ -94,4 +95,19 @@ a{
   .footer{
     align-self: end;
   }
+}
+
+
+.hide-tablet-landscape-up{
+    display: inline-block;
+    @include for-size(tablet-landscape-up){
+        display: none;
+    }
+}
+
+.show-tablet-landscape-up{
+    display: none;
+    @include for-size(tablet-landscape-up){
+        display: inline-block;
+    }
 }
