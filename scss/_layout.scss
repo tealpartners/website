@@ -11,6 +11,7 @@
 .l-header{
   display: -ms-grid;;
   display: grid;
+    z-index: 10;
 
   @include for-size(desktop-up){
     -ms-grid-columns: 300px 1fr;

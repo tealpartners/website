@@ -3,6 +3,8 @@
 }
 
 .page__header{
+    position: relative;
+    z-index: 50;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
   box-shadow: 0px -5px 8px rgba(0,0,0,0.10);
   border-radius:3px;
@@ -36,13 +38,32 @@
   }
 }
 
+a.page__backlink{
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    border:none;
+    display: inline-block;
+    &:hover{
+        color:black;
+        border:none;
+    }
+}
+
+
+.page__meta{
+    margin: 5px 0 30px 0;
+    font-size: 15px;
+    color: $color-text3;
+}
 
 
 .page__intro{
-  font-size:18px;
-  font-weight: 300;
-  line-height:130%;
-  color: $color-text2;
+    margin: 0rem;
+    font-size:18px;
+    font-weight: 300;
+    line-height:130%;
+    color: $color-text2;
 
   @include for-size(tablet-up){
     font-size:20px;
@@ -51,8 +72,13 @@
   @include for-size(desktop-up){
     font-size:22px;
   }
-
 }
+
+.page__blog .page__intro{
+    color: $color-text1;
+    font-weight: 500;
+}
+
 
 .page__content{
   @extend .l-contentcontainer;
