@@ -1290,6 +1290,11 @@ a.page__backlink {
   color: #202E30;
   font-weight: 500; }
 
+.page__image {
+  text-align: center; }
+  .page__image img {
+    width: 100%; }
+
 .page__content h2 {
   font-size: 18px;
   line-height: 30px;
