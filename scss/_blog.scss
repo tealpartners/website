@@ -103,8 +103,12 @@
   }
 
   &:hover{
-    opacity: 0.8;
-    transition: all 0.2s;
+    .blog-teaser__body{
+        color:$color-text3;
+    }
+    .readmore{
+        border: none;
+    }
   }
 
 }
@@ -151,5 +155,16 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
+
+    .readmore{
+        color:$color-cta;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-bottom: 2px solid rgba($color-cta,0.7);
+
+    }
+
 }
+
+
 
