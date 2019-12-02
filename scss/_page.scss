@@ -56,12 +56,13 @@ a.page__backlink{
     color: $color-text3;
 }
 
+
 .page__intro{
-    margin: 30px 0 0 0;
-    font-size:18px;
-    font-weight: 300;
-    line-height:130%;
-    color: $color-text2;
+  margin: 30px 0 0 0;
+  font-size:18px;
+  line-height:130%;
+  color: $color-text1;
+  font-weight: 500;
 
   @include for-size(tablet-up){
     font-size:20px;
@@ -70,12 +71,76 @@ a.page__backlink{
   @include for-size(desktop-up){
     font-size:22px;
   }
+
+  &.withauthor{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include for-size(tablet-up){
+      display: grid;
+      grid-template-columns: auto 100px;
+      grid-gap: 48px;
+
+      .page__author{grid-column: 2;}
+      .page__intro__p{grid-column: 1;}
+      .page__author, .page__intro__p{grid-row: 1;}
+    }
+
+    @include for-size(desktop-up){
+      grid-template-columns: auto 150px;
+    }
+  }
+
+
+  .page__author{
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-gap: 24px;
+    align-items: start;
+    margin-bottom: 24px;
+    @include for-size(tablet-up){
+      text-align: center;
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  .page__author__pic {
+    display: grid;
+    align-content: end;
+    border: 2px solid $color-brand;
+    border-radius:200px;
+    overflow: hidden;
+    position: relative;
+
+    img{
+      width: 60px;
+      @include for-size(tablet-up){width: 100px}
+      @include for-size(desktop-up){width: 150px}
+    }
+  }
+
+  .page__author__description{
+    margin-top: 16px;
+    line-height: 18px;
+    font-size: 16px;
+    color:$color-text1;
+    text-align:left;
+    @include for-size(tablet-up){text-align: center;}
+  }
+
+  .page__author__title{
+    font-weight: 700;
+  }
+
+
+  .page__intro__p{
+    margin: 0;
+  }
+
 }
 
-.page__blog .page__intro{
-    color: $color-text1;
-    font-weight: 500;
-}
+
 
 .page__image{
     text-align: center;
@@ -83,6 +148,9 @@ a.page__backlink{
         width: 100%;
     }
 }
+
+
+
 
 
 .page__content{
