@@ -13,7 +13,7 @@ Get Started
 
 # Prequesits 
 ## Python 3
-Please install [python 3](https://www.python.org/downloads/)
+Please install [python 3](https://www.python.org/downloads/), don't forgot to add python to the path variables.
 ### Virtualenv (optional)
 Install virtualenv with following command:
 
