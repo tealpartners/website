@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS;EACP,OAAO,EAAE,IAAI;;AAGf,UAAU;EACR,qBAAqB,EAAE,OAAO;;AAIhC,eAAe;EACb,gBAAgB,EAAE,IAAI;EACtB,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,oCAAiC",
-"sources": ["floaters.scss"],
-"names": [],
-"file": "floaters.css"
-}
