@@ -1,0 +1,42 @@
+.blogpost__list{
+  max-width: 600px;
+}
+
+.blogpost--teaser{
+  --padding-blogpost: 40px;
+}
+
+.blogpost__image img{
+  width: 100%;
+}
+
+.blogpost__content{
+  padding: var(--padding-blogpost);
+  border: 2px solid #D6EBE9;
+  background-color: #fff;
+}
+
+.blogpost__title{
+  font-size: 22px;
+}
+
+.blogpost__teasertext{
+  font-size: 18px;
+  line-height: 26px;
+  color: #4C6B6B;
+}
+
+.blogpost__readmorelink{
+  border:0;
+
+  svg{
+    margin-left: 12px;
+    transform: translate(0px, 2px);
+  }
+}
+
+
+.III{
+  display: none;
+}
+
