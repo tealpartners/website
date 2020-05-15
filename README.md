@@ -1,10 +1,5 @@
 Teal website
 ===========
-
-
-
-Teal website
-===========
 Contents
 --------
 
