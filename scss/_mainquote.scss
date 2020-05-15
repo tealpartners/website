@@ -1,22 +1,23 @@
 .mainquote{
   display: flex;
   justify-content: center;
-  margin: 30px 30px 50px 30px;
-
+  // margin: 30px 30px 50px 30px;
+  margin: 30px 30px 30px 30px;
   @include for-size(tablet-portrait-up){
-    margin:50px 50px 70px 50px;
+    // margin:50px 50px 70px 50px;
+    margin:50px 50px 40px 50px;
   };
   @include for-size(desktop-up){
-    margin:70px 100px 100px 100px;
+    // margin:70px 100px 100px 100px;
+    margin:70px 100px 50px 100px;
   };
 }
 
 .mainquote__text{
-  font-weight:500;
+  font-weight:bold;
   font-size:22px;
-  font-style: italic;
   color:#FFF;
-
+  text-align: center;
 
   @include for-size(tablet-portrait-up){
     font-size:28px;
@@ -25,4 +26,32 @@
   @include for-size(desktop-up){
     font-size:35px;
   };
+}
+
+.mainquote_sub{
+  display: flex;
+  justify-content: center;
+  margin: 0px 30px 30px 30px;
+
+  @include for-size(tablet-portrait-up){
+    margin:0px 50px 70px 50px;
+  };
+  @include for-size(desktop-up){
+    margin:0px 100px 100px 100px;
+  };
+}
+
+.mainquote_subtext{
+  font-size:18px;
+  color:#FFF;
+  text-align: center;
+
+  @include for-size(tablet-portrait-up){
+    font-size:18px;
+  };
+
+  @include for-size(desktop-up){
+    font-size:24px;
+  };
+
 }
