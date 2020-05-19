@@ -9,14 +9,13 @@
 
 
 .l-header{
-  display: -ms-grid;;
+  display: -ms-grid;
   display: grid;
-    z-index: 10;
+  z-index: 10;
 
-  @include for-size(desktop-up){
-    -ms-grid-columns: 300px 1fr;
-    grid-template-columns: 300px 1fr;
-  }
+  -ms-grid-columns: 200px 1fr;
+  grid-template-columns: 200px 1fr;
+
 }
 
 
