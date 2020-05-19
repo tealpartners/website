@@ -2,9 +2,11 @@
 
 :root{
   --gap-cards: 16px;
+  --padding-blogpost: 32px;
 
   @include for-size(tablet-landscape-up){
     --gap-cards: 32px;
+    --padding-blogpost: 40px;
   }
 
 }
@@ -18,7 +20,7 @@
 }
 
 .blogpost--teaser{
-  --padding-blogpost: 40px;
+
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 0px 40px rgba(0,0,0,0.09);
