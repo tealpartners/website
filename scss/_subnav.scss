@@ -1,0 +1,56 @@
+.subnav-container{
+  width: 100%;
+
+  @include for-size(tablet-landscape-up) {
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: $shadow-over-header;
+  }
+
+}
+
+.subnav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include for-size(tablet-up){
+    padding: 32px;
+  }
+
+  &:hover .subnav-link,
+  &.is-open .subnav-link{
+    display: block;
+    transition: all O,1s ease;
+    transform: translateY(0px);
+    opacity: 1;
+    height: 40px;
+  }
+
+}
+
+.subnav-link{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-text1;
+  line-height: 32px;
+
+  transform: translateY(-20px);
+  opacity: 0.01;
+  position: relative;
+  height: 1px;
+
+
+  @include for-size(tablet-landscape-up){
+    display: block;
+  }
+
+  &.active {
+    color: $color-cta;
+
+    transform: translateY(0px);
+    opacity: 1;
+    height: 40px;
+  }
+}
+
