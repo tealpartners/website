@@ -42,17 +42,27 @@ a.page__backlink{
     margin-bottom: 20px;
     font-size: 15px;
     text-decoration: none;
+    font-weight: bold;
     border:none;
     display: inline-block;
     &:hover{
         color:black;
         border:none;
     }
+
+    svg{
+      margin-right: 12px;
+      transform: translateY(3px);
+    }
+
+    &:hover svg{
+      fill: #000;
+    }
 }
 
-.page__meta{
-    margin: 5px 0 0px 0px;
-    font-size: 15px;
+.page__content .page__meta{
+    margin: 2px 0 0px 0px;
+    font-size: 16px;
     color: $color-text3;
 }
 
