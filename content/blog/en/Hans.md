@@ -1,7 +1,7 @@
 <!-- title: Hans -->
 <!-- author: Hans -->
 <!-- date: 2020-05-14 -->
-<!-- img: /assets/img/blogimages/employeestory-kelly.png -->
+<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
 
 Besides being a software developer, Teal Partners gives me the opportunity to learn about the commercial and business side of things. When you build software, you are hardly ever involved in the bigger picture. You develop, and that’s that. That’s not the case at Teal Partners. If you want to, you can contribute ideas about the whole thing. About the business you are developing a solution for. About the users and what they need. We immerse ourselves in the customer’s world and give advice based on our expertise. 

@@ -1,7 +1,7 @@
 <!-- title: Yana -->
 <!-- author: Yana -->
 <!-- date: 2020-05-14 -->
-<!-- img: /assets/img/blogimages/employeestory-kelly.png -->
+<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
 I chose Teal Partners because the people who work here are so nice. The job is important but having great colleagues is just as important. People you can have a lovely chat with. Normally, I’m quite reserved at first but I felt quickly at ease here. My interview was very pleasant. We talked a bit about work but mostly about gaming and other fun things. 
 
