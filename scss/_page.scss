@@ -3,12 +3,12 @@
 }
 
 .page__header{
-    position: relative;
-    z-index: 50;
+  position: relative;
+  //z-index: 50;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
   box-shadow: $shadow-over-header;
   border-radius:3px;
-  margin: -150px auto 0 auto;
+  margin: -120px auto 0 auto;
   width: calc(100% - 40px);
   max-width: calc(1100px - 80px);
 
@@ -202,20 +202,21 @@ a.page__backlink{
 
 .l-page-bloglist-withmenu{
   @extend .l-wrapper;
-  transform: translateY(-140px);
+  //transform: translateY(-140px);
 
   display: grid;
   @include for-size(tablet-up){
     grid-template-columns: 250px 1fr;
     grid-gap: 32px;
-    transform: translateY(-140px);
+    //transform: translateY(-140px);
     align-items: start;
   }
 }
 
 .l-page-bloglist{
   @extend .l-wrapper;
-  transform: translateY(-140px);
+  //transform: translateY(-140px);
+  margin-top: -120px;
   display: grid;
   justify-content: center;
 

@@ -1,3 +1,26 @@
+<article class="blogpost--teaser">
+    <a class="blogpost--link" href="{{ base_path }}/{{ blog }}/{{ slug }}/" >
+        <div class="blogpost__image"><img src="https://dummyimage.com/1200x440/000/fff" alt="" /></div>
+        <div class="blogpost__content">
+            <h1 class="blogpost__title">
+                {{ title }}
+            </h1>
+            <div class="blogpost__meta">
+                <!-- <div class="blogpost__authorimage"></div> -->
+                <span class="blogpost__authroname">By {{ author }}</span>
+                <span class="blogpost__metatext"> on {{ date }}</span>
+            </div>
+            <p class="blogpost__teasertext">
+                {{ summary }}&nbsp;
+            </p>
+            <span class="blogpost__cta">Lees verder<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.30469 1.60547C6.95312 1.95703 6.98828 2.48438 7.30469 2.83594L11.5586 6.84375H1.46875C0.976562 6.84375 0.625 7.23047 0.625 7.6875V8.8125C0.625 9.30469 0.976562 9.65625 1.46875 9.65625H11.5586L7.30469 13.6992C6.98828 14.0508 6.98828 14.5781 7.30469 14.9297L8.07812 15.7031C8.42969 16.0195 8.95703 16.0195 9.27344 15.7031L16.1289 8.84766C16.4453 8.53125 16.4453 8.00391 16.1289 7.65234L9.27344 0.832031C8.95703 0.515625 8.42969 0.515625 8.07812 0.832031L7.30469 1.60547Z" fill="#EE5772"/>
+            </svg></span>
+        </div>
+    </a>
+</article>
+
+<!--
 <article>
     <h2><a href="{{ base_path }}/{{ blog }}/{{ slug }}/">{{ title }}</a></h2>
     <p class="meta">Published on {{ date }} by <b>{{ author }}</b></p>
@@ -8,3 +31,4 @@
         <a class="more" href="{{ base_path }}/{{ blog }}/{{ slug }}/">Read More</a>
     </div>
 </article>
+-->
