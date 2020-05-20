@@ -1,6 +1,7 @@
 <!-- title: Developing is a creative job -->
 <!-- author: Laila -->
 <!-- date: 2020-05-14 -->
+<!-- img: /assets/img/blogimages/employeestory-kelly.png -->
 
 Yes, you could say I’m inquisitive. I love immersing myself in the customer’s business. Looking for solutions. Continuously learning and trying out new things. It keeps me mentally fit. My passion is writing flexible code for software that you can easily incorporate into the complex projects we do. 
 

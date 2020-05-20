@@ -1,6 +1,7 @@
 <!-- title: Data News awards -->
 <!-- author: Laila Bougria -->
 <!-- date: 2019-05-23 -->
+<!-- img: /assets/img/blogimages/datanews2.jpg -->
 <!-- intro: Most of us in the industry have read a Data News magazine at one point or another in our career. This popular IT-focussed periodical keeps us up to date on innovations and developments in our industry. Each year, Data News selects the most innovative companies in a celebration called the Data News Awards for Excellence. A few weeks ago we were honoured to join in on the 20th edition of this event. -->
 
 <p>

@@ -1,6 +1,7 @@
 <!-- title: Sarah -->
 <!-- author: Sarah -->
 <!-- date: 2020-05-14 -->
+<!-- img: /assets/img/blogimages/employeestory-kelly.png -->
 
 For over a year now, three of my colleagues and I have been building Unbox, a tool that allows employees to spend part of their wages flexibly. For instance, on a company car, dental insurance, a laptop or an extra day off. Using the tool, you can put your package together yourself. 
 

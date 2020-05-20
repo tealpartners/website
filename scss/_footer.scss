@@ -8,7 +8,7 @@
     content:"";
     width: 100%;
     overflow: hidden;
-    transform: skewY(0deg);
+    transform: skewY(-3deg);
     transform-origin: 0;
     background: linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
     background-position: center center;
@@ -44,15 +44,18 @@
 }
 
 .bigpic{
+  margin: 0 auto 32px auto;
+  max-width: $maxwidth;
+  padding: 0px 40px 0px 40px;
+  img{
+    width: 100%;
+  }
 
   .bigpic__inner{
     position: relative;
-
     overflow: hidden;
     border-radius: 5px;
-
   }
-
 }
 
 
