@@ -174,7 +174,7 @@ def make_list(posts, dst, list_layout, item_layout, **params):
     fwrite(dst_path, output)
 
 
-def main():
+def build():
 
     # OWN CODE
     if not os.path.exists('_site'):
@@ -200,7 +200,7 @@ def main():
         'subtitle': 'Lorem Ipsum',
         'author': 'Admin',
         'intro': '',
-        'site_url': 'http://www.tealpartners.com',
+        'site_url': 'https://www.tealpartners.com',
         'current_year': datetime.datetime.now().year
     }
 
@@ -230,7 +230,7 @@ def main():
     blog_posts = make_pages('content/blog/en/*.md',
                             '_site/blog/{{ slug }}/index.html',
                             post_layout, blog='blog', **params)
-    news_posts = make_pages('content/news/*.html',
+    news_posts = make_pages('content/news/en/*.md',
                             '_site/news/{{ slug }}/index.html',
                             post_layout, blog='news', **params)
 
@@ -252,4 +252,4 @@ _test = None
 
 
 if __name__ == '__main__':
-    main()
+    build()
