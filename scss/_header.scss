@@ -153,6 +153,9 @@
 }
 
 .top-navigation.fullscreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 200;
   position: fixed;
   left: 0;
@@ -161,8 +164,6 @@
   height: 100%;
   background-color: #F4FAF9;
   color: $color-cta;
-  grid-template-columns: 1fr;
-
   a{
     color: $color-text1;
   }
