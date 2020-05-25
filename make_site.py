@@ -200,7 +200,7 @@ def main():
         'subtitle': 'Lorem Ipsum',
         'author': 'Admin',
         'intro': '',
-        'site_url': 'http://localhost:8000',
+        'site_url': 'http://www.tealpartners.com',
         'current_year': datetime.datetime.now().year
     }
 
