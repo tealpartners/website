@@ -20,6 +20,13 @@ h1,h2,h3,h4,h5,h6{
   font-weight:600;
 }
 
+.mt-large{
+  margin-top: 48px;
+  @include for-size(desktop-up){
+    margin-top:64px;
+  }
+}
+
 *{
   box-sizing: border-box;
 }
@@ -45,17 +52,16 @@ a{
   background-color: $color-cta;
   color:#fff;
   font-weight:600;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   border-radius:5px;
   text-align: center;
   display: inline-block;
-  min-width:150px;
-  line-height:42px;
+  line-height:56px;
   box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
   transition: all 0.1s ease-out;
   position: relative;
-  padding: 8px;
+  padding: 0 24px;
 
   &:hover{
     box-shadow: 0px 0px 30px rgba(255,0,65,0.34);
@@ -77,13 +83,13 @@ a{
 
 
 .callout{
-  margin-top:60px;
+  margin-top:40px;
   text-align: center;
   .callout__title{
     font-size:30px;
   }
   @include for-size(tablet-landscape-up){
-    margin-top:100px;
+    margin-top:60px;
   }
 }
 
