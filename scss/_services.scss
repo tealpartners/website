@@ -1,3 +1,9 @@
 .services-how-do-we-work{
-    padding-top: 30px;
+    margin-top: 60px;
+    text-align: center;
+
+    @include for-size(tablet-up){
+      margin-top: 80px;
+    }
+
   }
