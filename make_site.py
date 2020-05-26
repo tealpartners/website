@@ -133,7 +133,7 @@ def make_pages(src, dst, layout, **params):
     """Generate pages from page content."""
     items = []
 
-    for src_path in glob.glob(src):
+    for src_path in glob.glob(src, recursive=True):
         src_path = src_path.replace("\\", "/")
         common_path = os.path.commonprefix([src, src_path])
         content = read_content(src_path, common_path)
