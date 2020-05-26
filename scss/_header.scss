@@ -15,7 +15,7 @@
     overflow: hidden;
     transform: skewY(-3deg);
     transform-origin: 0;
-    background: url("../assets/img/teal-logo-shape.svg"), linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
+    background: url("/assets/img/teal-logo-shape.svg"), linear-gradient(-200deg,$color-brand-dark 0%,$color-brand-light 100%);
     background-position: center center;
     z-index: -1;
   }
@@ -60,7 +60,7 @@
     overflow: hidden;
     width: 150px;
     height:52px;
-    background: url(../assets/img/tealpartners-logo.svg) no-repeat center center;
+    background: url(/assets/img/tealpartners-logo.svg) no-repeat center center;
     background-size: 150px 52px;
 
     @include for-size(tablet-landscape-up){

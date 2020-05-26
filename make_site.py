@@ -221,10 +221,13 @@ def build():
 
 
     # OWN CODE
-    if not os.path.exists('_site/scss'):
-        os.mkdir('_site/scss')
+    if not os.path.exists('_site/assets'):
+        os.mkdir('_site/assets')
 
-    sass.compile(dirname=('scss', '_site/scss'), output_style='compressed', source_map_contents= True)
+    if not os.path.exists('_site/assets/css'):
+        os.mkdir('_site/assets/css')
+
+    sass.compile(dirname=('scss', '_site/assets/css'), output_style='compressed', source_map_contents= True)
     # END
 
     # Default parameters.
@@ -233,7 +236,7 @@ def build():
         'subtitle': 'Lorem Ipsum',
         'author': 'Admin',
         'intro': '',
-        'site_url': 'https://www.tealpartners.com',
+        'site_url': 'https://www.tealpartners.com/en',
         'current_year': datetime.datetime.now().year
     }
 
