@@ -1,0 +1,45 @@
+.processflow{
+
+  .processflow_item{
+    position: relative;
+    padding: 0 24px 32px 56px;
+
+
+    &:after{
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      border:2px solid $color-line;
+      border-radius:16px;
+
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      background-color: $color-line;
+      width: 2px;
+      height: 100%;
+      left: 15px;
+      top: 0;
+    }
+  }
+
+  .processflow__title{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+
+  .processflow__text{
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-text2;
+  }
+
+}
