@@ -79,7 +79,7 @@ def rfc_2822_format(date_str):
     return d.strftime('%a, %d %b %Y %H:%M:%S +0000')
 
 
-def read_content(filename):
+def read_content(filename, common_path):
     """Read content and metadata from file into a dictionary."""
     # Read file content.
     text = fread(filename)
@@ -87,9 +87,12 @@ def read_content(filename):
     # Read metadata and save it in a dictionary.
     date_slug = os.path.basename(filename).split('.')[0]
     match = re.search(r'^(?:(\d\d\d\d-\d\d-\d\d)-)?(.+)$', date_slug)
+
+    slug = filename.replace(common_path, '').split('.')[0]
+
     content = {
         'date': match.group(1) or '1970-01-01',
-        'slug': match.group(2),
+        'slug': slug,
     }
 
     # Read headers.
@@ -131,7 +134,9 @@ def make_pages(src, dst, layout, **params):
     items = []
 
     for src_path in glob.glob(src):
-        content = read_content(src_path)
+        src_path = src_path.replace("\\", "/")
+        common_path = os.path.commonprefix([src, src_path])
+        content = read_content(src_path, common_path)
 
         page_params = dict(params, **content)
 
@@ -150,6 +155,34 @@ def make_pages(src, dst, layout, **params):
         fwrite(dst_path, output)
 
     return sorted(items, key=lambda x: x['date'], reverse=True)
+
+
+def make_category_pages(posts, dst, list_layout, item_layout, **params):
+    all_paths = {}
+    for post in posts:
+        categories = []
+        parts = post['slug'].split("/")
+        parts.pop()
+
+        previous_part = ''
+        for part in parts:
+            previous_part = previous_part + '/' + part
+            categories.append((previous_part, part))
+
+        for (path, category) in categories:
+            if path in all_paths:
+                all_paths[path][0].append(post)
+            else:
+                all_paths[path] = ([post], category)
+
+    for path in all_paths:
+        info = all_paths[path]
+
+        params_copy = params.copy()
+        params_copy['title']=info[1]
+        print(dst + path)
+        make_list(info[0], dst + path + "/index.html",
+              list_layout, item_layout, **params_copy)
 
 
 def make_list(posts, dst, list_layout, item_layout, **params):
@@ -227,12 +260,15 @@ def build():
                page_layout, **params)
 
     # Create blogs.
-    blog_posts = make_pages('content/blog/en/*.md',
+    blog_posts = make_pages('content/blog/**/*.md',
                             '_site/blog/{{ slug }}/index.html',
                             post_layout, blog='blog', **params)
     news_posts = make_pages('content/news/en/*.md',
                             '_site/news/{{ slug }}/index.html',
                             post_layout, blog='news', **params)
+
+    make_category_pages(blog_posts, '_site/blog',
+              list_layout, item_layout, blog='blog', title='Blog', **params)
 
     # Create blog list pages.
     make_list(blog_posts, '_site/blog/index.html',
