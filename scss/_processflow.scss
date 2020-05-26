@@ -1,8 +1,16 @@
 .processflow{
 
-  .processflow_item{
+  margin-top: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @include for-size(tablet-up){
+    margin-top: 40px;
+  }
+
+  .processflow__item{
     position: relative;
-    padding: 0 24px 32px 56px;
+    padding: 0 0px 16px 56px;
 
 
     &:after{
@@ -24,22 +32,55 @@
       background-color: $color-line;
       width: 2px;
       height: 100%;
-      left: 15px;
+      left: 9px;
       top: 0;
     }
   }
 
+  .processflow__item.cycle{
+    &:after{
+      display: none;
+    }
+    padding-top: 18px;
+    margin-top: 16px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      left: -19px;
+      top: 0px;
+      background: url("../assets/img/cycle.svg");
+      background-size: 62px 62px;
+      animation: rotate 20s linear infinite;
+    }
+
+  }
+
+  .processflow__item:last-child{
+    &:before{
+      display: none;
+    }
+  }
+
   .processflow__title{
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: bold;
     padding: 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
   }
 
   .processflow__text{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 140%;
     color: $color-text2;
   }
 
+}
+
+@keyframes rotate {
+  from{ transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
 }
