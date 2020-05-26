@@ -23,11 +23,11 @@
   margin: 0 auto;
   width: calc(100% - 64px);
   max-width: 880px;
-  padding-top: 32px;
+  padding-top: 24px;
 
   @include for-size(tablet-up){
     width: calc(100% - 180px);
-    padding-top: 60px;
+    padding-top: 32px;
   }
 
   @include for-size(tablet-up){
