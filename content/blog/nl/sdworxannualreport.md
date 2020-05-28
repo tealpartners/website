@@ -1,7 +1,6 @@
 <!-- title: Teal Partners in jaarverslag SD Worx -->
 <!-- author: Koen Denies -->
 <!-- date: 2020-05-28 -->
-<!-- intro: Teal Partners krijgt een mooie vermelding in het jaarverslag van SD Worx. Het document schetst hoe de samenwerking tot stand kwam en wat het uiteindelijke resultaat is.  -->
 <!-- img: /assets/img/blogimages/smeDigitalHeader.jpg -->
 
 SD Worx is dienstverlener in human resources en payroll. Het bedrijf, met hoofdzetel in België, is geëvolueerd van een sociaal secretariaat dat in opdracht van werkgevers administratieve taken afhandelt naar een toonaangevende internationale specialist in personeelsbeleid en HR-processen.
