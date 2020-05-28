@@ -3,7 +3,7 @@
 <!-- date: 2020-05-14 -->
 <!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
-I work both for customers and on our own product, the VIREN calculation module. In 2016, I was Teal Partners’ first employee. When Koen and Jelle called me, I was immediately on board. You can learn so much from them, technically as well as commercially. They complement each other incredibly well. When these two start brainstorming, very few people can keep up with them. It’s wonderful to see. 
+I work both for customers and on our own product, the VIREN calculation module. In 2016, I was Teal Partners’ first employee. When Koen and Jelle called me, I was immediately on board. You can learn so much from them, technically as well as business wise. They complement each other incredibly well. When these two start brainstorming, very few people can keep up with them. It’s wonderful to see. 
 
 
 
