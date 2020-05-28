@@ -1,6 +1,6 @@
 <!-- title: Sarah -->
 <!-- author: Sarah -->
-<!-- date: 2020-05-2 -->
+<!-- date: 2020-05-02 -->
 <!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
 Met vier collega’s bouwen we al meer dan een jaar aan Unbox, een tool die werknemers in staat stelt om een deel van hun loon flexibel te besteden. Bijvoorbeeld aan een bedrijfswagen, een tandverzekering, een laptop of een extra vakantiedag. Met de tool kan je zelf je pakket samenstellen. 

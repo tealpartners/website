@@ -1,6 +1,6 @@
 <!-- title: Hans -->
 <!-- author: Hans -->
-<!-- date: 2020-05-3 -->
+<!-- date: 2020-05-03 -->
 <!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
 

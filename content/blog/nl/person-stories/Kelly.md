@@ -1,6 +1,6 @@
 <!-- title: Kelly -->
 <!-- author: Kelly -->
-<!-- date: 2020-05-4 -->
+<!-- date: 2020-05-04 -->
 <!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
 
 Bij Teal Partners werk ik in een team van twaalf aan een payroll-applicatie. In mijn huidige job programmeer ik meer dan vroeger en dat doe ik liever. In andere bedrijven word je vaak gepusht naar zogenaamd hogere rollen die niet per se aansluiten bij je sterktes of interesse. Terwijl ik nu mijn job zelf kan samenstellen, rekening houdend met het werk dat er is en zonder het technische uit het oog te verliezen.
