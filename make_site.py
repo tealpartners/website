@@ -26,7 +26,6 @@
 
 """Make static website/blog with Python."""
 
-
 import os
 import shutil
 import re
@@ -34,15 +33,24 @@ import glob
 import sys
 import json
 import datetime
+from jinja2 import Template
 
 # OWN CODE
 import sass
+
+
 # END
 
 def fread(filename):
     """Read file and close the file."""
     with open(filename, 'r') as f:
         return f.read()
+
+
+def get_template(filename):
+    """Return the template"""
+    content = fread(filename)
+    return Template(content)
 
 
 def fwrite(filename, text):
@@ -129,6 +137,12 @@ def render(template, **params):
                   template)
 
 
+def render_layout(template, **params):
+    """Replace placeholders in template with values from params."""
+    output = template.render(params)
+    return output
+
+
 def make_pages(src, dst, layout, **params):
     """Generate pages from page content."""
     items = []
@@ -149,7 +163,7 @@ def make_pages(src, dst, layout, **params):
         items.append(content)
 
         dst_path = render(dst, **page_params)
-        output = render(layout, **page_params)
+        output = render_layout(layout, **page_params)
 
         log('Rendering {} => {} ...', src_path, dst_path)
         fwrite(dst_path, output)
@@ -179,10 +193,10 @@ def make_category_pages(posts, dst, list_layout, item_layout, **params):
         info = all_paths[path]
 
         params_copy = params.copy()
-        params_copy['title']=info[1]
+        params_copy['title'] = info[1]
         print(dst + path)
         make_list(info[0], dst + path + "/index.html",
-              list_layout, item_layout, **params_copy)
+                  list_layout, item_layout, **params_copy)
 
 
 def make_list(posts, dst, list_layout, item_layout, **params):
@@ -191,24 +205,23 @@ def make_list(posts, dst, list_layout, item_layout, **params):
     for post in posts:
         item_params = dict(params, **post)
         # OWN CODE
-        if('intro' in post):
+        if ('intro' in post):
             item_params['summary'] = post['intro']
         else:
             item_params['summary'] = truncate(post['content'])
         # END
-        item = render(item_layout, **item_params)
+        item = render_layout(item_layout, **item_params)
         items.append(item)
 
     params['content'] = ''.join(items)
     dst_path = render(dst, **params)
-    output = render(list_layout, **params)
+    output = render_layout(list_layout, **params)
 
     log('Rendering list => {} ...', dst_path)
     fwrite(dst_path, output)
 
 
 def build():
-
     # OWN CODE
     if not os.path.exists('_site'):
         os.mkdir('_site')
@@ -219,7 +232,6 @@ def build():
         shutil.rmtree('_site')
     shutil.copytree('static', '_site')
 
-
     # OWN CODE
     if not os.path.exists('_site/assets'):
         os.mkdir('_site/assets')
@@ -227,7 +239,7 @@ def build():
     if not os.path.exists('_site/assets/css'):
         os.mkdir('_site/assets/css')
 
-    sass.compile(dirname=('scss', '_site/assets/css'), output_style='compressed', source_map_contents= True)
+    sass.compile(dirname=('scss', '_site/assets/css'), output_style='compressed', source_map_contents=True)
     # END
 
     # Default parameters.
@@ -245,16 +257,16 @@ def build():
         params.update(json.loads(fread('params.json')))
 
     # Load layouts.
-    page_layout = fread('layout/page.html')
+    page_layout = get_template('layout/page.html')
     post_layout = fread('layout/post.html')
     list_layout = fread('layout/list.html')
-    item_layout = fread('layout/item.html')
-    feed_xml = fread('layout/feed.xml')
-    item_xml = fread('layout/item.xml')
+    item_layout = get_template('layout/item.html')
+    feed_xml = get_template('layout/feed.xml')
+    item_xml = get_template('layout/item.xml')
 
     # Combine layouts to form final layouts.
-    post_layout = render(page_layout, content=post_layout)
-    list_layout = render(page_layout, content=list_layout)
+    post_layout = Template(render_layout(page_layout, content=post_layout, **params))
+    list_layout = Template(render_layout(page_layout, content=list_layout, **params))
 
     # Create site pages.
     make_pages('content/_index.html', '_site/index.html',
@@ -271,7 +283,7 @@ def build():
                             post_layout, blog='news', **params)
 
     make_category_pages(blog_posts, '_site/blog',
-              list_layout, item_layout, blog='blog', title='Blog', **params)
+                        list_layout, item_layout, blog='blog', title='Blog', **params)
 
     # Create blog list pages.
     make_list(blog_posts, '_site/blog/index.html',
@@ -288,7 +300,6 @@ def build():
 
 # Test parameter to be set temporarily by unit tests.
 _test = None
-
 
 if __name__ == '__main__':
     build()
