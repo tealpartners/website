@@ -168,7 +168,8 @@ def make_pages(src, dst, layout, **params):
         log('Rendering {} => {} ...', src_path, dst_path)
         fwrite(dst_path, output)
 
-    return sorted(items, key=lambda x: x['date'], reverse=True)
+    result = sorted(items, key=lambda x: x['rfc_2822_date'], reverse=True)
+    return result
 
 
 def make_category_pages(posts, dst, list_layout, item_layout, **params):
