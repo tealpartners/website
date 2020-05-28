@@ -1,6 +1,6 @@
-<!-- title: Feeling valued is the single most important motivator for any human beeing -->
+<!-- title: Kelly -->
 <!-- author: Kelly -->
-<!-- date: 2020-05-14 -->
+<!-- date: 2020-05-4 -->
 <!-- img: /assets/img/blogimages/employeestory-kelly.png -->
 
 At Teal Partners, I work in a team of twelve people on a payroll application. In this job, I programme more than I used to and I prefer it that way. In other companies you are often pushed into so-called higher-level positions that don’t necessarily suit your strengths or interests. Now, however, I can put together my own job, taking into account the work that needs to be done and without losing sight of the technical aspect.
