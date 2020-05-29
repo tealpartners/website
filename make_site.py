@@ -258,45 +258,52 @@ def build():
         params.update(json.loads(fread('params.json')))
 
     # Load layouts.
-    page_layout = get_template('layout/page.html')
-    post_layout = fread('layout/post.html')
+    page_layout_en = get_template('layout/en/page.html')
+    page_layout_nl = get_template('layout/nl/page.html')
+    post_layout_en = fread('layout/en/post.html')
+    post_layout_nl = fread('layout/nl/post.html')
     list_layout = fread('layout/list.html')
-    item_layout = get_template('layout/item.html')
+    item_layout_en = get_template('layout/en/item.html')
+    item_layout_nl = get_template('layout/nl/item.html')
     feed_xml = get_template('layout/feed.xml')
     item_xml = get_template('layout/item.xml')
 
     # Combine layouts to form final layouts.
-    post_layout = Template(render_layout(page_layout, content=post_layout, **params))
-    list_layout = Template(render_layout(page_layout, content=list_layout, **params))
+    post_layout_en = Template(render_layout(page_layout_en, content=post_layout_en, **params))
+    post_layout_nl = Template(render_layout(page_layout_nl, content=post_layout_nl, **params))
+
+    list_layout_en = Template(render_layout(page_layout_en, content=list_layout, **params))
+    list_layout_nl = Template(render_layout(page_layout_nl, content=list_layout, **params))
 
     # Create site pages.
     make_pages('content/_index.html', '_site/index.html',
-               page_layout, **params)
+               post_layout_en, **params)
     make_pages('content/[!_]*.html', '_site/{{ slug }}/index.html',
-               page_layout, **params)
+               post_layout_en, **params)
 
     # Create blogs.
-    blog_posts = make_pages('content/blog/**/*.md',
-                            '_site/blog/{{ slug }}/index.html',
-                            post_layout, blog='blog', **params)
-    news_posts = make_pages('content/news/en/*.md',
-                            '_site/news/{{ slug }}/index.html',
-                            post_layout, blog='news', **params)
+    blog_posts_en = make_pages('content/en/blog/**/*.md',
+                            '_site/en/blog/{{ slug }}/index.html',
+                            post_layout_en, blog='en/blog', **params)
+    blog_posts_nl = make_pages('content/nl/blog/**/*.md',
+                            '_site/nl/blog/{{ slug }}/index.html',
+                            post_layout_nl, blog='nl/blog', **params)
 
-    make_category_pages(blog_posts, '_site/blog',
-                        list_layout, item_layout, blog='blog', title='Blog', **params)
+    make_category_pages(blog_posts_en, '_site/en/blog',
+                        list_layout_en, item_layout_en, blog='en/blog', title='Blog', **params)
+
+    make_category_pages(blog_posts_nl, '_site/nl/blog',
+                        list_layout_nl, item_layout_nl, blog='nl/blog', title='Blog', **params)
 
     # Create blog list pages.
-    make_list(blog_posts, '_site/blog/index.html',
-              list_layout, item_layout, blog='blog', title='Blog', **params)
-    make_list(news_posts, '_site/news/index.html',
-              list_layout, item_layout, blog='news', title='News', **params)
+    make_list(blog_posts_en, '_site/en/blog/index.html',
+              list_layout_en, item_layout_en, blog='en/blog', title='Blog', **params)
+    make_list(blog_posts_nl, '_site/nl/blog/index.html',
+              list_layout_nl, item_layout_nl, blog='nl/blog', title='Blog', **params)
 
     # Create RSS feeds.
-    make_list(blog_posts, '_site/blog/rss.xml',
+    make_list(blog_posts_en, '_site/blog/rss.xml',
               feed_xml, item_xml, blog='blog', title='Blog', **params)
-    make_list(news_posts, '_site/news/rss.xml',
-              feed_xml, item_xml, blog='news', title='News', **params)
 
 
 # Test parameter to be set temporarily by unit tests.

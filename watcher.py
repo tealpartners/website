@@ -48,6 +48,7 @@ if __name__ == "__main__":
     observer = Observer()
     observer.schedule(event_handler, path, recursive=True)
     observer.start()
+    build()
     try:
         while True:
             time.sleep(1)
