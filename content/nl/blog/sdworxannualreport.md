@@ -3,6 +3,12 @@
 <!-- date: 2020-05-28 -->
 <!-- img: /assets/img/blogimages/smeDigitalHeader.jpg -->
 
+<div class="bigpic">
+    <div class="bigpic__inner">
+        <img src="/assets/img/blogimages/smeDigitalHeader.jpg" alt="">
+    </div>
+</div>
+
 SD Worx is dienstverlener in human resources en payroll. Het bedrijf, met hoofdzetel in België, is geëvolueerd van een sociaal secretariaat dat in opdracht van werkgevers administratieve taken afhandelt naar een toonaangevende internationale specialist in personeelsbeleid en HR-processen.
 
 SD Worx wilde de Europese dienstverlening aan kmo's uitbouwen en versterken. De Belgische instrumenten konden niet zomaar geëxporteerd worden naar andere landen. De fiscale en sociaal-juridische regels verschillen te veel. 

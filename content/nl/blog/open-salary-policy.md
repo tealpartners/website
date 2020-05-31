@@ -1,10 +1,16 @@
 <!-- title: Een open loonbeleid -->
 <!-- author: Koen Denies -->
 <!-- date: 2019-05-22 -->
-<!-- intro: Bij Teal Partners weten alle collega’s van elkaar wat ze verdienen, ook de freelancers. Ook mijn loon en dat van medeoprichter Jelle is transparant.  -->
 <!-- img: /assets/img/portretten/011-websitecut-hover.png -->
+
+<div class="bigpic">
+    <div class="bigpic__inner">
+        <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
+    </div>
+</div>
+
 <p>
-   Een open loonbeleid is niet evident. De buitenwereld reageert vaak sceptisch. In sommige bedrijven vragen ze expliciet of we 'alsjeblieft niet te veel willen vertellen over onze loontransparantie'. Uit angst of behoudsgezindheid. 
+   Een open loonbeleid is niet evident. De buitenwereld reageert vaak sceptisch. In sommige bedrijven vragen ze expliciet of we "alsjeblieft niet te veel willen vertellen over onze loontransparantie". Uit angst of behoudsgezindheid. 
 </p>
 <p>
   Mensen bestempelen het als een modegril, een experiment dat gedoemd is om te mislukken. Ook al hebben Jelle en ik een uitgebreide ervaring op het vlak van Payroll & HR, onze keuze voor een open loonbeleid ziet men als een utopisch ideaal dat enkel werkt in een start-up waar vijf man werkt. Of tien man, misschien. 

@@ -1,8 +1,13 @@
 <!-- title: An open salary policy -->
 <!-- author: Koen Denies -->
 <!-- date: 2019-05-22 -->
-<!-- intro: At Teal Partners, we operate using an open salary policy. That means that every colleague knows what their colleagues earn, including the freelancers. My wage and the wage of co-founder Jelle are transparent too. -->
 <!-- img: /assets/img/portretten/011-websitecut-hover.png -->
+
+<div class="bigpic">
+    <div class="bigpic__inner">
+        <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
+    </div>
+</div>
 <p>
     Open wage policies are not the most obvious choice. The outside world often reacts skeptically. Some companies have
     even asked us to not overshare details about our wage transparency. This rises from fear or conservatism.
