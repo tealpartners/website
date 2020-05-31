@@ -249,7 +249,8 @@ def build():
         'subtitle': 'Lorem Ipsum',
         'author': 'Admin',
         'intro': '',
-        'site_url': 'https://www.tealpartners.com/en',
+        'site_url': 'https://www.tealpartners.com',
+        #   'site_url': 'http://localhost:8000',
         'current_year': datetime.datetime.now().year
     }
 
