@@ -81,10 +81,6 @@ def read_headers(text):
         yield match.group(1), match.group(2), match.end()
 
 
-def rfc_2822_format(date_str):
-    """Convert yyyy-mm-dd date string to RFC 2822 format date string."""
-    d = datetime.datetime.strptime(date_str, '%Y-%m-%d')
-    return d.strftime('%a, %d %b %Y %H:%M:%S +0000')
 
 
 def read_content(filename, common_path):
@@ -122,9 +118,14 @@ def read_content(filename, common_path):
             log('WARNING: Cannot render Markdown in {}: {}', filename, str(e))
 
     # Update the dictionary with content and RFC 2822 date.
+    """Convert yyyy-mm-dd date string to RFC 2822 format date string."""
+    date = datetime.datetime.strptime(content['date'], '%Y-%m-%d')
+    rfc_2822_date = date.strftime('%a, %d %b %Y %H:%M:%S +0000')
+
     content.update({
         'content': text,
-        'rfc_2822_date': rfc_2822_format(content['date'])
+        'date_object': date,
+        'rfc_2822_date': rfc_2822_date
     })
 
     return content
@@ -168,7 +169,7 @@ def make_pages(src, dst, layout, **params):
         log('Rendering {} => {} ...', src_path, dst_path)
         fwrite(dst_path, output)
 
-    result = sorted(items, key=lambda x: x['rfc_2822_date'], reverse=True)
+    result = sorted(items, key=lambda x: x['date_object'], reverse=True)
     return result
 
 
