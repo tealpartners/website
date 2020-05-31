@@ -1,7 +1,6 @@
 <!-- title: Working at Teal Partners -->
 <!-- author: Koen Denies -->
 <!-- date: 2018-03-21 -->
-<!-- intro: Partnerships between corporates and startups combine the best of both worlds. They improve time to market, create extra flexibility, boost operating speed. -->
 
 <h2>Add the chemistry of a startup to your corporate environment</h2>
 <p>It is really challenging to innovate inside an existing and successful company. Since a couple of years,

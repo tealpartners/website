@@ -3,11 +3,9 @@
 <!-- date: 2019-05-22 -->
 <!-- img: /assets/img/portretten/011-websitecut-hover.png -->
 
-<div class="bigpic">
-    <div class="bigpic__inner">
-        <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
-    </div>
-</div>
+<p class="page__image">
+    <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
+</p>
 
 <p>
    Een open loonbeleid is niet evident. De buitenwereld reageert vaak sceptisch. In sommige bedrijven vragen ze expliciet of we "alsjeblieft niet te veel willen vertellen over onze loontransparantie". Uit angst of behoudsgezindheid. 

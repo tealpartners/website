@@ -2,7 +2,16 @@
 <!-- author: Laila Bougria -->
 <!-- date: 2019-05-23 -->
 <!-- img: /assets/img/blogimages/datanews2.jpg -->
-<!-- intro: Most of us in the industry have read a Data News magazine at one point or another in our career. This popular IT-focussed periodical keeps us up to date on innovations and developments in our industry. Each year, Data News selects the most innovative companies in a celebration called the Data News Awards for Excellence. A few weeks ago we were honoured to join in on the 20th edition of this event. -->
+
+
+<b>
+    Most of us in the industry have read a Data News magazine at one point or another in our career. This popular IT-focussed periodical keeps us up to date on innovations and developments in our industry. Each year, Data News selects the most innovative companies in a celebration called the Data News Awards for Excellence. A few weeks ago we were honoured to join in on the 20th edition of this event.
+</b>
+<br/>
+<br/>
+<p class="page__image">
+    <img src="/assets/img/blogimages/datanews2.jpg" alt="">
+</p>
 
 <p>
     The event started a bit early for us at Teal Partners, as the office transformed in an actual Suits set. Our
@@ -35,7 +44,4 @@
     might sound cliché, but one of our greatest accomplishments is the compatibility of our team. Put us together in an
     office (with the necessary amount of coffee and sweets) and we'll do great things work-wise. Take away the work, add
     in some drinks and we'll have a great time. It was an absolute pleasure to attend this event.
-</p>
-<p class="page__image">
-    <img src="/assets/img/blogimages/datanews2.jpg" alt="">
 </p>

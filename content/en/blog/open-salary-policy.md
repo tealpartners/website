@@ -3,11 +3,11 @@
 <!-- date: 2019-05-22 -->
 <!-- img: /assets/img/portretten/011-websitecut-hover.png -->
 
-<div class="bigpic">
-    <div class="bigpic__inner">
-        <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
-    </div>
-</div>
+
+<p class="page__image">
+    <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
+</p>
+
 <p>
     Open wage policies are not the most obvious choice. The outside world often reacts skeptically. Some companies have
     even asked us to not overshare details about our wage transparency. This rises from fear or conservatism.
