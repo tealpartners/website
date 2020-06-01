@@ -66,3 +66,4 @@ Xerius denkt ook na over hoe het bedrijf de tool verder in de markt kan zetten. 
 <p>Aantal gebruikers: 73.000 op 6 weken</p>
 <p>Aantal berekeningen: 295.000 op 6 weken</p>
 <p>Ontdek de tool op <a href="http://www.xerius.be/brutonetto" target="_blank">http://www.xerius.be/brutonetto</a></p>
+<p>In de media <a href="https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html">https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html</a></p>
