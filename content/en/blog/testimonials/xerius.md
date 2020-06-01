@@ -66,3 +66,4 @@ Xerius is also considering how it can market the tool further. 'It's a clever pi
 <p>Number of users: 73,000 in 6 weeks</p>
 <p>Number of calculations: 295,000 in 6 weeks</p>
 <p>Discover the tool at  <a href="http://www.xerius.be/brutonetto" target="_blank">http://www.xerius.be/brutonetto</a></p>
+<p>In the media <a href="https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html">https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html (Dutch)</a></p>
