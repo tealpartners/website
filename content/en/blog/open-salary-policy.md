@@ -1,11 +1,11 @@
 <!-- title: An open salary policy -->
 <!-- author: Koen Denies -->
 <!-- date: 2019-05-22 -->
-<!-- img: /assets/img/portretten/011-websitecut-hover.png -->
+<!-- img: /assets/img/portretten/011-websitecut-hover.jpg -->
 
 
 <p class="page__image">
-    <img src="/assets/img/portretten/011-websitecut-hover.png" alt="">
+    <img src="/assets/img/portretten/011-websitecut-hover.jpg" alt="">
 </p>
 
 <p>

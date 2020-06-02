@@ -19,7 +19,7 @@ Install virtualenv with following command:
 
 And create the virtualenv in the repo:
 
-    virtualenv venv
+    python -m virtualenv venv
 
 Now activate the virtualenv:
 
