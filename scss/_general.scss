@@ -118,3 +118,14 @@ a{
         display: inline-block;
     }
 }
+
+.arrowlink-right{
+  color:$color-cta;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  svg{
+    margin-left: 12px;
+    transform: translate(0px, 2px);
+  }
+}

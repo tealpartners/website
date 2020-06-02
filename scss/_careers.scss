@@ -1,0 +1,85 @@
+.career_storycontainer{
+  @extend .l-wrapper;
+  margin-top: -130px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  padding: 0px 40px;
+
+
+  @include for-size(tablet-up){
+
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -70px;
+    grid-gap: 40px;
+  }
+
+  @include for-size(desktop-up){
+    padding: 0;
+    margin-top: -130px;
+    grid-gap: 56px;
+  }
+
+}
+
+.career_story{
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+
+.career__imagecontainer{
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  border: 4px solid #F1F1F1;
+  box-shadow: 0px 4px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+
+  @include for-size(tablet-up){
+    width: 100px;
+    height: 100px;
+  }
+
+  @include for-size(desktop-up){
+    width: 150px;
+    height: 150px;
+  }
+
+  img{
+    height: 100%;
+  }
+}
+
+.career__quote{
+  font-weight: bold;
+  color:$color-text1;
+  font-size: 22px;
+  font-style: italic;
+
+  @include for-size(tablet-up){
+    font-size: 18px;
+
+  }
+
+  @include for-size(desktop-up){
+    font-size: 22px;
+  }
+
+}
+
+.career__link{
+  align-self: end;
+}
+
+
+
+.career__jobslist-container{
+
+}
+.career__lobslist__item{
+  max-width: 600px;
+  border: 2px solid rgba(0,0,0,0.1);
+
+}
