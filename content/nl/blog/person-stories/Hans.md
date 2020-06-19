@@ -1,7 +1,12 @@
 <!-- title: Hans -->
 <!-- author: Hans -->
 <!-- date: 2020-05-03 -->
-<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
+<!-- img: /assets/img/blogimages/headerimage_Hans.png -->
+
+<p class="page__image">
+      <img src="/assets/img/blogimages/headerimage_Hans.png" alt="">
+</p>
+
 
 
 Teal Partners geeft me de kans om naast mijn job als softwareontwikkelaar bij te leren over het commerciële en het zakelijke. Als je software bouwt, ben je zelden betrokken bij het bredere plaatje. Je voert uit. Dat is bij Teal Partners anders. Wie daar zin in heeft, denkt mee over het geheel. Over de business waar je de oplossing voor ontwikkelt. Over de gebruikers en wat zij nodig hebben. We dompelen ons onder in de wereld van de klant en geven advies vanuit onze expertise. 
