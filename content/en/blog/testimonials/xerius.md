@@ -63,7 +63,14 @@ Xerius is also considering how it can market the tool further. 'It's a clever pi
 'This tool of Xerius clearly shows what sets our calculation engine apart,' says Koen Denies of Teal Partners. 'The speed at which the calculations are carried out, the flexible way the data can be amended, the fact that complex input and large data volume have been factored in, the simple maintenance of legislation, and a shift in ownership from IT to business. This case is a perfect example of our technological prowess.'
 </p>
 <h2>In figures</h2>
-<p>Number of users: 73,000 in 6 weeks</p>
-<p>Number of calculations: 295,000 in 6 weeks</p>
+<h4>Number of users<h4>
+<p class="page__image">
+        <img src="/assets/img/blogimages/UniqueSessionsXeriusCase.png" alt="">
+</p>
+<h4>Number of calculations<h4>
+<p class="page__image">
+    <img src="/assets/img/blogimages/UniqueCalculationsXeriusCase.png" alt="">
+</p>
+
 <p>Discover the tool at  <a href="http://www.xerius.be/brutonetto" target="_blank">http://www.xerius.be/brutonetto</a></p>
 <p>In the media <a href="https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html">https://www.tijd.be/netto/loopbaan/tool-simuleert-wat-zelfstandige-in-spe-netto-overhoudt/10120775.html (Dutch)</a></p>
