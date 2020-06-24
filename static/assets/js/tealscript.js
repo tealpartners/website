@@ -6,7 +6,7 @@ window.onload = function () {
             var navigations = document.getElementsByClassName('top-navigation');
             for (var i = 0; i < navigations.length; i++) {
                 var navigation = navigations[i];
-                navigation.toggle("fullscreen");
+                navigation.classList.toggle("fullscreen");
             }
         }
     }
