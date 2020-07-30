@@ -3,6 +3,8 @@
 <!-- date: 2020-05-03 -->
 <!-- img: /assets/img/blogimages/headerimage_Hans.png -->
 
+<meta property="og:image" content="/assets/img/blogimages/headerimage_Hans.png" />
+
 <p class="page__image">
       <img src="/assets/img/blogimages/headerimage_Hans.png" alt="">
 </p>
