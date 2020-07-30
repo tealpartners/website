@@ -144,7 +144,7 @@ def render_layout(template, **params):
     return output
 
 
-def make_pages(src, dst, layout, **params):
+def make_pages(src, dst, page_layout, post_layout, **params):
     """Generate pages from page content."""
     items = []
 
@@ -164,16 +164,20 @@ def make_pages(src, dst, layout, **params):
         items.append(content)
 
         dst_path = render(dst, **page_params)
-        output = render_layout(layout, **page_params)
 
+        # Combine layouts to form final layouts.
+        post = render_layout(post_layout, **page_params)
+        page_params['content'] = post
+        page = render_layout(page_layout, **page_params)
+        
         log('Rendering {} => {} ...', src_path, dst_path)
-        fwrite(dst_path, output)
+        fwrite(dst_path, page)
 
     result = sorted(items, key=lambda x: x['date_object'], reverse=True)
     return result
 
 
-def make_category_pages(posts, dst, list_layout, item_layout, **params):
+def make_category_pages(posts, dst, page_layout, list_layout, item_layout, **params):
     all_paths = {}
     for post in posts:
         categories = []
@@ -194,14 +198,12 @@ def make_category_pages(posts, dst, list_layout, item_layout, **params):
     for path in all_paths:
         info = all_paths[path]
 
-        params_copy = params.copy()
-        params_copy['title'] = info[1]
         print(dst + path)
-        make_list(info[0], dst + path + "/index.html",
-                  list_layout, item_layout, **params_copy)
+        make_list(info[0], dst + path + "/index.html", page_layout,
+                  list_layout, item_layout, **params)
 
 
-def make_list(posts, dst, list_layout, item_layout, **params):
+def make_list(posts, dst, page_layout, list_layout, item_layout, **params):
     """Generate list page for a blog."""
     items = []
     for post in posts:
@@ -217,10 +219,13 @@ def make_list(posts, dst, list_layout, item_layout, **params):
 
     params['content'] = ''.join(items)
     dst_path = render(dst, **params)
-    output = render_layout(list_layout, **params)
+    page = render_layout(list_layout, **params)
+    if page_layout is not None:
+        params['content'] = page
+        page = render_layout(page_layout, **params)
 
     log('Rendering list => {} ...', dst_path)
-    fwrite(dst_path, output)
+    fwrite(dst_path, page)
 
 
 def build():
@@ -262,50 +267,43 @@ def build():
     # Load layouts.
     page_layout_en = get_template('layout/en/page.html')
     page_layout_nl = get_template('layout/nl/page.html')
-    post_layout_en = fread('layout/en/post.html')
-    post_layout_nl = fread('layout/nl/post.html')
-    list_layout = fread('layout/list.html')
+    post_layout_en = get_template('layout/en/post.html')
+    post_layout_nl = get_template('layout/nl/post.html')
+    list_layout = get_template('layout/list.html')
     item_layout_en = get_template('layout/en/item.html')
     item_layout_nl = get_template('layout/nl/item.html')
     feed_xml = get_template('layout/feed.xml')
     item_xml = get_template('layout/item.xml')
 
-    # Combine layouts to form final layouts.
-    post_layout_en = Template(render_layout(page_layout_en, content=post_layout_en, **params))
-    post_layout_nl = Template(render_layout(page_layout_nl, content=post_layout_nl, **params))
-
-    list_layout_en = Template(render_layout(page_layout_en, content=list_layout, **params))
-    list_layout_nl = Template(render_layout(page_layout_nl, content=list_layout, **params))
-
     # Create site pages.
     make_pages('content/_index.html', '_site/index.html',
-               post_layout_en, **params)
+               page_layout_en, post_layout_en, **params)
     make_pages('content/[!_]*.html', '_site/{{ slug }}/index.html',
-               post_layout_en, **params)
+               page_layout_nl, post_layout_en, **params)
 
     # Create blogs.
     blog_posts_en = make_pages('content/en/blog/**/*.md',
                             '_site/en/blog/{{ slug }}/index.html',
-                            post_layout_en, blog='en/blog', **params)
+                            page_layout_en, post_layout_en, blog='en/blog', **params)
     blog_posts_nl = make_pages('content/nl/blog/**/*.md',
                             '_site/nl/blog/{{ slug }}/index.html',
-                            post_layout_nl, blog='nl/blog', **params)
+                            page_layout_nl, post_layout_nl, blog='nl/blog', **params)
 
-    make_category_pages(blog_posts_en, '_site/en/blog',
-                        list_layout_en, item_layout_en, blog='en/blog', title='Blog', **params)
+    make_category_pages(blog_posts_en, '_site/en/blog', page_layout_en,
+                        list_layout, item_layout_en, blog='en/blog', title='Teal Partners Blog', **params)
 
-    make_category_pages(blog_posts_nl, '_site/nl/blog',
-                        list_layout_nl, item_layout_nl, blog='nl/blog', title='Blog', **params)
+    make_category_pages(blog_posts_nl, '_site/nl/blog', page_layout_nl,
+                        list_layout, item_layout_nl, blog='nl/blog', title='Teal Partners Blog', **params)
 
     # Create blog list pages.
-    make_list(blog_posts_en, '_site/en/blog/index.html',
-              list_layout_en, item_layout_en, blog='en/blog', title='Blog', **params)
-    make_list(blog_posts_nl, '_site/nl/blog/index.html',
-              list_layout_nl, item_layout_nl, blog='nl/blog', title='Blog', **params)
+    make_list(blog_posts_en, '_site/en/blog/index.html', page_layout_en,
+              list_layout, item_layout_en, blog='en/blog', title='Teal Partners Blog', **params)
+    make_list(blog_posts_nl, '_site/nl/blog/index.html', page_layout_nl,
+              list_layout, item_layout_nl, blog='nl/blog', title='Teal Partners Blog', **params)
 
     # Create RSS feeds.
-    make_list(blog_posts_en, '_site/blog/rss.xml',
-              feed_xml, item_xml, blog='blog', title='Blog', **params)
+    make_list(blog_posts_en, '_site/blog/rss.xml', None,
+              feed_xml, item_xml, blog='blog', title='Teal Partners Blog', **params)
 
 
 # Test parameter to be set temporarily by unit tests.

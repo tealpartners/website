@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Teal Partners Blog</title>
+    <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }}">
+    {% if img %}
+    <meta property="og:image" content="{{ img }}">
+    {% endif %}
     <link rel="stylesheet" href="/assets/css/all.css">
     <script async src="/assets/js/tealscript.js"></script>
     <meta name="viewport" content="initial-scale=1">
