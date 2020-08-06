@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+window.onload = function () {
     var toggles = document.getElementsByClassName('top-navigation__toggle');
     for (var i = 0; i < toggles.length; i++) {
         var toggle = toggles[i];
@@ -22,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function(){
             adress.href = href;
         }
     }
-});
+}
