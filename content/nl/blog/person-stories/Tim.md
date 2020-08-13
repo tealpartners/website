@@ -1,7 +1,11 @@
 <!-- title: Tim -->
 <!-- author: Tim -->
 <!-- date: 2020-05-01 -->
-<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
+<!-- img: /assets/img/blogimages/headerimage_tim.png -->
+
+<p class="page__image">
+      <img src="/assets/img/blogimages/headerimage_tim.png" alt="">
+</p>
 
 Ik werk zowel voor klanten als aan ons eigen product, de Viren-berekeningsmodule. In 2016 was ik de eerste werknemer van Teal Partners. Toen Koen en Jelle me belden, was ik meteen overtuigd. Een mens kan zoveel van hen leren, zowel technisch als zakelijk. Ze vullen elkaar geweldig aan. Als ze aan het brainstormen slaan, kunnen er maar weinigen volgen. Het is een plezier om mee te maken. 
 
