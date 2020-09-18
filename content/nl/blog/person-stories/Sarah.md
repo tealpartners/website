@@ -1,7 +1,7 @@
 <!-- title: Sarah -->
 <!-- author: Sarah -->
 <!-- date: 2020-05-02 -->
-<!-- img: /assets/img/blogimages//blog-person-2.jpg -->
+<!-- img: /assets/img/blogimages/blog-person-2.jpg -->
 
 
 Met vier collega’s bouwen we al meer dan een jaar aan Unbox, een tool die werknemers in staat stelt om een deel van hun 
