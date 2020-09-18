@@ -1,13 +1,23 @@
 <!-- title: Sarah -->
 <!-- author: Sarah -->
 <!-- date: 2020-05-02 -->
-<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
+<!-- img: /assets/img/blogimages//blog-person-2.jpg -->
 
-Met vier collega’s bouwen we al meer dan een jaar aan Unbox, een tool die werknemers in staat stelt om een deel van hun loon flexibel te besteden. Bijvoorbeeld aan een bedrijfswagen, een tandverzekering, een laptop of een extra vakantiedag. Met de tool kan je zelf je pakket samenstellen. 
 
-Ik hou ervan om me te verdiepen in een probleem, in detail uit te pluizen hoe ik iets kan laten werken. Een oplossing ontwikkelen die wérkt, dat maakt me blij. De technologie is ondergeschikt, het gaat me om het resultaat. Ik ben niet de geek die zich verliest in nieuwe trends. Maar wil je iets realiseren dat werkt? Dan kan je op me rekenen. 
+Met vier collega’s bouwen we al meer dan een jaar aan Unbox, een tool die werknemers in staat stelt om een deel van hun 
+loon flexibel te besteden. Bijvoorbeeld aan een bedrijfswagen, een tandverzekering, een laptop of een extra vakantiedag.
+ Met de tool kan je zelf je pakket samenstellen. 
+ 
+  <p class="page__image--wide">
+        <img src="/assets/img/blogimages/blog-person-2.jpg" alt="">
+  </p>
 
-Daarom werk ik graag bij Teal Partners. Heeft iemand een goed idee, dan voeren we het uit. Handen uit de mouwen en bouwen. We willen dat mensen onze tools gebruiken. Het blijft niet bij theorie. 
+Ik hou ervan om me te verdiepen in een probleem, in detail uit te pluizen hoe ik iets kan laten werken. Een oplossing 
+ontwikkelen die wérkt, dat maakt me blij. De technologie is ondergeschikt, het gaat me om het resultaat. Ik ben niet de 
+geek die zich verliest in nieuwe trends. Maar wil je iets realiseren dat werkt? Dan kan je op me rekenen. 
+
+Daarom werk ik graag bij Teal Partners. Heeft iemand een goed idee, dan voeren we het uit. Handen uit de mouwen en 
+bouwen. We willen dat mensen onze tools gebruiken. Het blijft niet bij theorie. 
 
 Als ontwikkelaar krijg je honderden mails van recruiters. Het is onmogelijk om op alles te antwoorden. Maar het bericht van Teal Partners sprong eruit. Het enthousiasme van Koen, de oprechte interesse. Hij nodigde me uit om samen met het team een pint te pakken om de week af te sluiten. Ik heb me die vrijdagavond geweldig geamuseerd. Toen wist ik het zeker: met zoveel humor en positiviteit wil ik me omringen. Die avond heb ik beslist: ik ga bij Teal aan de slag.
 

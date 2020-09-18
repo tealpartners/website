@@ -20,8 +20,14 @@
 
 
 .l-contentcontainer{
+
+  --blogpadding:32px;
+
+  @include for-size(tablet-up){ --blogpadding: 90px
+  }
+
   margin: 0 auto;
-  width: calc(100% - 64px);
+  width: calc(100% - 2 * var(--blogpadding));
   max-width: 880px;
   padding-top: 24px;
 

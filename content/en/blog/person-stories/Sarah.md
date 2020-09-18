@@ -1,13 +1,21 @@
 <!-- title: Sarah -->
 <!-- author: Sarah -->
 <!-- date: 2020-05-02 -->
-<!-- img: /assets/img/blogimages/headerimage_placeholder.png -->
+<!-- img: /assets/img/blogimages//blog-person-2.jpg -->
 
-For over a year now, three of my colleagues and I have been building Unbox, a tool that allows employees to spend part of their wages flexibly. For instance, on a company car, dental insurance, a laptop or an extra day off. Using the tool, you can put your package together yourself. 
+For over a year now, three of my colleagues and I have been building Unbox, a tool that allows employees to spend part 
+of their wages flexibly. For instance, on a company car, dental insurance, a laptop or an extra day off. Using the tool,
+ you can put your package together yourself. 
 
 
+ <p class="page__image--wide">
+       <img src="/assets/img/blogimages/blog-person-2.jpg" alt="">
+ </p>
 
-I love immersing myself in a problem, figuring out in detail how I can make something work. Developing a solution that works makes me happy. The technology comes second, it’s about the result for me. I’m not the kind of geek who gets swept up in new trends. But if you want to produce something that works? I’m the woman for the job. 
+
+I love immersing myself in a problem, figuring out in detail how I can make something work. Developing a solution that 
+works makes me happy. The technology comes second, it’s about the result for me. I’m not the kind of geek who gets swept
+ up in new trends. But if you want to produce something that works? I’m the woman for the job. 
 
 
 
