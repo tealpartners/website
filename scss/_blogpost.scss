@@ -53,9 +53,15 @@
 }
 
 .page__content p.blogpost__quote{
-  margin: 32px;
+
+  margin: 16px;
+  font-size: 24px;
+
+  @include for-size(tablet-up){
+    margin: 32px;
+    font-size: 28px;
+  }
   padding: 8px;
-  font-size: 28px;
   font-weight: bold;
   color: $color-text1;
   font-style: italic;

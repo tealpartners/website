@@ -3,7 +3,7 @@
 <!-- date: 2020-09-14 -->
 <!-- img: /assets/img/blogimages/teal-self-managing-teams.jpg -->
 
-<p>Koen Denies is the founder of Teal Partners. He talks about how Teal Partners does self-management.</p>
+<h2>Koen Denies is the founder of Teal Partners. He talks about how Teal Partners does self-management.</h2>
 <p>
 Self-management is a vogue word, but to us, it’s more than a trend. We strongly believe in the principle that people
  are best placed to organise their own work. In this way, we build the best possible company together.
