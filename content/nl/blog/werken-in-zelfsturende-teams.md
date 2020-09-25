@@ -10,6 +10,11 @@ Zelfsturing is een modewoord, maar voor ons is het geen trend. Wij geloven rotsv
  werk het beste kunnen organiseren. Op die manier bouwen we samen aan het best mogelijke bedrijf.
 </p>
 
+<p>
+Onze naam verwijst er zelfs naar. Het boek ‘Reinventing Organizations’ van Frederic Laloux bevestigde ons geloof in 
+decentralisatie en zelfsturende teams. Hij introduceert het begrip van de Teal-organisatie, die hij omschrijft als een 
+aan belang winnende organisatievorm die pleit voor meer werknemersautonomie.
+
 <p class="page__image--wide">
       <img src="/assets/img/blogimages/teal-self-managing-teams.jpg" alt="">
 </p>
