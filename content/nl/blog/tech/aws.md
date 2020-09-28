@@ -48,6 +48,6 @@ Op die manier garandeerden we de beste winkelervaring voor de bezoeker, ook tijd
 
 <div class="blogpost__content__kader">
 
-Teal Partners ondersteunt organisaties die digitaal willen uitbliken via consultancy en oplossingen op maat. Onze ontwikkelaars hebben een jarenlange ervaring en een sterke affiniteit met het ontwikkelen van cloudapplicaties en het optimaliseren van de IT-infrastructuur in de cloud. 
+Teal Partners ondersteunt organisaties die digitaal willen uitblinken via consultancy en oplossingen op maat. Onze ontwikkelaars hebben een jarenlange ervaring en een sterke affiniteit met het ontwikkelen van cloudapplicaties en het optimaliseren van de IT-infrastructuur in de cloud. 
 
 </div>

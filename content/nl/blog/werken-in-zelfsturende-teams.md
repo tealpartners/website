@@ -102,7 +102,7 @@ zoals wanneer we ontwikkelen. De neerslag van dit proces vind je in onze Azure D
 <h2>Meer weten? Dit zijn de interne teams van Teal Partners.</h2>
 
 - Het Evolutionary purpose-team waakt over het budget en de contracten. Het zorgt er ook voor dat de neuzen in dezelfde
- richting staan en dat iedereen gemotiveerd en geïnspireerd is. Dat ‘de kop knettert’, om het met Teal Partner 
+ richting staan en dat iedereen gemotiveerd en geïnspireerd is. ‘Koppen laten knetteren’, om het met Teal Partner 
  Bart Waeterschoot te zeggen. 
 
 - Het Growth-team denkt na over de langetermijndoelen en bekommert zich om de groei van het bedrijf. Het buigt zich over
