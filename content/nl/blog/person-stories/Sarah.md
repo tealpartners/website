@@ -4,7 +4,7 @@
 <!-- img: /assets/img/blogimages/blog-person-2.jpg -->
 
 
-Met vier collega’s bouwen we al meer dan een jaar aan Unbox, een tool die werknemers in staat stelt om een deel van hun 
+Met vier collega’s bouwen we al meer dan een jaar aan Flex Income Plan, een tool die werknemers in staat stelt om een deel van hun 
 loon flexibel te besteden. Bijvoorbeeld aan een bedrijfswagen, een tandverzekering, een laptop of een extra vakantiedag.
  Met de tool kan je zelf je pakket samenstellen. 
  
