@@ -36,4 +36,10 @@ jobs:
         app-name: 'teal-website'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_224dac0ba1804f2aa475205343254676 }}
-        package: _site 
+        package: _site
+
+    - name: Purge Cloudflare cache
+      uses: jakejarvis/cloudflare-purge-action@master
+      env:
+        CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
