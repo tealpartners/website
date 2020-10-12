@@ -1,13 +1,11 @@
 <!-- title: Een inspirerende energiebom vol nieuwe inzichten  -->
-<!-- author: Koen Denies -->
+<!-- author: Nick Van Langendonck & Koen Denies -->
 <!-- date: 2020-10-12 -->
 <!-- img: /assets/img/blogimages/hifluence-blog.jpg -->
 
-<h2>"Een inspirerende energiebom vol nieuwe inzichten"</h2> 
-
-<p>
+<h2>
 Teal Partners is een team van 28 softwareprofessionals. Het bedrijf bouwt complexe, onderhoudsvriendelijke IT-oplossingen die het potentieel hebben om een organisatie tot in de kern te veranderen. "Onze keuze voor zelfsturing speelt een belangrijke rol in onze snelle groei", zegt oprichter Koen Denies. "Daarom willen we er nog sterker op inzetten, met de hulp van Hifluence."
-</p>
+</h2> 
 
 <p>
 De naam Teal Partners verwijst naar het boek 'Reinventing Organisations' van Frederic Laloux over decentralisatie en zelfsturende teams. De auteur introduceert het begrip van de Teal-organisatie die resoluut kiest voor werknemersautonomie. 
@@ -16,12 +14,13 @@ De naam Teal Partners verwijst naar het boek 'Reinventing Organisations' van Fre
 <p>
 Nieuw is het unbossing-principe niet voor Koen Denies. "Vanaf dag één hebben we gekozen voor zelfsturing. Teal Partners is niet mijn bedrijf, of dat van medeoprichter Jelle, maar het bedrijf van iedereen die er werkt. Er is volledige loontransparantie en medewerkers rekruteren hun eigen collega's. We verdelen het werk in teams, van hr tot sales. Voor ons is zelfsturing essentieel verbonden met wie we zijn."
 </p>
+<p class="blogpost__quote">
+      We willen onze Teal-manier-van-werken niet verliezen door onze snelle groei.
+</p>
 <p>
 Sinds de oprichting vijf jaar geleden kende Teal Partners een fikse groei. "Precies daarom doen we een beroep op Hifluence. We willen onze Teal-manier-van-werken niet verliezen door onze snelle groei."
 </p>
-<p class="page__image--wide">
-      <img src="/assets/img/blogimages/hifluence-blog.jpg" alt="">
-</p>
+
 
 <h2>Value proposition</h2>
 <p>
@@ -32,7 +31,9 @@ Samen met Hifluence dacht het bedrijf na over de toekomst. Koen Denies: "Waar wi
 "Bij veel bedrijven hangt de missie als een slogan aan de muur", zegt Nick Van Langendonck van Hifluence. "Gelukkige mensen maken een gelukkige organisatie, ik zeg maar wat. Stel dat ik de boekhouder ben: wat kan ik met zo'n slogan? Alleen als de betekenis glashelder is, kunnen mensen er naar handelen. In een kleine groep gaat dat organisch, maar in een snelgroeiend team wordt het een ander verhaal."
 </p>
  
-<p> 
+<p class="page__image--wide">
+      <img src="/assets/img/blogimages/hifluence-blog.jpg" alt="">
+</p>
 
 <h2>Collectieve intelligentie</h2>
 <p>
@@ -47,7 +48,9 @@ De brainstorm resulteerde in een concrete value proposition, zoals dat in vakter
 <p>
 "Van de Hifluence-inspiratiesessie over de trends en valkuilen van zelfsturing hebben we onthouden dat we niet alles zelf moeten doen", zegt Koen Denies. Het is best oké om externe expertise aan te trekken voor de zaken die blijven liggen. Ik denk bijvoorbeeld aan business development of marketing."
 </p>
-
+<p class="blogpost__quote">
+     Teal Partners is niet te beroerd om zaken uit te proberen, maar maakt evengoed scherpe keuzes als iets niet werkt.
+</p>
 <p> 
 De juiste manier van zelfsturing vinden is een proces van vallen en opstaan, zegt Nick Van Langendonck. "Zelfsturing is geen one-size-fits-all. Wat in het ene bedrijf zaligmakend is, is zinloos in het andere. Teal Partners is niet te beroerd om zaken uit te proberen, maar maakt evengoed scherpe keuzes als iets niet werkt."
 </p>
@@ -55,8 +58,11 @@ De juiste manier van zelfsturing vinden is een proces van vallen en opstaan, zeg
 
 <h2>Gelijk versus gelijkwaardig</h2>
 <p>
-"Het uitdelen van bonussen, dat was een heikel punt", zegt Koen Denies. "Mensen wilden niet beslissen over de extra's van hun collega's. Iedereen hetzelfde geven is ook geen oplossing, want sommigen steken hun nek uit. Dat willen we erkennen. Dus daarover beslis ik voortaan."
+"Het uitdelen van bonussen, dat was een heikel punt", zegt Koen Denies. "Mensen wilden niet beslissen over de extra's van hun collega's. Iedereen hetzelfde geven is ook geen oplossing, want sommigen steken hun nek uit. Dat willen we erkennen. Daarom starten we nu vanuit een voorstel dat opgemaakt wordt door Jelle en mij."
 </p>   
+<p class="blogpost__quote">
+      Je hoeft niet iedereen bij elke beslissing te betrekken. Dat is een veelvoorkomende misvatting over zelfsturing.
+</p>
 <p>
 "Je hoeft niet iedereen bij elke beslissing te betrekken. Dat is een veelvoorkomende misvatting over zelfsturing", zegt Nick Van Langendonck. "Je moet bepalen wie wanneer wat beslist. Nog zo'n misvatting is dat iedereen gelijk is. Mensen zijn niet gelijk, ze zijn gelijkwaardig. Kies je voor een evenwichtige work-lifebalans? Prima. Wil je dubbele uren kloppen? Ook goed, en dan krijg je iets extra."
 </p> 
@@ -73,12 +79,15 @@ Ook nieuw zijn de tacticsmeeting op maandag, waar agenda's en noden binnen de pr
 <p>
 "Het traject is een energiebom", zegt Denies. "We kregen zoveel nieuwe inzichten die ons sterkten in onze overtuiging. We kregen het gevoel er niet alleen voor te staan. Alles verliep online, conform de coronaregels. Dat lukte prima, alsof we het live deden. Het toont de flexibiliteit van Hifluence." 
 </p>   
+<p class="blogpost__quote">
+      Het is geweldig om te zien hoe onze mensen nog meer initiatief nemen en zelf knopen doorhakken.
+</p>
 <p>
 Als belangrijkste pluspunt onthoudt Koen Denies dat de medewerkers zich bewuster zijn geworden van hun impact. "Hifluence stimuleerde ons om even uit de ratrace te stappen en samen na te denken over ons bedrijf, onze uitdagingen en hoe we willen groeien. Het is geweldig om te zien hoe onze mensen nog meer initiatief nemen en knopen doorhakken, nu ze een helder kader voor ogen hebben." 
 </p> 
 
 <p class="blogpost__content__outro">
--- Koen Denies
+-- Nick Van Langendonck & Koen Denies
 </p>
 
 

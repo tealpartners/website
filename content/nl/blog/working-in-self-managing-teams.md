@@ -4,7 +4,7 @@
 <!-- img: /assets/img/blogimages/teal-self-managing-teams.jpg -->
 
 <h2>Koen Denies is oprichter van Teal Partners. Hij vertelt hoe we bij Teal Partners zelfsturing in de praktijk brengen.</h2> 
- 
+
 <p>
 Zelfsturing is een modewoord, maar voor ons is het geen trend. Wij geloven rotsvast in het principe dat mensen hun eigen
  werk het beste kunnen organiseren. Op die manier bouwen we samen aan het best mogelijke bedrijf.

@@ -1,10 +1,10 @@
 <!-- title: Tim -->
 <!-- author: Tim -->
 <!-- date: 2020-05-01 -->
-<!-- img: /assets/img/blogimages/headerimage_tim.png -->
+<!-- img: /assets/img/blogimages/story-tim.jpg -->
 
 <p class="page__image">
-      <img src="/assets/img/blogimages/headerimage_tim.png" alt="">
+      <img src="/assets/img/blogimages/story-tim.jpg" alt="">
 </p>
 
 I work both for customers and on our own product, the VIREN calculation module. In 2016, I was Teal Partners’ first employee. When Koen and Jelle called me, I was immediately on board. You can learn so much from them, technically as well as business wise. They complement each other incredibly well. When these two start brainstorming, very few people can keep up with them. It’s wonderful to see. 

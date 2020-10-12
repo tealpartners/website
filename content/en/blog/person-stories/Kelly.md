@@ -1,7 +1,11 @@
 <!-- title: Kelly -->
 <!-- author: Kelly -->
 <!-- date: 2020-05-04 -->
-<!-- img: /assets/img/blogimages/employeestory-kelly.png -->
+<!-- img: /assets/img/blogimages/story-kelly.jpg -->
+
+<p class="page__image">
+      <img src="/assets/img/blogimages/story-kelly.jpg" alt="">
+</p>
 
 At Teal Partners, I work in a team of twelve people on a payroll application. In this job, I programme more than I used to and I prefer it that way. In other companies you are often pushed into so-called higher-level positions that don’t necessarily suit your strengths or interests. Now, however, I can put together my own job, taking into account the work that needs to be done and without losing sight of the technical aspect.
 
