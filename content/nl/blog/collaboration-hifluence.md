@@ -80,10 +80,3 @@ Ook nieuw zijn de adviesraad, waar collega's projecten met elkaar bespreken, en 
 <p class="blogpost__content__outro">
 -- Nick Van Langendonck & Koen Denies
 </p>
-
-
-
-
-
-nl blog hifluence.txt
-nl blog hifluence.txt wordt weergegeven.
