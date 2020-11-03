@@ -129,3 +129,21 @@ a{
     transform: translate(0px, 2px);
   }
 }
+
+.logogrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  a.logolink{
+    line-height: 32px;
+    display: block;
+  }
+  img{
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
