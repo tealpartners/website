@@ -132,11 +132,16 @@ a{
 
 .logogrid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   justify-items: center;
   justify-content: center;
   text-align: center;
+
+  @include for-size(tablet-landscape-up){
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+
   a.logolink{
     line-height: 32px;
     display: block;
