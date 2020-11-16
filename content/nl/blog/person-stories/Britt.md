@@ -42,7 +42,7 @@ Yana komt me een vragenlijst geven. Het is de bedoeling dat ik, door met collega
 </div> 
 
 ## Woensdag 07/10
-Een collega heeft een nieuwe klant aangebracht.  Successen bij Teal worden uitgebreid gevierd, daarom vraagt Koen of ik een mooi cadeau kan voorzien. Met plezier! Een hoop papierwerk is een tijdje blijven liggen. Ik vlieg er ik met volle goesting in. 
+Een collega heeft een nieuwe klant aangebracht.  Successen bij Teal worden uitgebreid gevierd, daarom vraagt Koen of ik een mooi cadeau kan voorzien. Met plezier! Een hoop papierwerk is een tijdje blijven liggen. Ik vlieg er met volle goesting in. 
 
 Nieuwe medewerkers komen bij Teal normaal direct in een projectteam terecht, maar ik moet zelf mijn weg wat zoeken. Welke software gebruiken we? Waar staat dit of dat? Hoe zijn bepaalde dingen geregeld? Iedereen is extreem behulpzaam, maar ik zet toch op mijn to-dolijst dat we misschien werk kunnen maken van een soort onboardingsplan, zodat we zeker niets missen. Stuff to think about. Maar dat is voor later, nu eerst doorwerken aan die prospectenlijst van maandag!
 
