@@ -131,6 +131,48 @@
   }
 }
 
+.blogpost__image-in-text{
+
+  width: calc(100% + 2 * var(--blogpadding));
+  margin-left: calc(var(--blogpadding) * -1);
+
+  @include for-size(tablet-up){
+    width: 300px;
+    padding-top: 16px;
+    margin-left: 0;
+  }
+  @include for-size(tablet-landscape-up){
+    width: 400px;
+  }
+
+  &.image-in-text--left{
+    @include for-size(tablet-up){
+      float:left;
+      margin-left: calc(var(--blogpadding) * -1);
+      padding-right: calc(var(--blogpadding) / 2);
+    }
+  }
+
+  &.image-in-text--right{
+    @include for-size(tablet-up){
+      float:right;
+      margin-right: calc(var(--blogpadding) * -1);
+      padding-left: calc(var(--blogpadding) / 2);
+    }
+  }
+
+  .image-in-text__img{
+    width: 100%;
+  }
+
+
+  .image-in-text__caption{
+    font-style: italic;
+    font-size: 13px;
+  }
+
+}
+
 .blogpost__single{
   position: relative;
 
