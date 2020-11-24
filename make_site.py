@@ -43,7 +43,7 @@ import sass
 
 def fread(filename):
     """Read file and close the file."""
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding="utf8") as f:
         return f.read()
 
 
@@ -59,7 +59,7 @@ def fwrite(filename, text):
     if not os.path.isdir(basedir):
         os.makedirs(basedir)
 
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding="utf8") as f:
         f.write(text)
 
 
@@ -197,13 +197,11 @@ def make_category_pages(posts, dst, page_layout, list_layout, item_layout, **par
 
     for path in all_paths:
         info = all_paths[path]
-
-        print(dst + path)
-        make_list(info[0], dst + path + "/index.html", page_layout,
+        make_list(info[0], dst, path, page_layout,
                   list_layout, item_layout, **params)
 
 
-def make_list(posts, dst, page_layout, list_layout, item_layout, **params):
+def make_list(posts, dst, path, page_layout, list_layout, item_layout, **params):
     """Generate list page for a blog."""
     items = []
     for post in posts:
@@ -218,10 +216,11 @@ def make_list(posts, dst, page_layout, list_layout, item_layout, **params):
         items.append(item)
 
     params['content'] = ''.join(items)
-    dst_path = render(dst, **params)
+    dst_path = render(dst + path + "/index.html", **params)
     page = render_layout(list_layout, **params)
     if page_layout is not None:
         params['content'] = page
+        params['slug'] = path.lstrip("/")
         page = render_layout(page_layout, **params)
 
     log('Rendering list => {} ...', dst_path)
@@ -272,8 +271,6 @@ def build():
     list_layout = get_template('layout/list.html')
     item_layout_en = get_template('layout/en/item.html')
     item_layout_nl = get_template('layout/nl/item.html')
-    feed_xml = get_template('layout/feed.xml')
-    item_xml = get_template('layout/item.xml')
 
     # Create site pages.
     make_pages('content/_index.html', '_site/index.html',
@@ -296,15 +293,10 @@ def build():
                         list_layout, item_layout_nl, blog='nl/blog', title='Teal Partners Blog', **params)
 
     # Create blog list pages.
-    make_list(blog_posts_en, '_site/en/blog/index.html', page_layout_en,
+    make_list(blog_posts_en, '_site/en/blog', '', page_layout_en,
               list_layout, item_layout_en, blog='en/blog', title='Teal Partners Blog', **params)
-    make_list(blog_posts_nl, '_site/nl/blog/index.html', page_layout_nl,
+    make_list(blog_posts_nl, '_site/nl/blog', '', page_layout_nl,
               list_layout, item_layout_nl, blog='nl/blog', title='Teal Partners Blog', **params)
-
-    # Create RSS feeds.
-    make_list(blog_posts_en, '_site/blog/rss.xml', None,
-              feed_xml, item_xml, blog='blog', title='Teal Partners Blog', **params)
-
 
 # Test parameter to be set temporarily by unit tests.
 _test = None
