@@ -33,7 +33,7 @@ Maaltijdcheques: Nee, Bruto loon: 5 500 euro
         <input id="mc" name="mc" type="checkbox">
         <label for="mc">Maaltijdcheques</label>
     </div>
-    <button id="run">Bereken</button>
+    <button id="run" type="button">Bereken</button>
     <div>
         Bruto loon: <span id="result"></span>euro
     </div>
