@@ -24,12 +24,20 @@ Maaltijdcheques: Ja, Bruto loon: 5 000 euro
 Oplossing B)
 Maaltijdcheques: Nee, Bruto loon: 5 500 euro
 
-<div class="blogpost__content__kader">
-    <input id="netto" type="number" min="0" max="10000" value="2000">
-    <input id="mc" type="checkbox">
+<form class="blogpost__content__kader">
+    <div>
+        <label for="netto">Netto</label>
+        <input id="netto" name="netto" type="number" min="1" max="10000" value="2000" required>
+    </div>
+    <div>
+        <input id="mc" name="mc" type="checkbox">
+        <label for="mc">Maaltijdcheques</label>
+    </div>
     <button id="run">Bereken</button>
-    Bruto loon: <span id="result"></span>euro
-</div>
+    <div>
+        Bruto loon: <span id="result"></span>euro
+    </div>
+</form>
 <div id="output">
 
 </div>
