@@ -97,6 +97,7 @@ def read_content(filename, common_path):
     content = {
         'date': match.group(1) or '1970-01-01',
         'slug': slug,
+        'hide': False
     }
 
     # Read headers.
@@ -127,6 +128,8 @@ def read_content(filename, common_path):
         'date_object': date,
         'rfc_2822_date': rfc_2822_date
     })
+
+    content['hide'] = (content['hide'] == 'True' or content['hide'] == True)
 
     return content
 
@@ -173,6 +176,7 @@ def make_pages(src, dst, page_layout, post_layout, **params):
         log('Rendering {} => {} ...', src_path, dst_path)
         fwrite(dst_path, page)
 
+    items = filter(lambda x: (x['hide'] != True), items)
     result = sorted(items, key=lambda x: x['date_object'], reverse=True)
     return result
 
