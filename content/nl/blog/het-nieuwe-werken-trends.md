@@ -35,7 +35,7 @@ een e-bike of maaltijdcheques?"
 <br/>
 <br/>
 <br/>
-Meer informatie rond de campagne: <https://nl.planet-business.be/campaign/het-nieuwe-werken/>
+<a href="https://nl.planet-business.be/campaign/het-nieuwe-werken">Lees hier meer informatie rond de campagne</a>
 
 <p class="page__image--wide">
       <img src="/assets/img/blogimages/TealPartnersInMediaPlanet.png" alt="">
