@@ -32,8 +32,9 @@ To ensure that the project was supported internally in the company, Deloitte sta
 
 
 <p class="blogpost__quote">
-“Teal Partners was our partner as of day one. They were an integral part of a very successful project, that made a material impact on our business operations.” - Inge Diels, Managing Partner Talent at Deloitte 
+Teal Partners was our partner as of day one. They were an integral part of a very successful project, that made a material impact on our business operations.
 </p>
+- Inge Diels, Managing Partner Talent at Deloitte 
 
 While Deloitte collected feedback, Teal Partners translated the wishes and requirements into functionalities. Development went smoothly, with short feedback rounds. From the start, our team paid attention to aspects of the tool that were not purely functional, such as branding, appearance, privacy, and security. There was also permanent consultation on these aspects. 
 
@@ -56,8 +57,9 @@ As the users were involved from day one, the tool has been accepted without any 
 The administrative process is much easier. This results in significant time savings for top management. The export of the data to SAP is on point. The tool makes the process more efficient and less error-prone and allows for standardized distribution of amounts. 
 
 <p class="blogpost__quote">
-“Just like us, Deloitte attaches great importance to quality. The goal was clear, the timing realistic and the requirements crystal clear. From day one, the focus was on change management so that user acceptance was high. The company’s digital maturity ensured that the collaboration ran smoothly.” - Jelle Huygen, Teal Partners 
+Just like us, Deloitte attaches great importance to quality. The goal was clear, the timing realistic and the requirements crystal clear. From day one, the focus was on change management so that user acceptance was high. The company’s digital maturity ensured that the collaboration ran smoothly. 
 </p>
+- Jelle Huygen, Teal Partners
 
 
 A weighting mechanism determines, according to objective criteria, how often an employee receives the standard bonus. The managers inform employees individually of the amount they receive. The standardization allows managers to explain transparently how they landed at that amount. 
