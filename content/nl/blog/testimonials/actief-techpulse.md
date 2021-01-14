@@ -1,5 +1,6 @@
 <!-- title: Digitale versnelling versterkt het menselijk aspect bij Actief Interim -->
 <!-- author: Sören Seels en Koen Denies -->
+<!-- hide: True -->
 <!-- date: 2020-08-17 -->
 
 <b>
