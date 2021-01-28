@@ -1,7 +1,7 @@
 <!-- title: Deloitte -->
-<!-- author: Britt Mariën -->
+<!-- author: Britt Marien -->
 <!-- hide: True -->
-<!-- date: 2021-01-14 -->
+<!-- date: 2021-01-28 -->
 
 Het kaderpersoneel van Deloitte ontvangt een variabel loon in de vorm van een eindejaarsbonus. De hoogte van de bonus is afhankelijk van een aantal factoren, zoals de prestaties van het bedrijf, de afdeling en de medewerker. Deze variabiliteit maakt van de verdeling van het budget een complex administratief verhaal. 
 
@@ -65,7 +65,8 @@ Net als wij draagt Deloitte kwaliteit hoog in het vaandel. Het doel was duidelij
 </p>
 <p style="text-align: right;"> — Jelle Huygen, Teal Partners </p>
 
-Een wegingsmechanisme bepaalt volgens objectieve maatstaven hoe vaak een medewerker de stan-daardbonus ontvangt. De managers brengen medewerkers individueel op de hoogte van het bedrag dat zij ontvangen. Door de standaardisatie kunnen managers op transparante wijze toelichten hoe ze tot het bedrag zijn gekomen. 
+
+Een wegingsmechanisme bepaalt volgens objectieve maatstaven hoe vaak een medewerker de standaardbonus ontvangt. De managers brengen medewerkers individueel op de hoogte van het bedrag dat zij ontvangen. Door de standaardisatie kunnen managers op transparante wijze toelichten hoe ze tot het bedrag zijn gekomen. 
 
 Hoewel het project van start ging tijdens de coronapandemie, is de samenwerking erg vlot verlopen. De tool was up and running in minder dan negen maanden. Na de oplevering werd er nauwelijks iets gewijzigd: het lijstje met change requests was beperkt. Dat duidt erop dat de tool goed werd voorbereid en gebouwd. 
 
