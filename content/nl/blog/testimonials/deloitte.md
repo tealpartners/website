@@ -30,14 +30,14 @@ Deloitte contacteerde Teal Partners om een tool te bouwen die zou voldoen aan de
 
 # Aanpak
 
-Deloitte legt de lat hoog. Het bedrijf is bekend om zijn excellentiestreven en mikt op het allerbeste voor zijn klanten. De consultants zijn top in hun vak. Dit streven vertaalt zich in een bedrijf met een hoge digi-tale maturiteit en heldere processen voor transformatietrajecten. 
+Deloitte legt de lat hoog. Het bedrijf is bekend om zijn excellentiestreven en mikt op het allerbeste voor zijn klanten. De consultants zijn top in hun vak. Dit streven vertaalt zich in een bedrijf met een hoge digitale maturiteit en heldere processen voor transformatietrajecten. 
 
 Om ervoor te zorgen dat het project intern gedragen werd in het bedrijf, startte Deloitte een voortraject. Nadat er bij de managers informatie was verzameld over hoe zo’n tool er ideaal zou uitzien en welke functies zij verlangden, bouwde Teal Partners een interactief prototype. 
 
 <p class="blogpost__quote">
 Teal Partners was our partner as of day one. They were an integral part of a very successful project, that made a material impact on our business operations.”
 </p>
-<p style=“text-align: right;“> – Inge Diels, Managing Partner Talent at Deloitte </p>
+<p style="text-align: right;"> – Inge Diels, Managing Partner Talent at Deloitte </p>
 
 
 Terwijl Deloitte intern de violen stemde en feedback verzamelde, vertaalde Teal Partners de wensen en vereisten in functionaliteiten. Het ontwikkelen verliep vlot, met korte feedbackrondes. Vanaf het begin was er aandacht voor de niet louter functionele aspecten van de tool, zoals branding, uitzicht, privacy en veiligheid. Ook over deze aspecten was er permanent overleg. 
@@ -49,7 +49,7 @@ De deadline voor de oplevering van de tool lag ruim voor het geplande eerste geb
 
 “Het automatiseren van het toekenningsproces van de eindejaarsbonus leverde ons tijdswinst op”, zegt Inge Diels, Managing Partner Talent bij Deloitte. “Die tijd besteden we nu aan gesprekken met de men-sen die de bonus ontvangen. Automatiseren leidde dus naar een verdieping van het menselijk contact, en dat is precies wat we nastreefden.” 
 
-“Gebruiksvriendelijkheid was een basisvoorwaarde voor deze tool, die door onze senior managers wordt gebruikt. Een belangrijke vereiste was dat de complexe berekeningen onder de motorkap instant ver-taald werden in heldere visualisaties. Teal Partners is vertrouwd met complexe payrollomgevingen. Ze kunnen sterke referenties voorleggen. Daarom zijn we met hen in zee gegaan.” 
+“Gebruiksvriendelijkheid was een basisvoorwaarde voor deze tool, die door onze senior managers wordt gebruikt. Een belangrijke vereiste was dat de complexe berekeningen onder de motorkap instant vertaald werden in heldere visualisaties. Teal Partners is vertrouwd met complexe payrollomgevingen. Ze kunnen sterke referenties voorleggen. Daarom zijn we met hen in zee gegaan.” 
 
 “Teal Partners gaf ons het gevoel dat we centraal stonden. We waren gecharmeerd door het team en de oplossingsgerichtheid die Teal Partners kenmerkt. We zaten als partners aan tafel. Het project was op tijd klaar en binnen het vooropgestelde budget. Teal Partners is ons vertrouwen helemaal waard gebleken. Het team heeft een solide ‘trust dividend’ opgebouwd.” 
 
@@ -67,6 +67,6 @@ Net als wij draagt Deloitte kwaliteit hoog in het vaandel. Het doel was duidelij
 
 Een wegingsmechanisme bepaalt volgens objectieve maatstaven hoe vaak een medewerker de stan-daardbonus ontvangt. De managers brengen medewerkers individueel op de hoogte van het bedrag dat zij ontvangen. Door de standaardisatie kunnen managers op transparante wijze toelichten hoe ze tot het bedrag zijn gekomen. 
 
-Hoewel het project van start ging tijdens de coronapandemie, is de samenwerking erg vlot verlopen. De tool was up and running in minder dan negen maanden. Na de oplevering werd er nauwelijks iets gewij-zigd: het lijstje met change requests was beperkt. Dat duidt erop dat de tool goed werd voorbereid en gebouwd. 
+Hoewel het project van start ging tijdens de coronapandemie, is de samenwerking erg vlot verlopen. De tool was up and running in minder dan negen maanden. Na de oplevering werd er nauwelijks iets gewijzigd: het lijstje met change requests was beperkt. Dat duidt erop dat de tool goed werd voorbereid en gebouwd. 
 
-Momenteel bekijken Deloitte en Teal Partners hoe de tool kan integeren met andere HR-processen, bij-voorbeeld bij het bepalen van loonsverhogingen.
+Momenteel bekijken Deloitte en Teal Partners hoe de tool kan integeren met andere HR-processen, bijvoorbeeld bij het bepalen van loonsverhogingen.
