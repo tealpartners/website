@@ -43,7 +43,7 @@ Terwijl Deloitte intern de violen stemde en feedback verzamelde, vertaalde Teal 
 
 De deadline voor de oplevering van de tool lag ruim voor het geplande eerste gebruik, zodat er ruimte was om gedegen te testen. Het testen zelf verliep vlot dankzij de geijkte processen die Deloitte hanteert. Deze inspanning zorgde ervoor dat er nauwelijks zaken hoefden bijgestuurd te worden op het moment dat de medewerkers de tool in gebruik namen. 
 
-<p class="page__image--wide">
+<p class="page__image">
         <img src="/assets/img/blogimages/bonustool_Deloitte_Tealpartners.jpg" alt="">
  </p>
  
