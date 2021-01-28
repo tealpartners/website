@@ -1,6 +1,7 @@
 <!-- title: Bonustool Deloitte -->
 <!-- author: Britt Marien -->
 <!-- date: 2021-01-28 -->
+<!-- img: /assets/img/blogimages/header_bonustool_Deloitte_TealPartners_resize2.jpg -->
 
 Het kaderpersoneel van Deloitte ontvangt een variabel loon in de vorm van een eindejaarsbonus. De hoogte van de bonus is afhankelijk van een aantal factoren, zoals de prestaties van het bedrijf, de afdeling en de medewerker. Deze variabiliteit maakt van de verdeling van het budget een complex administratief verhaal. 
 
