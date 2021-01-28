@@ -3,7 +3,7 @@
 <!-- hide: True -->
 <!-- date: 2021-01-14 -->
 
-Het kaderpersoneel van Deloitte ontvangt een variabel loon in de vorm van een eindejaarsbonus. De hoogte van de bonus is afhankelijk van een aantal factoren, zoals de prestaties van het bedrijf, de afde-ling en de medewerker. Deze variabiliteit maakt van de verdeling van het budget een complex admini-stratief verhaal. 
+Het kaderpersoneel van Deloitte ontvangt een variabel loon in de vorm van een eindejaarsbonus. De hoogte van de bonus is afhankelijk van een aantal factoren, zoals de prestaties van het bedrijf, de afdeling en de medewerker. Deze variabiliteit maakt van de verdeling van het budget een complex administratief verhaal. 
 
 De manager van elke divisie bepaalt het bedrag dat hij wil toekennen aan de mensen in zijn team en voegt informatie toe over hun loon en carrièrepad. Door de autonomie van de afdelingen verliep het proces niet gestandaardiseerd. Elke business unit hanteerde eigen criteria. Het bespreken en bijsturen van de voorstellen door het topmanagement nam veel tijd in beslag. 
 
