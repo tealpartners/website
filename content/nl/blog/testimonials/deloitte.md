@@ -47,7 +47,7 @@ De deadline voor de oplevering van de tool lag ruim voor het geplande eerste geb
 
 # Waarom Teal Partners? 
 
-“Het automatiseren van het toekenningsproces van de eindejaarsbonus leverde ons tijdswinst op”, zegt Inge Diels, Managing Partner Talent bij Deloitte. “Die tijd besteden we nu aan gesprekken met de men-sen die de bonus ontvangen. Automatiseren leidde dus naar een verdieping van het menselijk contact, en dat is precies wat we nastreefden.” 
+“Het automatiseren van het toekenningsproces van de eindejaarsbonus leverde ons tijdswinst op”, zegt Inge Diels, Managing Partner Talent bij Deloitte. “Die tijd besteden we nu aan gesprekken met de mensen die de bonus ontvangen. Automatiseren leidde dus naar een verdieping van het menselijk contact, en dat is precies wat we nastreefden.” 
 
 “Gebruiksvriendelijkheid was een basisvoorwaarde voor deze tool, die door onze senior managers wordt gebruikt. Een belangrijke vereiste was dat de complexe berekeningen onder de motorkap instant vertaald werden in heldere visualisaties. Teal Partners is vertrouwd met complexe payrollomgevingen. Ze kunnen sterke referenties voorleggen. Daarom zijn we met hen in zee gegaan.” 
 
@@ -56,14 +56,14 @@ De deadline voor de oplevering van de tool lag ruim voor het geplande eerste geb
  
 # Resultaat
 
-Omdat de gebruikers vanaf dag één betrokken waren, is de tool probleemloos geaccepteerd. De gebrui-kers waarderen de snelheid, zorgvuldigheid en efficiëntie van de tool waaraan zij zelf inhoudelijk hebben bijgedragen. 
+Omdat de gebruikers vanaf dag één betrokken waren, is de tool probleemloos geaccepteerd. De gebruikers waarderen de snelheid, zorgvuldigheid en efficiëntie van de tool waaraan zij zelf inhoudelijk hebben bijgedragen. 
 
 Het administratieve proces verloopt veel eenvoudiger. Dit resulteert in een aanzienlijke tijdswinst van het topmanagement. De export van de data naar SAP is op punt. De tool maakt het proces efficiënter en minder foutgevoelig en laat toe om gestandaardiseerd bedragen te verdelen. 
 
 <p class="blogpost__quote">
-Net als wij draagt Deloitte kwaliteit hoog in het vaandel. Het doel was duidelijk, de timing realistisch en de eisen glashelder. Vanaf dag één werd er ingezet op change management zodat de gebruikersaccepta-tie hoog lag. De digitale maturiteit van het bedrijf zorgde ervoor dat de samenwerking vlekkeloos ver-liep.
+Net als wij draagt Deloitte kwaliteit hoog in het vaandel. Het doel was duidelijk, de timing realistisch en de eisen glashelder. Vanaf dag één werd er ingezet op change management zodat de gebruikersaccepta-tie hoog lag. De digitale maturiteit van het bedrijf zorgde ervoor dat de samenwerking vlekkeloos verliep.
 </p>
-— Jelle Huygen, Teal Partners
+<p style="text-align: right;"> — Jelle Huygen, Teal Partners </p>
 
 Een wegingsmechanisme bepaalt volgens objectieve maatstaven hoe vaak een medewerker de stan-daardbonus ontvangt. De managers brengen medewerkers individueel op de hoogte van het bedrag dat zij ontvangen. Door de standaardisatie kunnen managers op transparante wijze toelichten hoe ze tot het bedrag zijn gekomen. 
 
