@@ -1,12 +1,15 @@
-<!-- title: Deloitte -->
+<!-- title: Bonustool Deloitte -->
 <!-- author: Britt Mariën -->
-<!-- hide: True -->
-<!-- date: 2021-01-14 -->
+<!-- date: 2021-01-28 -->
 
 Deloitte executives receive variable pay in the form of an end-of-year bonus. The bonus amount depends on several factors, such as the company’s performance, the department, and the employee. This variability makes budget allocation a complex administrative matter. 
 
 Each division manager determines the amount he wants to allocate to the people on his team and adds information about their pay and career path. Due to the autonomy of the departments, this process was not standardized. Each business unit applied its own criteria. Discussing and adjusting the proposals by top management took a lot of time. 
 
+<p class="page__image--wide">
+        <img src="/assets/img/blogimages/header_bonustool_Deloitte_TealPartners_resize2.jpg" alt="">
+ </p>
+  
 Teal Partners built a tool that simplified the administrative process and introduced a degree of standardization. The managers used to write down the proposals in Excel files, which were then merged at a higher level for approval. Entering the amounts via the tool we build saves them a lot of time and the process is less prone to errors. 
 
 The tool provides the managers with objective parameters for allocating the amounts. A weighting mechanism allows the manager to make decisions about budgets in a structured, clear manner. This increases transparency and shortens the approval process. 
@@ -34,12 +37,15 @@ To ensure that the project was supported internally in the company, Deloitte sta
 <p class="blogpost__quote">
 Teal Partners was our partner as of day one. They were an integral part of a very successful project, that made a material impact on our business operations.
 </p>
-- Inge Diels, Managing Partner Talent at Deloitte 
+<p style="text-align: right;"> – Inge Diels, Managing Partner Talent at Deloitte </p>
 
 While Deloitte collected feedback, Teal Partners translated the wishes and requirements into functionalities. Development went smoothly, with short feedback rounds. From the start, our team paid attention to aspects of the tool that were not purely functional, such as branding, appearance, privacy, and security. There was also permanent consultation on these aspects. 
 
 The tool’s delivery deadline was well before the planned first use, so there was room for thorough testing. The testing itself went smoothly thanks to the calibrated processes that Deloitte uses. All this effort ensured that there were hardly any issues that needed to be adjusted when the employees started using the tool. 
 
+<p class="page__image">
+        <img src="/assets/img/blogimages/bonustool_Deloitte_Tealpartners.jpg" alt="">
+</p>
 
 # Why Teal Partners? 
 
@@ -59,7 +65,7 @@ The administrative process is much easier. This results in significant time savi
 <p class="blogpost__quote">
 Just like us, Deloitte attaches great importance to quality. The goal was clear, the timing realistic and the requirements crystal clear. From day one, the focus was on change management so that user acceptance was high. The company’s digital maturity ensured that the collaboration ran smoothly. 
 </p>
-- Jelle Huygen, Teal Partners
+<p style="text-align: right;"> — Jelle Huygen, Teal Partners </p>
 
 
 A weighting mechanism determines, according to objective criteria, how often an employee receives the standard bonus. The managers inform employees individually of the amount they receive. The standardization allows managers to explain transparently how they landed at that amount. 
