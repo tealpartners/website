@@ -43,7 +43,7 @@ While Deloitte collected feedback, Teal Partners translated the wishes and requi
 
 The tool’s delivery deadline was well before the planned first use, so there was room for thorough testing. The testing itself went smoothly thanks to the calibrated processes that Deloitte uses. All this effort ensured that there were hardly any issues that needed to be adjusted when the employees started using the tool. 
 
-<p class="page__image">
+<p class="page__image--wide">
         <img src="/assets/img/blogimages/bonustool_Deloitte_Tealpartners.jpg" alt="">
 </p>
 
