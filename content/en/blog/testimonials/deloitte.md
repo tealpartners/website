@@ -21,7 +21,7 @@ The tool provides the managers with objective parameters for allocating the amou
 Deloitte is a leading global audit and assurance provider, consulting financial advice, risk advice, tax, and related services. The company was founded in 1845 and today employs 312,000 people in 150 countries. It belongs to the top of the consultancy companies worldwide. 
 
 
-# Challange
+# Challenge
 
 Deloitte wanted to revise the system that determines how annual bonuses for executives are awarded. The challenge was to get a grip on the complex administrative process and achieve standardization in allocating amounts, with respect for the departments’ individuality and autonomy.
 
