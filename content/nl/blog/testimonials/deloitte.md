@@ -7,6 +7,10 @@ Het kaderpersoneel van Deloitte ontvangt een variabel loon in de vorm van een ei
 
 De manager van elke divisie bepaalt het bedrag dat hij wil toekennen aan de mensen in zijn team en voegt informatie toe over hun loon en carrièrepad. Door de autonomie van de afdelingen verliep het proces niet gestandaardiseerd. Elke business unit hanteerde eigen criteria. Het bespreken en bijsturen van de voorstellen door het topmanagement nam veel tijd in beslag. 
 
+<p class="page__image--wide">
+        <img src="/assets/img/blogimages/header_bonustool_Deloitte_TealPartners_resize2.jpg" alt="">
+  </p>
+
 Teal Partners bouwde een tool die het administratieve proces vereenvoudigde en een mate van stan-daardisering invoerde. Waar de managers de voorstellen vroeger in Excel-bestanden noteerden, die op een hoger niveau werden samengevoegd ter goedkeuring, geven ze de bedragen nu in via de tool. Dit zorgt voor een flinke tijdwinst. Het proces is minder foutgevoelig. 
 
 De tool geeft de managers objectieve parameters voor het toekennen van de bedragen. Via een we-gingsmechanisme kan de manager op een gestructureerde, heldere manier beslissingen nemen over de budgetten. Dit verhoogt de transparantie en verkort het goedkeuringsproces. 
