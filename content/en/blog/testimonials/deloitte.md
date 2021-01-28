@@ -1,6 +1,7 @@
 <!-- title: Bonustool Deloitte -->
 <!-- author: Britt Mariën -->
 <!-- date: 2021-01-28 -->
+<!-- img: /assets/img/blogimages/header_bonustool_Deloitte_TealPartners_resize2.jpg -->
 
 Deloitte executives receive variable pay in the form of an end-of-year bonus. The bonus amount depends on several factors, such as the company’s performance, the department, and the employee. This variability makes budget allocation a complex administrative matter. 
 
