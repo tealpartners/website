@@ -37,7 +37,8 @@ Om ervoor te zorgen dat het project intern gedragen werd in het bedrijf, startte
 <p class="blogpost__quote">
 Teal Partners was our partner as of day one. They were an integral part of a very successful project, that made a material impact on our business operations.”
 </p>
-– Inge Diels, Managing Partner Talent at Deloitte
+<p style=“text-align: right;“> – Inge Diels, Managing Partner Talent at Deloitte </p>
+
 
 Terwijl Deloitte intern de violen stemde en feedback verzamelde, vertaalde Teal Partners de wensen en vereisten in functionaliteiten. Het ontwikkelen verliep vlot, met korte feedbackrondes. Vanaf het begin was er aandacht voor de niet louter functionele aspecten van de tool, zoals branding, uitzicht, privacy en veiligheid. Ook over deze aspecten was er permanent overleg. 
 
