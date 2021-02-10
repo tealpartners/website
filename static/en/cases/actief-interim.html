@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>About Teal Partners</title>
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <script async src="/assets/js/tealscript.js"></script>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            actief_start_main_animation();
+        })
+
+        function actief_start_main_animation(){
+            actief_start_dot1(); //duration 0.5s
+            setTimeout(actief_start_dot2,1200); //duration 0.5s
+            setTimeout(actief_start_dot3,2000); //duration 0.5s
+            setTimeout(actief_start_dot4,3200); //duration 0.5s
+            setTimeout(actief_start_dot5,4000); //duration 0.5s
+        }
+
+        function actief_start_pulse(){
+            $('.actief_pulse').addClass('animate');
+            setTimeout(function(){
+                $('.actief_pulse').removeClass('animate');
+            },1000);
+        }
+
+        function actief_start_dot1(){
+            $('.actief_dot1').removeClass('animate').addClass('animate');
+            setTimeout(actief_start_pulse,1000);
+        }
+
+        function actief_start_dot2(){
+            $('.actief_dot2').removeClass('animate').addClass('animate');
+        }
+
+        function actief_start_dot3(){
+            $('.actief_dot3').removeClass('animate').addClass('animate');
+            setTimeout(actief_start_pulse,1000);
+        }
+
+        function actief_start_dot4(){
+            $('.actief_dot4').removeClass('animate').addClass('animate');
+        }
+
+        function actief_start_dot5(){
+            $('.actief_dot5').removeClass('animate').addClass('animate');
+            setTimeout(actief_start_pulse,1000);
+        }
+
+
+
+
+    </script>
+
+    <style>
+
+        #actief_circle{
+            transform: rotate(0deg);
+            transform-origin: 382px 140px;
+            animation: 25s linear rotate infinite ;
+
+        }
+
+        @keyframes rotate{
+            from{transform: rotate(0deg)}
+            to{transform: rotate(360deg)}
+        }
+
+        .actief_pulse.animate{
+            animation: 2s cubic-bezier(0.16, 1, 0.3, 1) actief_pulse ;
+        }
+
+        @keyframes actief_pulse{
+            from{
+                opacity: 0.1;
+                stroke-width: 10px;
+                r: 139;
+            }
+            to{
+                opacity: 0;
+                stroke-width: 20px;
+                r: 180;
+            }
+        }
+
+        .actief_dot1.animate{
+            animation: 1s ease-in-out dot_slide1;
+        }
+
+        @keyframes dot_slide1 {
+            from{
+                cx: 97;
+                opacity:1;
+            }
+            to{
+                cx: 240;
+                opacity: 0;
+            }
+        }
+
+        .actief_dot2.animate{
+            animation: 1s ease-in-out dot_slide2;
+        }
+
+        @keyframes dot_slide2 {
+            from{
+                cx: 500;
+                opacity:0;
+            }
+            to{
+                cx: 645;
+                opacity: 1;
+            }
+        }
+
+        .actief_dot3.animate{
+            animation: 1s ease-in-out dot_slide3;
+        }
+
+        @keyframes dot_slide3 {
+            from{
+                cx: 645;
+                opacity:1;
+            }
+            to{
+                cx: 500;
+                opacity: 0;
+            }
+        }
+
+        .actief_dot4.animate{
+            animation: 1s ease-in-out dot_slide2;
+        }
+
+        .actief_dot5.animate{
+            animation: 1s ease-in-out dot_slide3;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<header class="colorband ">
+    <div class="l-wrapper">
+        <div class="l-header">
+            <div class="l-header__logo logo"><a href="../en/">Teal Partners</a></div>
+            <nav class="l-header__nav top-navigation">
+                <div class="top-navigation__item"><a href="../en/services.html">Services</a></div>
+                <div class="top-navigation__item"><a href="../en/about.html">Who we are</a></div>
+                <div class="top-navigation__item"><a href="../en/cases.html">Cases</a></div>
+                <div class="top-navigation__item active"><a href="../en/careers.html">Work at Teal</a></div>
+                <div class="top-navigation__item"><a href="../en/blog/">News</a></div>
+                <div class="top-navigation__item"><a href="../en/contact.html">Contact</a></div>
+                <div class="top-navigation__item"><a href="../nl/careers.html">NL</a></div>
+                <div class="top-navigation__toggle">
+                    <svg class="hamburger" width="19" height="12" viewBox="0 0 19 12"  xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19" height="2" />
+                        <rect x="4" y="5" width="15" height="2" />
+                        <rect y="10" width="19" height="2"/>
+                    </svg>
+                    <svg class="close" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.48926" y="0.575439" width="19" height="2" transform="rotate(45 1.48926 0.575439)"/>
+                        <rect x="0.0751953" y="14.0104" width="19" height="2" transform="rotate(-45 0.0751953 14.0104)"/>
+                    </svg>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="page">
+        <div class="page__header">
+            <h1 class="page__title">About Teal Partners</h1>
+            <p class="page__intro">People make the difference. At Teal Partners, we strongly believe this. We are not the guys who come in, build things,
+                then pack up and disappear into thin air. No army of mercenaries.
+            </p>
+        </div>
+
+        <div class="page__content" style="padding-top: 0;">
+            <p>
+                We keep our eyes firmly on the horizon. We go for a meaningful collaboration. From the first meeting to post-delivery. We put
+                our hearts into our projects. We are proud of what we build. Our job is our passion. Sure, call us dreamers,
+                if you like. In our own way, we want to make the world a little bit better. With the help of technology and the solutions we build.
+            </p>
+
+            <div>
+                <svg width="821" height="281" viewBox="0 0 821 281" fill="none" style="overflow: visible" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <rect x="644" y="17" width="176" height="102" rx="4" fill="white" stroke="#E4E4E4" stroke-width="2"/>
+                        <path d="M688.337 62.604C686.902 62.604 685.684 63.0575 684.686 63.8998C683.687 64.7744 683.188 66.297 683.188 68.4674C683.188 70.6378 683.687 72.1603 684.686 73.035C685.684 73.8772 686.902 74.3308 688.337 74.3308C689.461 74.3308 690.522 74.1364 691.521 73.7153L691.739 73.6181V71.3829L691.302 71.5772C690.459 71.966 689.523 72.1603 688.524 72.1603C687.401 72.1603 686.589 71.8688 686.09 71.3181C685.591 70.735 685.341 69.7956 685.341 68.435C685.341 67.1068 685.591 66.135 686.09 65.5843C686.589 65.0336 687.401 64.742 688.524 64.742C689.461 64.742 690.397 64.9364 691.302 65.3251L691.739 65.5195V63.3167L691.521 63.2195C690.491 62.8308 689.43 62.604 688.337 62.604Z" fill="black"/>
+                        <path d="M702.007 63.5758C701.289 62.9279 700.291 62.604 699.074 62.604C698.356 62.604 697.607 62.7012 696.889 62.8632C696.14 63.0251 695.547 63.2519 695.11 63.5434L694.954 63.6406V66.0702L695.484 65.6491C695.859 65.3251 696.327 65.0984 696.889 64.9364C697.451 64.7744 698.044 64.6772 698.605 64.6772C700.228 64.6772 700.977 65.3251 700.977 66.7505V67.4632C700.166 67.1068 699.198 66.9125 698.044 66.9125C696.795 66.9125 695.796 67.2364 695.047 67.8519C694.298 68.4998 693.924 69.504 693.924 70.897C693.924 72.1927 694.361 73.1322 695.235 73.6829C696.046 74.2012 697.045 74.4927 698.2 74.4927C699.666 74.4927 700.852 74.2984 701.695 73.942C702.631 73.5533 703.1 72.711 703.1 71.5772V66.3941C703.1 65.1632 702.725 64.2237 702.007 63.5758ZM700.977 71.642C700.977 71.966 700.852 72.1279 700.54 72.2251C700.135 72.3547 699.479 72.4195 698.574 72.4195C697.856 72.4195 697.232 72.2575 696.733 71.966C696.296 71.7068 696.077 71.2533 696.077 70.6378C696.077 70.0871 696.265 69.6984 696.639 69.4068C697.045 69.1153 697.669 68.9533 698.449 68.9533C698.949 68.9533 699.448 69.0181 699.916 69.1153C700.291 69.2125 700.665 69.3096 700.946 69.4392V71.642H700.977Z" fill="black"/>
+                        <path d="M710.746 62.604C709.81 62.604 708.873 62.7336 707.999 62.9603C707.126 63.1871 706.408 63.4463 705.877 63.673L705.69 63.7702V74.1688H707.812V65.0336C708.405 64.9364 708.873 64.8392 709.217 64.8068C709.841 64.7096 710.621 64.6772 711.37 64.7744L711.745 64.8068V62.8308L711.495 62.766C711.183 62.6688 710.933 62.604 710.746 62.604Z" fill="black"/>
+                        <path d="M717.363 62.604C715.834 62.604 714.648 63.1223 713.774 64.1265C712.931 65.1308 712.494 66.5885 712.494 68.4674C712.494 70.411 712.931 71.9012 713.836 72.9378C714.741 73.9744 715.99 74.4927 717.581 74.4927C719.017 74.4927 720.297 74.2336 721.327 73.7153L721.514 73.6181V71.2209L721.015 71.5125C720.078 72.0956 718.955 72.3871 717.644 72.3871C716.645 72.3871 715.927 72.0956 715.397 71.4801C714.929 70.9294 714.648 70.1195 714.616 69.0829H722.107V68.7589C722.138 66.9448 721.764 65.4547 720.983 64.3533C720.297 63.1871 719.048 62.604 717.363 62.604ZM714.772 67.0096C714.897 66.1674 715.147 65.5843 715.49 65.2603C715.896 64.8716 716.52 64.6772 717.332 64.6772C718.174 64.6772 718.799 64.904 719.204 65.3251C719.579 65.7139 719.797 66.2646 719.891 67.0096H714.772V67.0096Z" fill="black"/>
+                        <path d="M729.691 62.604C728.755 62.604 727.818 62.7336 726.944 62.9603C726.07 63.1871 725.353 63.4463 724.822 63.673L724.635 63.7702V74.1688H726.757V65.0336C727.35 64.9364 727.818 64.8392 728.162 64.8068C728.786 64.7096 729.566 64.6772 730.315 64.7744L730.69 64.8068V62.8308L730.44 62.766C730.097 62.6688 729.847 62.604 729.691 62.604Z" fill="black"/>
+                        <path d="M734.903 62.7983H732.78V74.1688H734.903V62.7983Z" fill="black"/>
+                        <path d="M734.996 59.2026H732.687V61.5674H734.996V59.2026Z" fill="black"/>
+                        <path d="M743.454 68.435L747.449 62.7983H744.952L742.175 66.6209L739.459 62.7983H736.806L740.77 68.435L736.682 74.1688H739.147L742.019 70.2166L744.796 74.1688H747.48L743.454 68.435Z" fill="black"/>
+                        <path d="M758.56 78.8012H764.708L767.049 75.7886L763.866 71.6421L758.56 78.8012Z" fill="#008CD7"/>
+                        <path d="M772.323 68.435L780.875 57.0322H774.914L766.612 68.435L775.039 79.9998H781L772.323 68.435Z" fill="#008CD7"/>
+                        <path d="M767.049 61.3086L764.708 58.2959H758.56L763.866 65.4551L767.049 61.3086Z" fill="#008CD7"/>
+                        <path d="M757.062 62.7983H752.692L757.124 68.435L752.692 74.1364H757.062L761.338 68.435L757.062 62.7983Z" fill="#008CD7"/>
+                    </g>
+                    <path d="M290.246 156.147L288.113 160.024H282L294.014 137.625H300.306L305.141 160.037H298.996L298.166 156.159L290.246 156.147ZM296.09 144.553H296.033L292.533 151.015H297.323L296.09 144.553Z" fill="#004992"/>
+                    <path d="M332.919 160.037H327.171L329.911 142.588H325.146L325.919 137.657H341.197L340.424 142.588H335.666L332.919 160.037Z" fill="#004992"/>
+                    <path d="M345.572 160.037H339.823L343.336 137.625H349.085L345.572 160.037Z" fill="#004992"/>
+                    <path d="M357.56 142.555L356.973 146.304H363.462L362.696 151.241H356.2L355.593 155.119H362.44L361.667 160.05H349.065L352.572 137.637H365.174L364.408 142.568L357.56 142.555Z" fill="#004992"/>
+                    <path d="M373.126 142.556L372.539 146.304H378.856L378.083 151.241H371.766L370.386 160.037H364.638L368.144 137.625H380.88L380.108 142.556H373.126Z" fill="#004992"/>
+                    <path d="M388.718 160.076H385.99L388.724 137.663H391.49L388.718 160.076Z" fill="#004992"/>
+                    <path d="M395.335 136.59L409.521 154.221L411.501 137.663H414.209L411.418 161L397.225 143.37L395.233 160.076H392.524L395.335 136.59Z" fill="#004992"/>
+                    <path d="M421.618 160.076H418.859L421.28 140.216H416.01L416.323 137.663H429.615L429.302 140.216H424.045L421.618 160.076Z" fill="#004992"/>
+                    <path d="M431.806 137.663H443.705L443.399 140.216H434.259L433.492 146.491H442.364L442.051 149.044H433.179L432.145 157.516H441.285L440.972 160.102H429.072L431.806 137.663Z" fill="#004992"/>
+                    <path d="M458.478 160.076H455.132L449.766 150.595H448.617L447.46 160.076H444.701L447.435 137.663H450.782C452.755 137.663 454.863 137.663 456.53 138.704C457.369 139.287 458.027 140.1 458.426 141.048C458.825 141.995 458.95 143.038 458.785 144.055C458.612 145.638 457.919 147.116 456.816 148.253C455.713 149.39 454.265 150.119 452.704 150.323L458.478 160.076ZM448.898 148.275H449.779C452.596 148.275 455.719 147.738 456.166 144.171C456.613 140.604 453.362 140.158 450.635 140.158H449.9L448.898 148.275Z" fill="#004992"/>
+                    <path d="M463.007 160.076H460.248L462.982 137.663H465.741L463.007 160.076Z" fill="#004992"/>
+                    <path d="M473.036 145.27H472.978L468.584 160.076H465.735L473.112 136.713L478.567 154.369L488.326 136.713L490 160.076H487.151L486.372 145.27H486.315L477.813 160.554L473.036 145.27Z" fill="#004992"/>
+                    <path d="M367.543 108.659H358.441V118.837H367.543V108.659Z" fill="#FFED00"/>
+                    <path d="M356.207 108.633H347.105V118.812H356.207V108.633Z" fill="#FFED00"/>
+                    <path d="M367.543 120.737H358.441V130.916H367.543V120.737Z" fill="#FFED00"/>
+                    <path d="M356.315 120.763H347.213V130.942H356.315V120.763Z" fill="#FFED00"/>
+                    <path d="M345.272 120.699H336.17V130.877H345.272V120.699Z" fill="#FFED00"/>
+                    <path d="M378.645 120.725H369.543V130.903H378.645V120.725Z" fill="#FFED00"/>
+                    <path d="M336.4 118.838H345.24V108.982L336.4 118.838Z" fill="#FFED00"/>
+                    <path d="M378.301 118.812H369.461V108.956L378.301 118.812Z" fill="#FFED00"/>
+                    <path d="M389.58 130.878H380.747V121.022L389.58 130.878Z" fill="#FFED00"/>
+                    <path d="M367.333 106.856H358.5V97L367.333 106.856Z" fill="#FFED00"/>
+                    <path d="M347.533 106.856H356.367V97L347.533 106.856Z" fill="#FFED00"/>
+                    <path d="M325.286 130.878H334.12V121.022L325.286 130.878Z" fill="#FFED00"/>
+                    <path d="M323.574 144.255C322.654 142.652 320.559 142.109 318.592 142.109C315.066 142.109 312.256 145.173 311.713 148.65C311.17 152.127 313.169 155.067 316.753 155.067C318.63 155.067 320.975 154.789 322.405 153.335L321.952 159.352C319.938 159.97 317.853 160.32 315.75 160.392C314.295 160.417 312.851 160.136 311.509 159.568C310.166 158.999 308.955 158.156 307.951 157.09C305.862 154.86 305.205 151.623 305.722 148.294C306.201 145.231 307.491 141.967 309.95 139.77C312.409 137.573 316.152 136.784 319.269 136.784C321.033 136.787 322.775 137.173 324.379 137.915L323.574 144.255Z" fill="#004992"/>
+                    <circle id="actief_circle" cx="382" cy="140" r="139" stroke="black" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="4 8"/>
+                    <circle class="actief_pulse" cx="382" cy="140" r="139" stroke="black" stroke-opacity="50" stroke-width="10" opacity="0" />
+
+                    <rect width="178" height="104" transform="translate(643 140)" fill="white"/>
+                    <rect x="644" y="141" width="176" height="102" rx="4" stroke="#E4E4E4" stroke-width="2"/>
+                    <path d="M673 199.807L686.483 199.807L679.742 189L673 199.807Z" fill="#009CD7"/>
+                    <path d="M696.942 195.196H693.401V197.615H697.356V199.504H691.217V189.316H697.156V191.205H693.401V193.322H696.942V195.196H696.942Z" fill="#0068AA"/>
+                    <path d="M700.724 196.889L700.039 199.504H697.783L700.724 189.315H703.579L706.563 199.504H704.222L703.479 196.889H700.724ZM703.165 195.166L702.566 193.004C702.394 192.4 702.223 191.644 702.08 191.039H702.052C701.909 191.644 701.766 192.415 701.609 193.004L701.038 195.166H703.165Z" fill="#0068AA"/>
+                    <path d="M707.561 197.131C708.146 197.448 709.046 197.766 709.974 197.766C710.973 197.766 711.502 197.327 711.502 196.662C711.502 196.027 711.044 195.665 709.888 195.226C708.289 194.637 707.247 193.699 707.247 192.218C707.247 190.48 708.617 189.149 710.887 189.149C711.972 189.149 712.772 189.391 713.343 189.663L712.858 191.523C712.472 191.326 711.787 191.039 710.845 191.039C709.902 191.039 709.446 191.492 709.446 192.021C709.446 192.671 709.988 192.959 711.23 193.457C712.929 194.123 713.729 195.06 713.729 196.496C713.729 198.204 712.486 199.655 709.845 199.655C708.746 199.655 707.661 199.353 707.119 199.035L707.561 197.131Z" fill="#0068AA"/>
+                    <path d="M717.068 199.504V195.332L714.027 189.316H716.511L717.497 191.765C717.796 192.505 717.996 193.05 718.239 193.715H718.268C718.482 193.08 718.71 192.49 718.996 191.765L719.966 189.316H722.408L719.238 195.257V199.504H717.068V199.504Z" fill="#0068AA"/>
+                    <path d="M722.836 189.452C723.506 189.331 724.449 189.24 725.776 189.24C727.119 189.24 728.075 189.512 728.717 190.056C729.331 190.57 729.745 191.417 729.745 192.415C729.745 193.412 729.431 194.259 728.86 194.833C728.117 195.574 727.018 195.906 725.733 195.906C725.448 195.906 725.191 195.891 724.991 195.861V199.504H722.835V189.452H722.836ZM724.991 194.077C725.177 194.123 725.406 194.138 725.719 194.138C726.876 194.138 727.59 193.518 727.59 192.475C727.59 191.538 726.976 190.979 725.891 190.979C725.448 190.979 725.148 191.024 724.991 191.069V194.077Z" fill="#0068AA"/>
+                    <path d="M732.157 196.889L731.471 199.504H729.216L732.157 189.315H735.012L737.996 199.504H735.655L734.912 196.889H732.157ZM734.598 195.166L733.998 193.004C733.827 192.4 733.656 191.644 733.513 191.039H733.485C733.342 191.644 733.199 192.415 733.042 193.004L732.471 195.166H734.598Z" fill="#0068AA"/>
+                    <path d="M739.794 199.504V195.332L736.753 189.316H739.237L740.222 191.765C740.522 192.505 740.722 193.05 740.965 193.715H740.993C741.207 193.08 741.436 192.49 741.721 191.765L742.692 189.316H745.133L741.964 195.257V199.504H739.794V199.504Z" fill="#0068AA"/>
+                    <path d="M756.382 199.035C755.711 199.277 754.441 199.61 753.17 199.61C751.414 199.61 750.144 199.142 749.259 198.235C748.374 197.358 747.888 196.028 747.903 194.531C747.917 191.145 750.244 189.21 753.399 189.21C754.641 189.21 755.598 189.467 756.069 189.709L755.611 191.553C755.083 191.312 754.427 191.115 753.37 191.115C751.557 191.115 750.187 192.203 750.187 194.41C750.187 196.512 751.429 197.751 753.213 197.751C753.713 197.751 754.113 197.691 754.284 197.6V195.469H752.799V193.67H756.383V199.035H756.382Z" fill="#0068AA"/>
+                    <path d="M757.723 189.452C758.422 189.331 759.465 189.24 760.621 189.24C762.049 189.24 763.048 189.467 763.733 190.041C764.304 190.525 764.619 191.235 764.619 192.173C764.619 193.473 763.748 194.364 762.92 194.682V194.727C763.59 195.014 763.962 195.695 764.204 196.632C764.504 197.781 764.804 199.111 764.989 199.504H762.762C762.605 199.216 762.377 198.385 762.091 197.131C761.834 195.861 761.42 195.513 760.535 195.498H759.879V199.504H757.723V189.452H757.723ZM759.879 193.835H760.735C761.82 193.835 762.463 193.261 762.463 192.369C762.463 191.432 761.863 190.963 760.864 190.948C760.336 190.948 760.036 190.994 759.879 191.024V193.835V193.835Z" fill="#0068AA"/>
+                    <path d="M774.583 194.304C774.583 197.645 772.669 199.67 769.857 199.67C767.002 199.67 765.332 197.388 765.332 194.485C765.332 191.432 767.173 189.149 770.014 189.149C772.969 189.15 774.583 191.493 774.583 194.304ZM767.63 194.44C767.63 196.436 768.515 197.841 769.971 197.841C771.442 197.841 772.284 196.36 772.284 194.38C772.284 192.551 771.456 190.979 769.957 190.979C768.487 190.979 767.63 192.46 767.63 194.44Z" fill="#0068AA"/>
+                    <path d="M777.822 189.316V195.181C777.822 196.935 778.451 197.826 779.564 197.826C780.706 197.826 781.334 196.98 781.334 195.181V189.316H783.504V195.03C783.504 198.174 782.005 199.671 779.493 199.671C777.066 199.671 775.638 198.25 775.638 195V189.316H777.822Z" fill="#0068AA"/>
+                    <path d="M785.031 189.452C785.702 189.331 786.644 189.24 787.972 189.24C789.314 189.24 790.27 189.512 790.912 190.056C791.526 190.57 791.94 191.417 791.94 192.415C791.94 193.412 791.626 194.259 791.055 194.833C790.313 195.574 789.213 195.906 787.929 195.906C787.643 195.906 787.386 195.891 787.186 195.861V199.504H785.03V189.452H785.031ZM787.186 194.077C787.372 194.123 787.6 194.138 787.914 194.138C789.071 194.138 789.785 193.518 789.785 192.475C789.785 191.538 789.171 190.979 788.086 190.979C787.643 190.979 787.343 191.024 787.186 191.069V194.077Z" fill="#0068AA"/>
+                    <rect x="1" y="81" width="96" height="110" rx="4" fill="white" stroke="#E4E4E4" stroke-width="2"/>
+                    <path d="M25.5 111C28.7812 111 31.5 108.328 31.5 105C31.5 101.719 28.7812 99 25.5 99C22.1719 99 19.5 101.719 19.5 105C19.5 108.328 22.1719 111 25.5 111ZM29.6719 112.5H28.875C27.8438 113.016 26.7188 113.25 25.5 113.25C24.2812 113.25 23.1094 113.016 22.0781 112.5H21.2812C17.8125 112.5 15 115.359 15 118.828V120.75C15 122.016 15.9844 123 17.25 123H33.75C34.9688 123 36 122.016 36 120.75V118.828C36 115.359 33.1406 112.5 29.6719 112.5Z" fill="#004992"/>
+                    <rect x="46" y="104" width="19" height="6" fill="#E4E4E4"/>
+                    <rect x="46" y="114" width="39" height="6" fill="#E4E4E4"/>
+                    <rect x="13" y="143" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="13" y="153" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="13" y="163" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="13" y="173" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="54" y="143" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="54" y="153" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="54" y="163" width="32" height="6" fill="#E4E4E4"/>
+                    <rect x="54" y="173" width="32" height="6" fill="#E4E4E4"/>
+                    <circle class="actief_dot1" cx="97" cy="135" r="6" fill="#E4E4E4" opacity="0"/>
+                    <circle class="actief_dot2" cx="500" cy="58" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot3" cx="645" cy="98" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot4" cx="500" cy="170" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot5" cx="645" cy="211" r="6" fill="#E4E4E4" opacity="0" />
+                    <path d="M98 135H230" stroke="url(#paint0_linear)" stroke-width="2"/>
+                    <path d="M644 58L517 57.9845" stroke="url(#paint1_linear)" stroke-width="2"/>
+                    <path d="M644 98L517 97.9845" stroke="url(#paint2_linear)" stroke-width="2"/>
+                    <path d="M644 170.016L517 170" stroke="url(#paint3_linear)" stroke-width="2"/>
+                    <path d="M644 211.031L517 211.016" stroke="url(#paint4_linear)" stroke-width="2"/>
+                    <path d="M95.5 190.5L144.5 239.5" stroke="#E7E7E7" stroke-width="2"/>
+                    <path d="M151.533 279.333H192.967C196.575 279.333 199.5 276.408 199.5 272.8V212.533C199.5 208.925 196.575 206 192.967 206H165.954C164.221 206 162.559 206.688 161.334 207.914L146.914 222.334C145.688 223.559 145 225.221 145 226.954V272.8C145 276.408 147.925 279.333 151.533 279.333Z" fill="white" stroke="#E4E4E4" stroke-width="2"/>
+                    <path d="M144 223.833L162.833 205V220.067C162.833 222.147 161.147 223.833 159.067 223.833H144Z" fill="#E4E4E4"/>
+                    <rect x="157.183" y="233.25" width="30.1333" height="3.76667" fill="#E4E4E4"/>
+                    <rect x="157.183" y="242.667" width="18.8333" height="3.76667" fill="#E4E4E4"/>
+                    <path d="M165.422 256.758C166.686 253.555 163.144 250.339 159.947 252.4L157.928 253.758C157.45 254.045 157.276 254.704 157.597 255.217L158.229 256.222L158.237 256.233C158.528 256.641 159.174 256.899 159.697 256.531L161.819 255.104C162.127 254.915 162.466 255.213 162.34 255.528L158.737 264.57C158.546 265.015 158.599 265.563 158.846 265.996C159.108 266.455 159.599 266.803 160.276 266.803C160.687 266.803 161.103 266.649 161.418 266.334C162.784 264.968 166.175 261.692 168.352 259.819C168.388 260.618 168.591 261.457 169.269 262.197C169.936 262.95 170.892 263.272 172.01 263.272C173.449 263.272 174.714 262.711 175.989 262.129C176.319 261.988 176.718 261.769 177.135 261.532C177.286 261.446 177.44 261.357 177.596 261.267C177.884 261.101 178.18 260.93 178.482 260.762C178.946 260.506 179.405 260.268 179.83 260.088C180.261 259.906 180.627 259.798 180.911 259.777L180.927 259.775C181.488 259.712 181.897 259.261 181.897 258.718V257.563C181.949 256.936 181.407 256.445 180.838 256.445H180.82L180.802 256.446C179.74 256.528 178.505 257.078 177.416 257.643C176.924 257.898 176.445 258.166 176.012 258.408L175.855 258.496C175.375 258.764 174.968 258.988 174.648 259.136C174.114 259.375 173.627 259.587 173.181 259.74C172.732 259.894 172.357 259.976 172.047 259.976C171.885 259.976 171.813 259.948 171.784 259.93C171.765 259.919 171.739 259.899 171.711 259.825C171.64 259.632 171.63 259.263 171.705 258.59L171.709 258.561C171.735 258.362 171.836 257.607 171.684 256.888C171.603 256.501 171.439 256.074 171.105 255.75C170.757 255.412 170.275 255.235 169.666 255.269L169.656 255.269C169.051 255.316 168.369 255.604 167.382 256.307C166.687 256.803 165.817 257.522 164.691 258.551L165.42 256.763L165.422 256.758Z" fill="#E4E4E4"/>
+                    <path d="M201 247.5L256.5 215" stroke="url(#paint5_linear)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="96.1667" y1="121.5" x2="225.6" y2="121.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E4E4E4"/>
+                            <stop offset="1" stop-color="#E4E4E4" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="608.996" y1="66.3591" x2="519.787" y2="66.3482" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E4E4E4"/>
+                            <stop offset="1" stop-color="#E4E4E4" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear" x1="608.996" y1="106.359" x2="519.787" y2="106.348" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E4E4E4"/>
+                            <stop offset="1" stop-color="#E4E4E4" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear" x1="608.996" y1="178.375" x2="519.787" y2="178.364" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E4E4E4"/>
+                            <stop offset="1" stop-color="#E4E4E4" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear" x1="608.996" y1="219.39" x2="519.787" y2="219.379" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E4E4E4"/>
+                            <stop offset="1" stop-color="#E4E4E4" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear" x1="204.5" y1="243.5" x2="243.5" y2="198.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EBEBEB"/>
+                            <stop offset="0.815371" stop-color="#EBEBEB" stop-opacity="0"/>
+                        </linearGradient>
+                        <clipPath id="clip0">
+                            <rect width="178" height="104" fill="white" transform="translate(643 16)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+
+        </div>
+
+
+        <div class="page__content">
+
+
+
+        </div><!-- .team -->
+    </div><!-- .page__content -->
+    </div><!-- .page -->
+</main>
+
+<footer class="footer">
+    <div class="footer__info">
+        <p class="footer__name"><a href="./"><img src="/assets/img/tealpartners-logo.svg" alt=""></a></p>
+        <p class="footer__adress">
+            <a href="https://www.google.com/maps/place/Teal+Partners/@51.2283524,4.4133531,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f65757b72fcb:0xa5d58018e9f935c5!8m2!3d51.2283524!4d4.4155418" class="map-link">
+                <span class="footer__street">Van de Wervestraat 20 bus 206</span>
+                <span class="footer__devider">-</span>
+                <span class="footer__city">2060 Antwerp</span>
+            </a>
+        </p>
+        <p class="footer__contact" >
+            <span class="footer__phone"><a href="tel:+32479515101">0479 51 51 01</a></span>
+            <span class="footer__devider">-</span>
+            <span class="footer__mail"><a href="mailto:info@tealpartners.com">info@tealpartners.com</a></span>
+        <p class="footer__social">
+            <a class="footer__social__linkedin" href="https://www.linkedin.com/company/10674826/"><img src="/assets/img/icon-linkedin.svg" alt=""></a>
+            <a class="footer__social__twitter" href="https://twitter.com/teal_partners"><img src="/assets/img/icon-twitter.svg" alt=""></a>
+        </p>
+    </div>
+</footer>
+
+
+<!-- Hotjar Tracking Code for http://www.tealpartners.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:527886,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78961303-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-78961303-1');
+</script>
+</body>
+
+
+
+</html>
