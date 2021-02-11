@@ -12,6 +12,11 @@
     <script>
         $(document).ready(function(){
             actief_start_main_animation();
+
+            $('.pot_animation').on("animationend", function(){
+                $(this).removeClass('animate');
+            });
+
         })
 
         function actief_start_main_animation(){
@@ -20,6 +25,9 @@
             setTimeout(actief_start_dot3,2000); //duration 0.5s
             setTimeout(actief_start_dot4,3200); //duration 0.5s
             setTimeout(actief_start_dot5,4000); //duration 0.5s
+            setTimeout(actief_showcontract,4300);
+            setTimeout(actief_restart,8500);
+
         }
 
         function actief_start_pulse(){
@@ -31,7 +39,7 @@
 
         function actief_start_dot1(){
             $('.actief_dot1').removeClass('animate').addClass('animate');
-            setTimeout(actief_start_pulse,1000);
+            setTimeout(actief_start_pulse,700);
         }
 
         function actief_start_dot2(){
@@ -40,7 +48,7 @@
 
         function actief_start_dot3(){
             $('.actief_dot3').removeClass('animate').addClass('animate');
-            setTimeout(actief_start_pulse,1000);
+            setTimeout(actief_start_pulse,700);
         }
 
         function actief_start_dot4(){
@@ -49,9 +57,30 @@
 
         function actief_start_dot5(){
             $('.actief_dot5').removeClass('animate').addClass('animate');
-            setTimeout(actief_start_pulse,1000);
+            setTimeout(actief_start_pulse,700);
         }
 
+        function actief_start_dot6(){
+            $('.actief_dot6').removeClass('animate').addClass('animate');
+        }
+
+        function actief_showcontract() {
+            $('.actief_contract').removeClass('hidden');
+            setTimeout(function(){
+                $('.actief_contractline1').fadeIn(300);
+                actief_start_dot6();
+            },400)
+            setTimeout(function(){
+                $('.actief_signature').addClass('animate');
+            },1200)
+        }
+
+        function actief_restart() {
+            $('.actief_contractline1').fadeOut(300);
+            $('.actief_contract').addClass('hidden');
+            $('.actief_signature').removeClass('animate');
+            actief_start_main_animation();
+        }
 
 
 
@@ -133,6 +162,24 @@
             }
         }
 
+        .actief_dot6.animate{
+            animation: 1s ease-in-out dot_slide6;
+        }
+
+        @keyframes dot_slide6 {
+            from{
+                cx: 97;
+                cy: 190;
+                opacity:1;
+            }
+            to{
+                cx: 140;
+                cy: 236;
+                opacity: 0;
+            }
+        }
+
+
         .actief_dot4.animate{
             animation: 1s ease-in-out dot_slide2;
         }
@@ -140,6 +187,33 @@
         .actief_dot5.animate{
             animation: 1s ease-in-out dot_slide3;
         }
+
+        .actief_contract{
+            transform-origin: 173px 272px;
+            transition: 0.3s all;
+            transform: translate(0,0) scale(1);
+            opacity: 1;
+        }
+
+        .actief_contract.hidden{
+            transform: translate(100px,-50px) scale(0.5);
+            opacity: 0;
+        }
+
+        path.actief_signature.animate {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: drawline 0.8s ease-in-out forwards;
+        }
+
+        @keyframes drawline {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .actief_contractline1{ display: none};
+
 
 
     </style>
@@ -191,7 +265,7 @@
                 our hearts into our projects. We are proud of what we build. Our job is our passion. Sure, call us dreamers,
                 if you like. In our own way, we want to make the world a little bit better. With the help of technology and the solutions we build.
             </p>
-
+            <span class="animate"></span>
             <div>
                 <svg width="821" height="281" viewBox="0 0 821 281" fill="none" style="overflow: visible" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -252,35 +326,41 @@
                     <path d="M774.583 194.304C774.583 197.645 772.669 199.67 769.857 199.67C767.002 199.67 765.332 197.388 765.332 194.485C765.332 191.432 767.173 189.149 770.014 189.149C772.969 189.15 774.583 191.493 774.583 194.304ZM767.63 194.44C767.63 196.436 768.515 197.841 769.971 197.841C771.442 197.841 772.284 196.36 772.284 194.38C772.284 192.551 771.456 190.979 769.957 190.979C768.487 190.979 767.63 192.46 767.63 194.44Z" fill="#0068AA"/>
                     <path d="M777.822 189.316V195.181C777.822 196.935 778.451 197.826 779.564 197.826C780.706 197.826 781.334 196.98 781.334 195.181V189.316H783.504V195.03C783.504 198.174 782.005 199.671 779.493 199.671C777.066 199.671 775.638 198.25 775.638 195V189.316H777.822Z" fill="#0068AA"/>
                     <path d="M785.031 189.452C785.702 189.331 786.644 189.24 787.972 189.24C789.314 189.24 790.27 189.512 790.912 190.056C791.526 190.57 791.94 191.417 791.94 192.415C791.94 193.412 791.626 194.259 791.055 194.833C790.313 195.574 789.213 195.906 787.929 195.906C787.643 195.906 787.386 195.891 787.186 195.861V199.504H785.03V189.452H785.031ZM787.186 194.077C787.372 194.123 787.6 194.138 787.914 194.138C789.071 194.138 789.785 193.518 789.785 192.475C789.785 191.538 789.171 190.979 788.086 190.979C787.643 190.979 787.343 191.024 787.186 191.069V194.077Z" fill="#0068AA"/>
-                    <rect x="1" y="81" width="96" height="110" rx="4" fill="white" stroke="#E4E4E4" stroke-width="2"/>
-                    <path d="M25.5 111C28.7812 111 31.5 108.328 31.5 105C31.5 101.719 28.7812 99 25.5 99C22.1719 99 19.5 101.719 19.5 105C19.5 108.328 22.1719 111 25.5 111ZM29.6719 112.5H28.875C27.8438 113.016 26.7188 113.25 25.5 113.25C24.2812 113.25 23.1094 113.016 22.0781 112.5H21.2812C17.8125 112.5 15 115.359 15 118.828V120.75C15 122.016 15.9844 123 17.25 123H33.75C34.9688 123 36 122.016 36 120.75V118.828C36 115.359 33.1406 112.5 29.6719 112.5Z" fill="#004992"/>
-                    <rect x="46" y="104" width="19" height="6" fill="#E4E4E4"/>
-                    <rect x="46" y="114" width="39" height="6" fill="#E4E4E4"/>
-                    <rect x="13" y="143" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="13" y="153" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="13" y="163" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="13" y="173" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="54" y="143" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="54" y="153" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="54" y="163" width="32" height="6" fill="#E4E4E4"/>
-                    <rect x="54" y="173" width="32" height="6" fill="#E4E4E4"/>
-                    <circle class="actief_dot1" cx="97" cy="135" r="6" fill="#E4E4E4" opacity="0"/>
-                    <circle class="actief_dot2" cx="500" cy="58" r="6" fill="#E4E4E4" opacity="0" />
-                    <circle class="actief_dot3" cx="645" cy="98" r="6" fill="#E4E4E4" opacity="0" />
-                    <circle class="actief_dot4" cx="500" cy="170" r="6" fill="#E4E4E4" opacity="0" />
-                    <circle class="actief_dot5" cx="645" cy="211" r="6" fill="#E4E4E4" opacity="0" />
+                    <g class="actief_user">
+                        <rect x="1" y="81" width="96" height="110" rx="4" fill="white" stroke="#E4E4E4" stroke-width="2"/>
+                        <path d="M25.5 111C28.7812 111 31.5 108.328 31.5 105C31.5 101.719 28.7812 99 25.5 99C22.1719 99 19.5 101.719 19.5 105C19.5 108.328 22.1719 111 25.5 111ZM29.6719 112.5H28.875C27.8438 113.016 26.7188 113.25 25.5 113.25C24.2812 113.25 23.1094 113.016 22.0781 112.5H21.2812C17.8125 112.5 15 115.359 15 118.828V120.75C15 122.016 15.9844 123 17.25 123H33.75C34.9688 123 36 122.016 36 120.75V118.828C36 115.359 33.1406 112.5 29.6719 112.5Z" fill="#004992"/>
+                        <rect x="46" y="104" width="19" height="6" fill="#E4E4E4"/>
+                        <rect x="46" y="114" width="39" height="6" fill="#E4E4E4"/>
+                        <rect x="13" y="143" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="13" y="153" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="13" y="163" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="13" y="173" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="54" y="143" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="54" y="153" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="54" y="163" width="32" height="6" fill="#E4E4E4"/>
+                        <rect x="54" y="173" width="32" height="6" fill="#E4E4E4"/>
+                    </g>
+                    <circle class="actief_dot1 pot_animation" cx="97" cy="135" r="6" fill="#E4E4E4" opacity="0"/>
+                    <circle class="actief_dot2 pot_animation" cx="500" cy="48" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot3 pot_animation" cx="645" cy="88" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot4 pot_animation" cx="500" cy="170" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot5 pot_animation" cx="645" cy="211" r="6" fill="#E4E4E4" opacity="0" />
+                    <circle class="actief_dot6 pot_animation" cx="97" cy="190" r="6" fill="#E4E4E4" opacity="0" />
                     <path d="M98 135H230" stroke="url(#paint0_linear)" stroke-width="2"/>
-                    <path d="M644 58L517 57.9845" stroke="url(#paint1_linear)" stroke-width="2"/>
-                    <path d="M644 98L517 97.9845" stroke="url(#paint2_linear)" stroke-width="2"/>
+                    <path d="M644 48L517 47.9845" stroke="url(#paint1_linear)" stroke-width="2"/>
+                    <path d="M644 88L517 87.9845" stroke="url(#paint2_linear)" stroke-width="2"/>
                     <path d="M644 170.016L517 170" stroke="url(#paint3_linear)" stroke-width="2"/>
-                    <path d="M644 211.031L517 211.016" stroke="url(#paint4_linear)" stroke-width="2"/>
-                    <path d="M95.5 190.5L144.5 239.5" stroke="#E7E7E7" stroke-width="2"/>
-                    <path d="M151.533 279.333H192.967C196.575 279.333 199.5 276.408 199.5 272.8V212.533C199.5 208.925 196.575 206 192.967 206H165.954C164.221 206 162.559 206.688 161.334 207.914L146.914 222.334C145.688 223.559 145 225.221 145 226.954V272.8C145 276.408 147.925 279.333 151.533 279.333Z" fill="white" stroke="#E4E4E4" stroke-width="2"/>
-                    <path d="M144 223.833L162.833 205V220.067C162.833 222.147 161.147 223.833 159.067 223.833H144Z" fill="#E4E4E4"/>
-                    <rect x="157.183" y="233.25" width="30.1333" height="3.76667" fill="#E4E4E4"/>
-                    <rect x="157.183" y="242.667" width="18.8333" height="3.76667" fill="#E4E4E4"/>
-                    <path d="M165.422 256.758C166.686 253.555 163.144 250.339 159.947 252.4L157.928 253.758C157.45 254.045 157.276 254.704 157.597 255.217L158.229 256.222L158.237 256.233C158.528 256.641 159.174 256.899 159.697 256.531L161.819 255.104C162.127 254.915 162.466 255.213 162.34 255.528L158.737 264.57C158.546 265.015 158.599 265.563 158.846 265.996C159.108 266.455 159.599 266.803 160.276 266.803C160.687 266.803 161.103 266.649 161.418 266.334C162.784 264.968 166.175 261.692 168.352 259.819C168.388 260.618 168.591 261.457 169.269 262.197C169.936 262.95 170.892 263.272 172.01 263.272C173.449 263.272 174.714 262.711 175.989 262.129C176.319 261.988 176.718 261.769 177.135 261.532C177.286 261.446 177.44 261.357 177.596 261.267C177.884 261.101 178.18 260.93 178.482 260.762C178.946 260.506 179.405 260.268 179.83 260.088C180.261 259.906 180.627 259.798 180.911 259.777L180.927 259.775C181.488 259.712 181.897 259.261 181.897 258.718V257.563C181.949 256.936 181.407 256.445 180.838 256.445H180.82L180.802 256.446C179.74 256.528 178.505 257.078 177.416 257.643C176.924 257.898 176.445 258.166 176.012 258.408L175.855 258.496C175.375 258.764 174.968 258.988 174.648 259.136C174.114 259.375 173.627 259.587 173.181 259.74C172.732 259.894 172.357 259.976 172.047 259.976C171.885 259.976 171.813 259.948 171.784 259.93C171.765 259.919 171.739 259.899 171.711 259.825C171.64 259.632 171.63 259.263 171.705 258.59L171.709 258.561C171.735 258.362 171.836 257.607 171.684 256.888C171.603 256.501 171.439 256.074 171.105 255.75C170.757 255.412 170.275 255.235 169.666 255.269L169.656 255.269C169.051 255.316 168.369 255.604 167.382 256.307C166.687 256.803 165.817 257.522 164.691 258.551L165.42 256.763L165.422 256.758Z" fill="#E4E4E4"/>
-                    <path d="M201 247.5L256.5 215" stroke="url(#paint5_linear)" stroke-width="2"/>
+                    <path d="M644 211.031L517 211.015" stroke="url(#paint4_linear)" stroke-width="2"/>
+                    <path class="actief_contractline1" d="M95.5 190.5L144.5 239.5" stroke="#E7E7E7" stroke-width="2"/>
+                    <!-- <path class="actief_contractline2" d="M201 247.5L256.5 215" stroke="url(#paint5_linear)" stroke-width="2"/> -->
+                    <g class="actief_contract hidden">
+                        <path d="M151.533 279.333H192.967C196.575 279.333 199.5 276.408 199.5 272.8V212.533C199.5 208.925 196.575 206 192.967 206H165.954C164.221 206 162.559 206.688 161.334 207.914L146.914 222.334C145.688 223.559 145 225.221 145 226.954V272.8C145 276.408 147.925 279.333 151.533 279.333Z" fill="white" stroke="#E4E4E4" stroke-width="2"/>
+                        <path d="M144 223.833L162.833 205V220.067C162.833 222.147 161.147 223.833 159.067 223.833H144Z" fill="#E4E4E4"/>
+                        <rect x="157.183" y="233.25" width="30.1333" height="3.76667" fill="#E4E4E4"/>
+                        <rect x="157.183" y="242.667" width="18.8333" height="3.76667" fill="#E4E4E4"/>
+                        <path class="actief_signature" stroke-dashoffset="100" stroke-dasharray="100" stroke="#E4E4E4" stroke-width="3" d="M159 256.324C159.833 254.824 163 253.324 164 254.324C165 255.324 159.57 264.847 161 265.324C162.5 265.824 167.5 256.324 170 257.824C172.5 259.324 170 262.178 171 262.324C172 262.47 177 259.324 181 259.324" />
+                    </g>
+
                     <defs>
                         <linearGradient id="paint0_linear" x1="96.1667" y1="121.5" x2="225.6" y2="121.5" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#E4E4E4"/>
@@ -310,6 +390,7 @@
                             <rect width="178" height="104" fill="white" transform="translate(643 16)"/>
                         </clipPath>
                     </defs>
+
                 </svg>
 
             </div>
