@@ -1,0 +1,56 @@
+
+
+.cases-teasers{
+
+  .case-teaser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0px 60px 60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+
+  .case-teaser__title{
+    font-size: 20px;
+    margin: 24px 0px;
+    @include for-size(tablet-landscape-up){
+      font-size: 24px;
+      margin: 24px 0px;
+    }
+  }
+
+  .case-teaser__logo{
+    height: 42px;
+  }
+
+  .case--deloitte .case-teaser__logo{
+    height: 26px;
+  }
+
+  .case-teaser__content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .case-teaser__visual{
+    width: 40%;
+    text-align: right;
+  }
+
+  .case--actief .case-teaser__image{
+    height: 190px;
+  }
+
+  .case--deloitte .case-teaser__image{
+    height: 190px;
+  }
+
+
+
+}
