@@ -2,20 +2,36 @@
 
 .cases-teasers{
 
+  margin-left: calc( var(--blogpadding) * -1);
+  width: calc(100% + 2 * var(--blogpadding));
+
+  @include for-size(tablet-landscape-up){
+    margin-left: 0;
+    width: auto;
+  }
+
+
   .case-teaser{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 60px 0px 60px 60px;
+
     background-color: #fff;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
     border-radius: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    padding: 40px 0px 40px 32px;
+    @include for-size(tablet-landscape-up){
+      padding: 60px 0px 60px 60px;
+      margin-bottom: 40px;
+    }
+
+
   }
 
   .case-teaser__title{
-    font-size: 20px;
-    margin: 24px 0px;
+    font-size: 18px;
+    margin: 18px 0px;
     @include for-size(tablet-landscape-up){
       font-size: 24px;
       margin: 24px 0px;
@@ -23,34 +39,61 @@
   }
 
   .case-teaser__logo{
-    height: 42px;
+    height: 32px;
+    @include for-size(tablet-landscape-up){
+      height: 40px
+    }
   }
 
   .case--deloitte .case-teaser__logo{
-    height: 26px;
+    height: 20px;
+    @include for-size(tablet-landscape-up){
+      height: 26px;
+    }
+  }
+
+  .case--actief .case-teaser__logo{
+    height: 36px;
+    @include for-size(tablet-landscape-up){
+      height: 42px
+    }
   }
 
   .case-teaser__content{
-    width: 60%;
+    width: 70%;
+
+    @include for-size(tablet-landscape-up){
+      width: 60%;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    padding-right: 16px;
   }
 
   .case-teaser__visual{
-    width: 40%;
+    overflow: hidden;
+    width: 30%;
+    @include for-size(tablet-landscape-up){
+      width: 40%;
+    }
     text-align: right;
   }
 
   .case--actief .case-teaser__image{
-    height: 190px;
+    height: 140px;
+    @include for-size(tablet-landscape-up){
+      height: 190px;
+    }
   }
 
   .case--deloitte .case-teaser__image{
-    height: 190px;
+    height: 140px;
+    @include for-size(tablet-landscape-up){
+      height: 190px;
+    }
   }
-
-
 
 }

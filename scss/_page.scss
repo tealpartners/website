@@ -210,8 +210,6 @@ a.page__backlink{
       background-color: $color-brand;
     }
   }
-
-
 }
 
 
@@ -238,5 +236,21 @@ a.page__backlink{
 }
 
 .page__illustration{
-  margin: 60px 0px;
+  width: calc(100% + 1 * var(--blogpadding));
+  margin-left: calc(var(--blogpadding) / 2 * -1);
+  margin-bottom: 32px;
+  margin-top: 32px;
+
+  @include for-size(tablet-up){
+    width: calc(100% + var(--blogpadding));
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  svg.illustration--limiter{
+    display: block;
+    margin: auto 0;
+    //max-width: calc(100% + var(--blogpadding));
+    width:100%;
+  }
 }

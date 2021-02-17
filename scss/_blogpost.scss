@@ -72,15 +72,19 @@
     content: "\0022";
     font-size: 40px;
     color:$color-brand;
+    line-height: 24px;
   }
   &:after{
     content: "\0022";
     font-size: 40px;
     color:$color-brand;
+    line-height: 24px;
   }
 }
 
-
+.page__content .blogpopst__quotecredit{
+  text-align: right;
+}
 
 .blogpost__image img[src="{{img}}"]{
   background-color: red;
