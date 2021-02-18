@@ -5,7 +5,7 @@
   margin-left: calc( var(--blogpadding) * -1);
   width: calc(100% + 2 * var(--blogpadding));
 
-  @include for-size(tablet-landscape-up){
+  @media (min-width: 500px){
     margin-left: 0;
     width: auto;
   }
@@ -20,8 +20,9 @@
     box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
     border-radius: 5px;
     margin-bottom: 24px;
-    padding: 40px 0px 40px 32px;
-    @include for-size(tablet-landscape-up){
+    padding: 40px 0px 40px 40px;
+
+    @media (min-width: 700px){
       padding: 60px 0px 60px 60px;
       margin-bottom: 40px;
     }
@@ -60,7 +61,7 @@
   }
 
   .case-teaser__content{
-    width: 70%;
+    width: 60%;
 
     @include for-size(tablet-landscape-up){
       width: 60%;
@@ -75,7 +76,7 @@
 
   .case-teaser__visual{
     overflow: hidden;
-    width: 30%;
+    width: 40%;
     @include for-size(tablet-landscape-up){
       width: 40%;
     }
