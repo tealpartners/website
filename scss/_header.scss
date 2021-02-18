@@ -80,7 +80,7 @@
   align-content: center;
 
   @include for-size(tablet-landscape-up){
-    grid-gap: 48px;
+    grid-gap: 32px;
   }
 }
 
@@ -90,7 +90,7 @@
   align-self: center;
   display: none;
 
-  @include for-size(tablet-up){
+  @media (min-width: 850px) {
     display: block;
     transform: translateY(0px);
     text-align: center;
@@ -200,7 +200,7 @@
     fill: #000;
   }
 
-  @include for-size(tablet-up){
+  @media (min-width: 850px) {
     display: none;
   }
 }

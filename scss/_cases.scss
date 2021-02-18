@@ -1,0 +1,100 @@
+
+
+.cases-teasers{
+
+  margin-left: calc( var(--blogpadding) * -1);
+  width: calc(100% + 2 * var(--blogpadding));
+
+  @media (min-width: 500px){
+    margin-left: 0;
+    width: auto;
+  }
+
+
+  .case-teaser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
+    border-radius: 5px;
+    margin-bottom: 24px;
+    padding: 40px 0px 40px 40px;
+
+    @media (min-width: 700px){
+      padding: 60px 0px 60px 60px;
+      margin-bottom: 40px;
+    }
+
+
+  }
+
+  .case-teaser__title{
+    font-size: 18px;
+    margin: 18px 0px;
+    @include for-size(tablet-landscape-up){
+      font-size: 24px;
+      margin: 24px 0px;
+    }
+  }
+
+  .case-teaser__logo{
+    height: 32px;
+    @include for-size(tablet-landscape-up){
+      height: 40px
+    }
+  }
+
+  .case--deloitte .case-teaser__logo{
+    height: 20px;
+    @include for-size(tablet-landscape-up){
+      height: 26px;
+    }
+  }
+
+  .case--actief .case-teaser__logo{
+    height: 36px;
+    @include for-size(tablet-landscape-up){
+      height: 42px
+    }
+  }
+
+  .case-teaser__content{
+    width: 60%;
+
+    @include for-size(tablet-landscape-up){
+      width: 60%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-right: 16px;
+  }
+
+  .case-teaser__visual{
+    overflow: hidden;
+    width: 40%;
+    @include for-size(tablet-landscape-up){
+      width: 40%;
+    }
+    text-align: right;
+  }
+
+  .case--actief .case-teaser__image{
+    height: 140px;
+    @include for-size(tablet-landscape-up){
+      height: 190px;
+    }
+  }
+
+  .case--deloitte .case-teaser__image{
+    height: 140px;
+    @include for-size(tablet-landscape-up){
+      height: 190px;
+    }
+  }
+
+}
