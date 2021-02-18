@@ -1,5 +1,6 @@
 <!-- title: Bonustool Deloitte -->
 <!-- author: Britt Mariën -->
+<!-- hide: True -->
 <!-- date: 2021-01-28 -->
 <!-- img: /assets/img/blogimages/header_bonustool_Deloitte_TealPartners_resize2.jpg -->
 
