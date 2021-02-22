@@ -17,4 +17,4 @@ Wannes Meert en Sebastijan Dumančić van het departement Artificiële Intellige
 
 Meer weten over VIREN? Weldra publiceren we een blogreeks over deze unieke technologie. Volg onze pagina via [Linkedin](https://www.linkedin.com/company/teal-partners/?originalSubdomain=be)
 
-Meer weten over de paper? [hier](https://dtai.cs.kuleuven.be/stories/post/sebastijan-dumancic/automated-payroll-management/) kan je al een extract lezen 
+Meer weten over de paper? [Hier](https://dtai.cs.kuleuven.be/stories/post/sebastijan-dumancic/automated-payroll-management/) kan je al een extract lezen 
