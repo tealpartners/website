@@ -16,3 +16,5 @@ De paper beschrijft het gebruik van AI voor het berekenen van de potentiële imp
 Wannes Meert en Sebastijan Dumančić van het departement Artificiële Intelligentie en Machine Learning aan de KU Leuven en Teal Partners Stijn Goethals, Tim Stuyckens, Jelle Huygen en Koen Denies werkten mee aan het eindresultaat. 
 
 Meer weten over VIREN? Weldra publiceren we een blogreeks over deze unieke technologie. Volg onze pagina via [Linkedin](https://www.linkedin.com/company/teal-partners/?originalSubdomain=be)
+
+Meer weten over de paper? [hier](https://dtai.cs.kuleuven.be/stories/post/sebastijan-dumancic/automated-payroll-management/) kan je al een extract lezen 
