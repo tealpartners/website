@@ -18,3 +18,6 @@ Wannes Meert and Sebastijan Dumancic from the Department of Artificial Intellige
 
 
 Want to know more about VIREN? Soon we will publish a blog series about this unique technology. Follow our page via [Linkedin](https://www.linkedin.com/company/teal-partners/?originalSubdomain=be)
+
+Want to know more about the paper? You can already read an extract [here](https://dtai.cs.kuleuven.be/stories/post/sebastijan-dumancic/automated-payroll-management/).
+
