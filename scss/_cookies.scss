@@ -1,0 +1,20 @@
+.cookies__dialog {
+    border-top: 2px;
+    border-top-style: solid;
+    background-color: white;
+    border-top-color: $color-brand;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    padding: 2em;
+    display: none;
+}
+
+.cookies__decline {
+    background: none!important;
+    border: none;
+    padding: 0 !important;
+    color: $color-cta;
+    cursor: pointer;
+}
